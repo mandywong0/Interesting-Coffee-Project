@@ -1,0 +1,41 @@
+.header-title {
+  color: white;
+  font-size: 22px;
+}
+
+.results-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.matched-cafe {
+  background-color: var(--button-color);
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.matched-cafe:hover {
+  transform: translateY(-2px);
+}
+
+.cafe-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.label-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.cafe-name {
+  font-size: 18px;
+  font-weight: normal;
+} 

@@ -1,0 +1,149 @@
+:root {
+  --background-color: #301D15;
+  --card-color: #D9D9D9;
+  --text-color: #000;
+  --button-color: #8B5C44;
+  --accent-color: #E9B68A;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.App {
+  height: 100vh;
+  max-width: 480px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.cafe-card {
+  background-color: var(--card-color);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px 0;
+  position: relative;
+}
+
+.search-bar {
+  background-color: var(--card-color);
+  border-radius: 24px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.search-icon {
+  margin-right: 10px;
+}
+
+.match-button {
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  border-radius: 24px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.label-tag {
+  background-color: var(--button-color);
+  color: white;
+  border-radius: 15px;
+  padding: 5px 10px;
+  margin: 5px;
+  display: inline-block;
+}
+
+.input-area {
+  background-color: var(--button-color);
+  border-radius: 20px;
+  padding: 15px;
+  margin: 20px 0;
+  width: 100%;
+  border: none;
+  color: white;
+}
+
+.input-area::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--background-color);
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+}
+
+.nav-icon.active {
+  opacity: 1;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+.star-rating {
+  color: var(--accent-color);
+}
+
+.match-percentage {
+  font-weight: bold;
+}
+
+/* Page specific styles */
+.home-page {
+  padding: 20px;
+  padding-bottom: 70px;
+}
+
+.cafe-match-page {
+  padding: 20px;
+  padding-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.match-results-page {
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto;
+}

@@ -1,0 +1,110 @@
+.cafe-details-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.details-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.bookmark-button, .close-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.cafe-details-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.cafe-name-container {
+  background-color: white;
+  border-radius: 30px 30px 0 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.cafe-name-large {
+  color: black;
+  font-size: 28px;
+  margin: 0;
+}
+
+.cafe-info-container {
+  background-color: #8B5C44;
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.vibes {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.rating-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.rating-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rating-icon {
+  font-size: 20px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.rating-bar {
+  flex: 1;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.rating-bar-fill {
+  height: 100%;
+  background-color: white;
+}
+
+.menu-button {
+  align-self: center;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+  font-weight: bold;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.detail-item {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+} 

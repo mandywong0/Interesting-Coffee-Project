@@ -1,0 +1,43 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  color: white;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.cafe-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cafe-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cafe-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  outline: none;
+}
+
+.cafe-card {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.cafe-card:hover {
+  transform: translateY(-2px);
+} 

@@ -1,0 +1,48 @@
+[
+    {
+      "name": "Mind Coffee",
+      "images": {
+        "exterior": [
+          "/images/mind/exterior1.jpg",
+          "/images/mind/exterior2.jpg",
+          "/images/mind/exterior3.jpg"
+        ],
+        "interior": [
+          "/images/mind/interior1.jpg",
+          "/images/mind/interior2.jpg",
+          "/images/mind/interior3.jpg"
+        ]
+      },
+      "uniqueItems": ["Hojicha Latte", "Ceremonial Matcha Latte", "Iced Dirty Matcha Latte"],
+      "about": "We are a specialty coffee shop that serves drinks that inspire. We are on a mission to change the narrative around mental health and strengthen the mental health of our community, all while serving high-quality, great tasting coffee, tea, and signature drinks. All of our beans are roasted by us, all of our syrups made in house, and all of our crema / whipped creams are made in house. We don't make our own pastries, but we do have pastry happy hour - from 4-5pm all pastries are 30% off.",
+      "tags": ["Coffee", "Tea", "Coffee Roasteries", "Quiet"],
+      "address": "1816 Euclid Ave Berkeley, CA 94709",
+      "phone": null,
+      "reviews": [
+        "Small cafe in Berkeley with a beautiful, minimalist, modern interior.\n\nFinals week is this week, and I needed somewhere with ample seating, outlets, free WiFi, and a calm vibe. Mind Coffee delivered on everything I needed! It also helps that many other college students were studying or working when I came around 6pm. I also like that they're open late (10pm) compared to other cafes in the area.\n\nI ordered the inner peace tea which comes in a small glass carafe. Very calming and I liked the inclusion of kava root! Would definitely come back. (:",
+        "In spite of its terrible parking situation and very limited seating availability, Mind is one of the more popular study spots in the area. Definitely consider walking or taking public transit, and if you do decide to drive, know that the meter maids here are particularly active - one visit I saw 3 cars around me get ticketed in a two hour time span. There are only 4 regular tables, with the rest of the seating options being firm beanbags and knee-high surfaces.\n\nMind has some of the closest interior decor I've seen to some of my favorite coffee shops in LA - a clean, bright aesthetic that showcases their process. Staff are lovely and willing to answer any questions, and although drinks do take a little longer to come out they're worth the wait.\n\nCardamom Matcha Mindspanner: a personalized seasonal recommendation from one of their baristas. Matcha and cardamom taste were evenly matched and perfectly sweet - the matcha in particular tasted fairly high quality. Whipped cream was fantastic and very spoonable.\n\nHojicha Mindspanner: wanted to see how they would do one of my favorite flavors and Mind did not disappoint. Flavor was authentic and not overwhelming. See above for notes on cream.\n\nWill be back!",
+        "Solid coffee shop near campus. It is small so unless you're there early and camp out, you're not likely to find a spot to do work. Also some of their spots are little cushions on the ground and not the most comfortable for spending more than 5 minutes there.\n\nYou order at a little kiosk near the counter. Straightforward and no problems. I got a regular latte and a twice baked hazelnut chocolate croissant. Decent latte, was pricey but about average for Berkeley. The croissant while amazingly delicious was incredibly rich. Maybe share it with a friend and definitely have something caffeinated to cut through the richness.\n\nGive it a shot! But maybe take it to go and find somewhere else to work."
+      ],
+      "amenities": {
+        "bathroom": true,
+        "wifi": true,
+        "indoorSeating": true,
+        "outdoorSeating": true,
+        "wheelchairAccessible": true,
+        "outlets": true,
+        "creditCards": true
+      },
+      "priceRange": "$$",
+      "hours": {
+        "mon": "7:30am - 5:00pm",
+        "tue": "7:30am - 5:00pm",
+        "wed": "7:30am - 5:00pm",
+        "thu": "7:30am - 5:00pm",
+        "fri": "7:30am - 5:00pm",
+        "sat": "10:00am - 5:00pm",
+        "sun": "10:00am - 5:00pm"
+      },
+      "yelp": "https://www.yelp.com/biz/mind-coffee-berkeley?osq=Mind+Coffee"
+    }
+  ]
+  

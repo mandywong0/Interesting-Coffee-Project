@@ -1,48 +1,246 @@
 [
-    {
-      "name": "Mind Coffee",
-      "images": {
-        "exterior": [
-          "/images/mind/exterior1.jpg",
-          "/images/mind/exterior2.jpg",
-          "/images/mind/exterior3.jpg"
-        ],
-        "interior": [
-          "/images/mind/interior1.jpg",
-          "/images/mind/interior2.jpg",
-          "/images/mind/interior3.jpg"
-        ]
-      },
-      "uniqueItems": ["Hojicha Latte", "Ceremonial Matcha Latte", "Iced Dirty Matcha Latte"],
-      "about": "We are a specialty coffee shop that serves drinks that inspire. We are on a mission to change the narrative around mental health and strengthen the mental health of our community, all while serving high-quality, great tasting coffee, tea, and signature drinks. All of our beans are roasted by us, all of our syrups made in house, and all of our crema / whipped creams are made in house. We don't make our own pastries, but we do have pastry happy hour - from 4-5pm all pastries are 30% off.",
-      "tags": ["Coffee", "Tea", "Coffee Roasteries", "Quiet"],
-      "address": "1816 Euclid Ave Berkeley, CA 94709",
-      "phone": null,
-      "reviews": [
-        "Small cafe in Berkeley with a beautiful, minimalist, modern interior.\n\nFinals week is this week, and I needed somewhere with ample seating, outlets, free WiFi, and a calm vibe. Mind Coffee delivered on everything I needed! It also helps that many other college students were studying or working when I came around 6pm. I also like that they're open late (10pm) compared to other cafes in the area.\n\nI ordered the inner peace tea which comes in a small glass carafe. Very calming and I liked the inclusion of kava root! Would definitely come back. (:",
-        "In spite of its terrible parking situation and very limited seating availability, Mind is one of the more popular study spots in the area. Definitely consider walking or taking public transit, and if you do decide to drive, know that the meter maids here are particularly active - one visit I saw 3 cars around me get ticketed in a two hour time span. There are only 4 regular tables, with the rest of the seating options being firm beanbags and knee-high surfaces.\n\nMind has some of the closest interior decor I've seen to some of my favorite coffee shops in LA - a clean, bright aesthetic that showcases their process. Staff are lovely and willing to answer any questions, and although drinks do take a little longer to come out they're worth the wait.\n\nCardamom Matcha Mindspanner: a personalized seasonal recommendation from one of their baristas. Matcha and cardamom taste were evenly matched and perfectly sweet - the matcha in particular tasted fairly high quality. Whipped cream was fantastic and very spoonable.\n\nHojicha Mindspanner: wanted to see how they would do one of my favorite flavors and Mind did not disappoint. Flavor was authentic and not overwhelming. See above for notes on cream.\n\nWill be back!",
-        "Solid coffee shop near campus. It is small so unless you're there early and camp out, you're not likely to find a spot to do work. Also some of their spots are little cushions on the ground and not the most comfortable for spending more than 5 minutes there.\n\nYou order at a little kiosk near the counter. Straightforward and no problems. I got a regular latte and a twice baked hazelnut chocolate croissant. Decent latte, was pricey but about average for Berkeley. The croissant while amazingly delicious was incredibly rich. Maybe share it with a friend and definitely have something caffeinated to cut through the richness.\n\nGive it a shot! But maybe take it to go and find somewhere else to work."
+  {
+    "name": "Mind Coffee",
+    "images": {
+      "exterior": [
+        "/images/mind/exterior1.jpg",
+        "/images/mind/exterior2.jpg",
+        "/images/mind/exterior3.jpg"
       ],
-      "amenities": {
-        "bathroom": true,
-        "wifi": true,
-        "indoorSeating": true,
-        "outdoorSeating": true,
-        "wheelchairAccessible": true,
-        "outlets": true,
-        "creditCards": true
-      },
-      "priceRange": "$$",
-      "hours": {
-        "mon": "7:30am - 5:00pm",
-        "tue": "7:30am - 5:00pm",
-        "wed": "7:30am - 5:00pm",
-        "thu": "7:30am - 5:00pm",
-        "fri": "7:30am - 5:00pm",
-        "sat": "10:00am - 5:00pm",
-        "sun": "10:00am - 5:00pm"
-      },
-      "yelp": "https://www.yelp.com/biz/mind-coffee-berkeley?osq=Mind+Coffee"
-    }
-  ]
-  
+      "interior": [
+        "/images/mind/interior1.jpg",
+        "/images/mind/interior2.jpg",
+        "/images/mind/interior3.jpg"
+      ]
+    },
+    "uniqueItems": [
+      "Hojicha Latte",
+      "Ceremonial Matcha Latte",
+      "Iced Dirty Matcha Latte"
+    ],
+    "about": "We are a specialty coffee shop that serves drinks that inspire. We are on a mission to change the narrative around mental health and strengthen the mental health of our community, all while serving high-quality, great tasting coffee, tea, and signature drinks. All of our beans are roasted by us, all of our syrups made in house, and all of our crema / whipped creams are made in house. We don't make our own pastries, but we do have pastry happy hour - from 4-5pm all pastries are 30% off.",
+    "tags": ["Coffee", "Tea", "Coffee Roasteries", "Quiet"],
+    "address": "1816 Euclid Ave Berkeley, CA 94709",
+    "phone": null,
+    "website": "https://www.themindcoffee.com/",
+    "reviews": [
+      "Small cafe in Berkeley with a beautiful, minimalist, modern interior.\n\nFinals week is this week, and I needed somewhere with ample seating, outlets, free WiFi, and a calm vibe. Mind Coffee delivered on everything I needed! It also helps that many other college students were studying or working when I came around 6pm. I also like that they're open late (10pm) compared to other cafes in the area.\n\nI ordered the inner peace tea which comes in a small glass carafe. Very calming and I liked the inclusion of kava root! Would definitely come back. (:",
+      "In spite of its terrible parking situation and very limited seating availability, Mind is one of the more popular study spots in the area. Definitely consider walking or taking public transit, and if you do decide to drive, know that the meter maids here are particularly active - one visit I saw 3 cars around me get ticketed in a two hour time span. There are only 4 regular tables, with the rest of the seating options being firm beanbags and knee-high surfaces.\n\nMind has some of the closest interior decor I've seen to some of my favorite coffee shops in LA - a clean, bright aesthetic that showcases their process. Staff are lovely and willing to answer any questions, and although drinks do take a little longer to come out they're worth the wait.\n\nCardamom Matcha Mindspanner: a personalized seasonal recommendation from one of their baristas. Matcha and cardamom taste were evenly matched and perfectly sweet - the matcha in particular tasted fairly high quality. Whipped cream was fantastic and very spoonable.\n\nHojicha Mindspanner: wanted to see how they would do one of my favorite flavors and Mind did not disappoint. Flavor was authentic and not overwhelming. See above for notes on cream.\n\nWill be back!",
+      "Solid coffee shop near campus. It is small so unless you're there early and camp out, you're not likely to find a spot to do work. Also some of their spots are little cushions on the ground and not the most comfortable for spending more than 5 minutes there.\n\nYou order at a little kiosk near the counter. Straightforward and no problems. I got a regular latte and a twice baked hazelnut chocolate croissant. Decent latte, was pricey but about average for Berkeley. The croissant while amazingly delicious was incredibly rich. Maybe share it with a friend and definitely have something caffeinated to cut through the richness.\n\nGive it a shot! But maybe take it to go and find somewhere else to work."
+    ],
+    "amenities": {
+      "bathroom": true,
+      "wifi": true,
+      "indoorSeating": true,
+      "outdoorSeating": true,
+      "wheelchairAccessible": true,
+      "outlets": true,
+      "creditCards": true
+    },
+    "priceRange": "$$",
+    "hours": {
+      "mon": "7:30am - 5:00pm",
+      "tue": "7:30am - 5:00pm",
+      "wed": "7:30am - 5:00pm",
+      "thu": "7:30am - 5:00pm",
+      "fri": "7:30am - 5:00pm",
+      "sat": "10:00am - 5:00pm",
+      "sun": "10:00am - 5:00pm"
+    },
+    "yelp": "https://www.yelp.com/biz/mind-coffee-berkeley?osq=Mind+Coffee"
+  },
+  {
+    "name": "SoDoI Coffee Tasting House",
+    "images": {
+      "exterior": [
+        "/images/sodoi/exterior1.jpg",
+        "/images/sodoi/exterior2.jpg",
+        "/images/sodoi/exterior3.jpg"
+      ],
+      "interior": [
+        "/images/sodoi/interior1.jpg",
+        "/images/sodoi/interior2.jpg",
+        "/images/sodoi/interior3.jpg"
+      ]
+    },
+    "uniqueItems": [
+      "Red Velvet Latte",
+      "Strawberry Matcha",
+      "Iced Vanilla Latte"
+    ],
+    "about": "At SoDoI, we don't believe providing great coffee is enough. As our name suggests, we're part of the SoDoI movement, and it's our mission to deliver hope and inspiration with every cup we serve. With 200 combined years of roasting, blending, and serving experience, we're proud to say we've mastered our craft, and we can't wait to share that with the people of Berkeley and beyond. Our shop is a testament to our message, and we hope that our success in the community will encourage you to never give up on your dreams, to always be truthful and open your heart to others, and to love life while making as many memories as you can.",
+    "tags": ["Coffee", "Tea", "Quiet"],
+    "address": "2438 Durant Ave Berkeley, CA 94704",
+    "phone": "(510) 990-6487",
+    "website": "https://sodoicoffee.com/",
+    "reviews": [
+      "I got the chai with a shot of espresso for my first time visit at SoDol, and the coffee tasted so rich and amazing!\n\nThe interior is very interesting and fun! Lots of space to do work. Service was ok!",
+      "Tucked away in an alley, SoDoI Coffee Tasting House is easy to miss unless you know to keep an eye out for it. I eventually found my way by following the signs in the alley - and saw that many others had also discovered this hidden coffee shop since all of the tables inside were filled. It took a while to place my order; while there was no line, all of the baristas were incredibly busy preparing a long queue of drinks. After waiting a few minutes, I placed my order for a drip coffee and waited another ten minutes or so for my coffee (Note: drip coffee refers to a pour-over). My coffee tasted really smooth and strong - almost like espresso.\n\nThe coffee shop seemed to be filled with students preparing for midterms, but I could also envision this as a nice setting for a coffee meet-up with friends. While I was in a hurry during this most recent visit, I'll plan ahead next time and linger at one of the tables as I enjoy my coffee.",
+      "SoDoI is spacious coffee place with a lot of seating and huge tables, definitely great to come and study. The French toast iced coffee was good and in the sweet side so if you like the strong coffee flavor I recline to ask it for less sweater. The baristas here were really nice and helpful with deciding what to get and they were very welcoming. If you're in the Berkeley area I definitely recommend checking this place out."
+    ],
+    "amenities": {
+      "bathroom": true,
+      "wifi": true,
+      "indoorSeating": true,
+      "outdoorSeating": false,
+      "wheelchairAccessible": true,
+      "outlets": true,
+      "creditCards": true
+    },
+    "priceRange": "$$",
+    "hours": {
+      "mon": "8:00am - 5:00pm",
+      "tue": "8:00am - 5:00pm",
+      "wed": "8:00am - 5:00pm",
+      "thu": "8:00am - 5:00pm",
+      "fri": "8:00am - 5:00pm",
+      "sat": "9:00am - 5:00pm",
+      "sun": "9:00am - 5:00pm"
+    },
+    "yelp": "https://www.yelp.com/biz/sodoi-coffee-tasting-house-berkeley-2"
+  },
+  {
+    "name": "Binge Coffee House",
+    "images": {
+      "exterior": [
+        "/images/binge/exterior1.jpg",
+        "/images/binge/exterior2.jpg",
+        "/images/binge/exterior3.jpg"
+      ],
+      "interior": [
+        "/images/binge/interior1.jpg",
+        "/images/binge/interior2.jpg",
+        "/images/binge/interior3.jpg"
+      ]
+    },
+    "uniqueItems": ["Sesame Matcha", "Banh Mi", "Egg Coffee"],
+    "about": "At SoDoI, we don't believe providing great coffee is enough. As our name suggests, we're part of the SoDoI movement, and it's our mission to deliver hope and inspiration with every cup we serve. With 200 combined years of roasting, blending, and serving experience, we're proud to say we've mastered our craft, and we can't wait to share that with the people of Berkeley and beyond. Our shop is a testament to our message, and we hope that our success in the community will encourage you to never give up on your dreams, to always be truthful and open your heart to others, and to love life while making as many memories as you can.",
+    "tags": ["Coffee", "Tea", "Vietnamese", "Bubble Tea", "Moderate Noise"],
+    "address": "2199 Bancroft Way Berkeley, CA 94720",
+    "phone": "(341) 229-1296",
+    "website": "https://www.bingecoffeehouse.com/",
+    "reviews": [
+      "so nice to see more cute cafes opening up in berkeley! had the strawberry matcha and the grilled pork banh mi and both were super yummy! def hope to try more of their stuff in the future :)\n\nwent around noon and there was no line to order which was nice! drinks and food came out super quick too. there were a couple seats open but most tables were occupied so not sure if it would be the best place to study. highly recommend regardless!",
+      "Stumbled upon this place looking for coffee near UCB. I'm super impressed by this coffee shop! Binge Coffee House offers unique Asian flavors for coffee and drinks.\n\nI ordered their seasonal white peach drink which was a bit too sweet for my liking, but you can always adjust the sugar level. My friends ordered the banana matcha latte, which was also sweet, so we do recommend less sugar if you have less of a sweet tooth.\n\nCute family owned shop with some tables available for studying. It was fairly crowded with students on a weekend afternoon. Customer service was also really good with reasonable wait time for drinks.",
+      "Got to check this place out and got a drink for our little stroll through the neighborhood. It is packed with students, mostly. Small shop with people waiting for their orders while also being in the way of the 2 kiosks to place your order. Definitely some weaving through the crowd is necessary. Not the ideal place to do some laptop work, but there were definitely some folks in there making it work.\n\nNo desk person to speak to, mainly self service. They serve up the drinks pretty fast but then disappear to the back again. They also offer some light snacks too, like the egg puffs. Drinks are good but not worth a special trip, esp fighting through students to order and get your order."
+    ],
+    "amenities": {
+      "bathroom": false,
+      "wifi": true,
+      "indoorSeating": true,
+      "outdoorSeating": false,
+      "wheelchairAccessible": true,
+      "outlets": true,
+      "creditCards": true
+    },
+    "priceRange": "$",
+    "hours": {
+      "mon": "9:00am - 7:00pm",
+      "tue": "9:00am - 7:00pm",
+      "wed": "9:00am - 7:00pm",
+      "thu": "9:00am - 7:00pm",
+      "fri": "9:00am - 7:00pm",
+      "sat": "9:00am - 7:00pm",
+      "sun": "9:00am - 7:00pm"
+    },
+    "yelp": "https://www.yelp.com/biz/binge-coffee-house-berkeley?osq=Binge+Coffee+House"
+  },
+  {
+    "name": "Cha Thai Tea",
+    "images": {
+      "exterior": [
+        "/images/cha/exterior1.jpg",
+        "/images/cha/exterior2.jpg",
+        "/images/cha/exterior3.jpg"
+      ],
+      "interior": [
+        "/images/cha/interior1.jpg",
+        "/images/cha/interior2.jpg",
+        "/images/cha/interior3.jpg"
+      ]
+    },
+    "uniqueItems": ["Pang Cha", "Mango Sticky Rice", "Avacado Smash"],
+    "about": "Thai Tea specialty.",
+    "tags": [
+      "Bubble Tea",
+      "Cafes",
+      "Juice Bars",
+      "Smoothies",
+      "Moderate Noise"
+    ],
+    "address": "1796 Shattuck Ave Berkeley, CA 94709",
+    "phone": "(510) 225-9781",
+    "website": null,
+    "reviews": [
+      "Super yummy drink! I got the Up All Night which is Thai tea & Thai coffee. Perfect blend of flavors for me. There's a few tables inside & I was able to study for a few hours. The worker was very nice.",
+      "I came by recently and the woman at the front was very kind, she suggested the peppermint Thai milk tea (still available from the winter menu)! She said it was her favorite so I was really sold on it, plus I've never had peppermint flavored Thai milk tea before and I really love trying new and unique flavor combinations. Turns out, peppermint goes very well with Thai milk tea. It is a small space, with a few small tables on one side of the room. When we were there on a Sunday afternoon all the small tables were taken and it looked like everyone was studying.",
+      "I love Thai tea, imma just put that out there. The fact that Cha Thai Tea specializes in it and is close to my home? Dangerous!\n\nI came here with my best friend and we enjoyed sipping in their shop. The inside is pretty minimalistic and quiet. There's a few tables inside and a couple outside. Since we were one of the only customers, my drink came out fast.\n\nWhen you come to a place with Thai tea as their name, best believe I'm going to try it! I had the Oat Milk Thai Tea. Initially I asked for no sugar but it was definitely too bitter for me so they were kind enough to add some sweet syrup. You can taste the pureness of the tea. It was high quality for sure and I recommend it for those seeking authentic Thai tea.\n\nAfter my experience at Cha Thai Tea, I will continue to bring other friends who also love Thai tea. The shop is small but easy to find off Shattuck Ave. with street parking around. Can't wait to come back to try their other drinks!"
+    ],
+    "amenities": {
+      "bathroom": true,
+      "wifi": true,
+      "indoorSeating": true,
+      "outdoorSeating": false,
+      "wheelchairAccessible": true,
+      "outlets": true,
+      "creditCards": true
+    },
+    "priceRange": "$",
+    "hours": {
+      "mon": "11:30am - 9:00pm",
+      "tue": "11:30am - 9:00pm",
+      "wed": "11:30am - 9:00pm",
+      "thu": "11:30am - 9:00pm",
+      "fri": "11:30am - 9:00pm",
+      "sat": "11:30am - 9:00pm",
+      "sun": "11:30am - 9:00pm"
+    },
+    "yelp": "https://www.yelp.com/biz/cha-thai-tea-berkeley"
+  },
+  {
+    "name": "Victory Point Cafe",
+    "images": {
+      "exterior": [
+        "/images/victory/exterior1.jpg",
+        "/images/victory/exterior2.jpg",
+        "/images/victory/exterior3.jpg"
+      ],
+      "interior": [
+        "/images/victory/interior1.jpg",
+        "/images/victory/interior2.jpg",
+        "/images/victory/interior3.jpg"
+      ]
+    },
+    "uniqueItems": ["Honey Lavender Latte", "House Made Cold Brew", "Honey Mustard Club"],
+    "about": "Victory Point Cafe was born from a love of three key cornerstones: coffee, beer, and board games. We saw how popular similar cafes were doing across the continent and wanted to bring that experience to the Bay Area. We see board games as a chance to disconnect from our digital world and interact with our fellow neighbors over cardboard and dice.",
+    "tags": ["Coffee", "Tea", "Beer Bar", "Tabletop Games"],
+    "address": "1797 Shattuck Ave Ste A Berkeley, CA 94709",
+    "phone": "(510) 982-6325",
+    "website": "https://www.victorypointcafe.com/",
+    "reviews": [
+      "It's a lovely place to visit when you're wanting to try out new board games or even just to socialize. They're open late, and have an extensive library of games to play and experience! Most of them are in good condition, though a few older ones can be missing some pieces or feel a little dirty.\n\nIf you're not looking for board games, they also serve drinks and some simple food items! It's a nice location to study or work, and very comfortable!",
+      "This is what you'd imagine it would be like in the movies. They have an assortment of games - board games and cards for you to rent out. They also have coffee and drinks available. On weekends or later in the evening it can get pretty packed, so arrive earlier than you'd like to get a table/seat. Parking can be a bit hard to find in the area as well.",
+      "Bring noise cancelling headphones if you want to study here!! It is very lively (: Very cute vibes especially if you're into board games. The chalkboard menu is super cute too! There are outlets all along the walls, but not many in the taller tables/counters along the walls. Also, some tables in the middle look like they require reservations.\n\nFlamecraft mocha: hot chocolate with cayenne and cinnamon. spicy in a good way! gets the immune system going and warms the body for a good study sesh.\n\nEmployees seem friendly, nothing super standout about service, good vibes all around tho."
+    ],
+    "amenities": {
+      "bathroom": true,
+      "wifi": true,
+      "indoorSeating": true,
+      "outdoorSeating": true,
+      "wheelchairAccessible": true,
+      "outlets": true,
+      "creditCards": true
+    },
+    "priceRange": "$",
+    "hours": {
+      "mon": "9:00am - 11:00pm",
+      "tue": "9:00am - 11:00pm",
+      "wed": "9:00am - 11:00pm",
+      "thu": "9:00am - 11:00pm",
+      "fri": "9:00am - 1:00am (next day)",
+      "sat": "9:00am - 1:00am (next day)",
+      "sun": "10:00am - 10:00pm"
+    },
+    "yelp": "https://www.yelp.com/biz/victory-point-cafe-berkeley"
+  }
+]

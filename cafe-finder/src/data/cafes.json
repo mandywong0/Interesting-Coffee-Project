@@ -242,5 +242,235 @@
       "sun": "10:00am - 10:00pm"
     },
     "yelp": "https://www.yelp.com/biz/victory-point-cafe-berkeley"
+  },
+  {
+    "name": "Cafe Parisien",
+    "images": {
+      "exterior": [
+        "/images/parisien/exterior1.jpg",
+        "/images/parisien/exterior2.jpg",
+        "/images/parisien/exterior3.jpg"
+      ],
+      "interior": [
+        "/images/parisien/interior1.jpg",
+        "/images/parisien/interior2.jpg",
+        "/images/parisien/interior3.jpg"
+      ]
+    },
+    "uniqueItems": ["Chocolate Croissant", "Apple Danish", "Genoise"],
+    "about": null,
+    "tags": ["Cafes", "French", "Coffee", "Tea"],
+    "address": "1625 Shattuck Ave Berkeley, CA 94709",
+    "phone": "(510) 529-4309",
+    "website": null,
+    "reviews": [
+      "Great neighborhood cafe. Friendly and welcoming owners. Nice assortment of pastries, beverages, light lunch options. Glad that the students haven't taken over the cafe like they have in other places. You can actually buy food and sit down and enjoy it instead of doing take out due to lack of seating. Places to sit inside and out on the sidewalk.\n\nThey need to sell gift cards so we can share the experience with our friends and family.",
+      "This café is genuinely one of the cutest spots I've studied at. I'm writing this review because I was searching for a new café to try between classes, and after some exploring, this one popped up. I checked Yelp for reviews on the space, drinks, and pastries but found little information online. Still, since I had already been to most cafés in Berkeley, I decided to give it a shot--and I'm so glad I did.\n\nThe moment I walked in, I smiled. The cozy lighting, bright red balloons, and beautifully displayed pastries created such a warm and inviting atmosphere. I ordered a café latte (solid 4/5 for taste and well-priced for Berkeley) and easily found a spacious three-person table to study at, as it wasn't too crowded. Right away, I noticed how attentive the staff was--one of the owners (as I learned later on) quickly cleaned up a nearby table and even set aside a forgotten water bottle in case the customer returned. Sure enough, when the customer came back looking for it, the owner immediately handed it to them.\n\nThe hospitality here is unmatched. The owner personally brought my drink to my table and even gave me a free pastry to try! I later learned that this is a family-run business owned by twin French-Algerian brothers, which made me appreciate the café even more. The sense of community was evident--one customer in a wheelchair came in for their birthday, and the owner helped them pick out the perfect cake. It was also great to see that the café is wheelchair accessible, making it a welcoming space for everyone.\n\nI love the ambiance, the kindness of the staff, and the study-friendly setup. For students and employees, it's a great spot to work, with affordable house coffee refills. My only critique? The brownie is a bit pricey at $6.50. But overall, I'll definitely be coming back!",
+      "I stumbled upon this place while having lunch with a friend down the street. I was only going to look, but then I took a gander at the amazing pastries and croissants and was smitten. The service was top notch friendly and helpful. I couldn't decide what to try and ended up getting this cheese filled croissant on recommendation that was amazing. I have to go back to get more! I'm now obsessed. I also tried an apricot cheese croissant and a chocolate croissant and both were amazing. They were having a special on baklava on the counter and though I'm normally not a huge baklava fan, I bought a box of these and let me tell you, I'm now a baklava fan. They were nutty and gooey without being too sweet somehow. I loved them. I can't wait to go back here. Next time, I'm going to sit and try their espresso, and stay a while. Tres bien! C'est tres bon! Merci!"
+    ],
+    "amenities": {
+      "bathroom": true,
+      "wifi": true,
+      "indoorSeating": true,
+      "outdoorSeating": true,
+      "wheelchairAccessible": true,
+      "outlets": true,
+      "creditCards": true
+    },
+    "priceRange": null,
+    "hours": {
+      "mon": "7:30am - 6:00pm",
+      "tue": "7:30am - 6:00pm",
+      "wed": "7:30am - 6:00pm",
+      "thu": "7:30am - 6:00pm",
+      "fri": "7:30am - 6:00pm",
+      "sat": "8:00am - 5:30pm",
+      "sun": "8:00am - 5:30pm"
+    },
+    "yelp": "https://www.yelp.com/biz/cafe-parisien-berkeley-2"
+  },
+  {
+    "name": "Cafenated Coffee Company",
+    "images": {
+      "exterior": [
+        "/images/cafenated/exterior1.jpg",
+        "/images/cafenated/exterior2.jpg",
+        "/images/cafenated/exterior3.jpg"
+      ],
+      "interior": [
+        "/images/cafenated/interior1.jpg",
+        "/images/cafenated/interior2.jpg",
+        "/images/cafenated/interior3.jpg"
+      ]
+    },
+    "uniqueItems": ["Coffee", "Matcha", "Latte"],
+    "about": "Passionate about coffee. I’d like you to experience our beverages and food like no other place.  Our coffeehouse and our online store is designed to convey our enthusiasm about coffee.  Our mission is to help women coffee farmers live better and our customers to taste and feel their hard work.  We have partnered with local chefs, bakers, breweries, wineries, and coffee equipment makers like Fellow Industries to bring you the best-of-the-best.",
+    "tags": ["Breakfast", "Lunch", "Wine Bars", "Coffee", "Tea", "Moderate Noise"],
+    "address": "2085 Vine St Berkeley, CA 94709",
+    "phone": "(800) 388-4049",
+    "website": "https://www.cafenated.co/",
+    "reviews": [
+      "I popped in here to grab a coffee and do some work and will certainly be back!\n\nI came on a Wednesday afternoon and the cafe was busy, but I was still able to quickly find a seat. The staff were welcoming and friendly and my salted caramel cappuccino came out promptly and was delicious! I sat inside as it was a bit chilly, but there is some seating out front and ample seating on the back patio. On a nice day, I'd love to have lunch out there, it's beautiful!",
+      "I have two favorite coffee shops in Berkeley and this is one of them! The aesthetic, vibes and space are all immaculate. The coffee and food is also really good, a little on the more expensive size but they always have great service and the energy!\n\nThe outdoor seating is so beautiful, it feels like working in a garden. This place is great for a day to grind in Berkeley! Lots of outlets, seating and delicious drinks and pastries. Highly recommend :)",
+      "One of my favorite coffee shops in Berkeley! This was my second time coming to Cafenated Coffee Co. and decided to try a new drink. I had a hot white mocha with oatmilk and it was really good. My boyfriend had a hot vanilla latte and he enjoyed his drink as well. We visited early on a Friday morning and it was quite packed inside. They also have plenty of outdoor seating in the back which would be nice on a warm day. Service was great and drinks came out pretty fast! Highly recommend if you're looking for a good coffee shop in Berkeley."
+    ],
+    "amenities": {
+      "bathroom": true,
+      "wifi": true,
+      "indoorSeating": true,
+      "outdoorSeating": true,
+      "wheelchairAccessible": true,
+      "outlets": true,
+      "creditCards": true
+    },
+    "priceRange": "$$",
+    "hours": {
+      "mon": "7:00am - 6:00pm",
+      "tue": "7:00am - 6:00pm",
+      "wed": "7:00am - 6:00pm",
+      "thu": "7:00am - 6:00pm",
+      "fri": "7:00am - 6:00pm",
+      "sat": "8:00am - 6:00pm",
+      "sun": "8:00am - 6:00pm"
+    },
+    "yelp": "https://www.yelp.com/biz/cafenated-coffee-company-berkeley"
+  },
+  {
+    "name": "Roast & Toast Cafe",
+    "images": {
+      "exterior": [
+        "/images/roast/exterior1.jpg",
+        "/images/roast/exterior2.jpg",
+        "/images/roast/exterior3.jpg"
+      ],
+      "interior": [
+        "/images/roast/interior1.jpg",
+        "/images/roast/interior2.jpg",
+        "/images/roast/interior3.jpg"
+      ]
+    },
+    "uniqueItems": ["Knafeh", "Italian Macchiato", "Cortado"],
+    "about": null,
+    "tags": ["Cafes", "Sandwiches", "Coffee", "Tea", "Moderate Noise"],
+    "address": "1746 Shattuck Ave Berkeley, CA 94709",
+    "phone": "(510) 356-4419",
+    "website": null,
+    "reviews": [
+      "I'm so glad I stumbled across this cafe. Beautiful interior, wonderful ambiance, extremely friendly workers and owners- come support this small Palestinian-owned business! We tried three sandwiches- the Tuscan chicken, chicken supreme, and roast and toast special, and all were AMAZING. Hands down some of the best sandwiches I've ever had! The bread is fresh, and the flavors were delicious. The sun-dried tomatoes, paired with the unique balsamic glazes (grape and pomegranate), and Palestinian spices on the sandwiches were life-changing. The portions are fantastic as well- one sandwich is easily enough for two meals! The garlic sauce on the chicken supreme is phenomenal.\n\nThe Spanish lattes are beautifully decorated and delicious as well. Not too sweet! We also tried the knafeh with ice cream, which was unique and fun. Delicious with the pistachios!\n\nSafe to say, I will definitely be coming back. It's a great place to study, and the food, drinks, and experience is so worth it.",
+      "You're going to likely need to hunt for a seat when you're here -- it's popular, and with good reason. The guys who run this place are awesome, and so is the grub. The atmosphere is chill as hell and I love working here. I love the croissant sandwiches -- at $8 per, they're pretty affordable! The coffee is great too. What are you waiting for? Check it out.",
+      "This cafe has a lot of seating, outlets, and free wifi. We tried the za'atar and cheese croissant and it was really good. The Spanish hot chocolate was a pretty standard hot chocolate, but it was good! Workers were very friendly!"
+    ],
+    "amenities": {
+      "bathroom": true,
+      "wifi": true,
+      "indoorSeating": true,
+      "outdoorSeating": true,
+      "wheelchairAccessible": true,
+      "outlets": true,
+      "creditCards": true
+    },
+    "priceRange": null,
+    "hours": {
+      "mon": "8:00am - 8:00pm",
+      "tue": "8:00am - 8:00pm",
+      "wed": "8:00am - 8:00pm",
+      "thu": "8:00am - 8:00pm",
+      "fri": "8:00am - 8:00pm",
+      "sat": "8:00am - 8:00pm",
+      "sun": "8:00am - 8:00pm"
+    },
+    "yelp": "https://www.yelp.com/biz/roast-and-toast-cafe-berkeley"
+  },
+  {
+    "name": "Peet's Coffee",
+    "images": {
+      "exterior": [
+        "/images/peets/exterior1.jpg",
+        "/images/peets/exterior2.jpg",
+        "/images/peets/exterior3.jpg"
+      ],
+      "interior": [
+        "/images/peets/interior1.jpg",
+        "/images/peets/interior2.jpg",
+        "/images/peets/interior3.jpg"
+      ]
+    },
+    "uniqueItems": ["Lavender Vanilla Latte", "Iced Expresso", "Iced Cappuccino"],
+    "about": "Peet's Coffee is the premier specialty coffee company in the United States. Peet's Coffee offers superior quality coffees in multiple forms, by sourcing the best quality coffee beans in the world, adhering to strict high-quality and taste standards, and controlling product quality.",
+    "tags": ["Coffee", "Tea"],
+    "address": "2124 Vine St Berkeley, CA 94709",
+    "phone": "(510) 841-0564",
+    "website": "https://www.peets.com/pages/store-locator?stockist-query=berkeley,%20ca&selected=4th%20Street",
+    "reviews": [
+      "A nice Peet's Coffee on the corner in Berkeley. I discover this location through Google. I decided to check out this place since I was at a Safeway. I order my drink through the app and instead of walking from Safeway to Peet's, I drove to this location.\n\nI was impress how fast my drink was prepare when I got there. The inside of Peet's looks small but I found out that the place was bigger as it look and also that I was able to access to their restroom.\n\nI was greeted when I got my drink and they said come again when I left. I was lucky I did not have to pay for parking at this location. Putting money in the meter doesn't start until 9am and I came here at 8:30.\n\nWhenever I am in the area I will check out Peet's again.",
+      "Great employees, friendly and helpful. Seating area has 12 seats. 3 small 2 tops and then some bar areas to sit against the window. Perfect distance to the Claremont. Mobile order options, didn't eat the food but does have bakery options. Even has a bar menu if you're looking for an afternoon sip after a day!",
+      "This is the place where Peets made a start. The first Peets in America. This is genesis to Starbucks . Excited to see and taste the original Peets Coffee in Berkeley. Great atmosphere and great history."
+    ],
+    "amenities": {
+      "bathroom": true,
+      "wifi": true,
+      "indoorSeating": true,
+      "outdoorSeating": true,
+      "wheelchairAccessible": true,
+      "outlets": true,
+      "creditCards": true
+    },
+    "priceRange": "$$",
+    "hours": {
+      "mon": "5:30am - 7:00pm",
+      "tue": "5:30am - 7:00pm",
+      "wed": "5:30am - 7:00pm",
+      "thu": "5:30am - 7:00pm",
+      "fri": "5:30am - 7:00pm",
+      "sat": "6:00am - 7:00pm",
+      "sun": "6:00am - 7:00pm"
+    },
+    "yelp": "https://www.yelp.com/biz/peets-coffee-berkeley"
+  },
+  {
+    "name": "Asha Tea House",
+    "images": {
+      "exterior": [
+        "/images/asha/exterior1.jpg",
+        "/images/asha/exterior2.jpg",
+        "/images/asha/exterior3.jpg"
+      ],
+      "interior": [
+        "/images/asha/interior1.jpg",
+        "/images/asha/interior2.jpg",
+        "/images/asha/interior3.jpg"
+      ]
+    },
+    "uniqueItems": ["Hong Kong Milk Tea", "Iced Matcha Latte", "Hojicha Latte"],
+    "about": "There is a cup of tea out there for everyone, whether it's a simple glass of straight tea, or a crafted cup of flavored tea. At Asha, we strive to feed your love for tea by serving high-quality whole leaf tea and hand-crafted tea drinks made with fresh, pure and real ingredients. We travel extensively to source teas directly from growers and make almost everything from scratch so that we know exactly what we're serving. We also purposely limit our drink and tea selections to showcase a small but comprehensive representation of what the tea world has to offer, and we make a big effort to share everything we're learning as we help build America's tea culture. But we also know that drinking tea isn't just about the drink. It's also about where you drink it and who you drink it with--which is why we designed every element of our tea house to maximize your tea-drinking enjoyment.",
+    "tags": ["Bubble Tea", "Tea Rooms"],
+    "address": "2086 University Ave Berkeley, CA 94704",
+    "phone": "(510) 549-9137",
+    "website": "https://ashateahouse.com/",
+    "reviews": [
+      "Probably one of the most aesthetic boba spots I've been to! If I needed a place to study or read, I'd go to Asha Tea House.\n\nBut the boba itself? Honestly... I was a bit disappointed. I ordered the Hong Kong milk tea, and I'm not sure if it was because I ordered less ice or if it was just an off day, but the flavor was more watery. The boba itself had a nice chew, but it didn't taste like anything. For the price, I'd have expected a higher quality drink.\n\nThat being said, if I was in the area and a craving, I'd still drop by. But I wouldn't go out of the way to get something here.",
+      "Good quality matcha! I also love that there is the option to make it less sweet and with less ice. Ordering is pretty quick and easy through the ordering screen. To order loose-leaf tea, though, I believe I've had to order at the counter.\n\nThe space is great -- it fills up, but I personally haven't had trouble finding seating. There are large windows and plenty of natural light if you're reading while sipping on your tea. They do run out of pastries later in the day, so come early not to miss them!",
+      "Thoroughly impressed with their high-quality teas and cozy atmosphere! The Hong Kong Milk Tea is amazing--it's rich, creamy, and has the perfect balance of sweetness. I also tried their matcha series, which is made with 100% stone-ground green tea and individually hand-whisked to order. The matcha latte was smooth and not overly sweet, allowing the prominent flavor of matcha to shine through. The tea house itself is beautifully designed, creating a relaxing and inviting space to enjoy your drink. If you like tea, check out Asha Tea House!"
+    ],
+    "amenities": {
+      "bathroom": true,
+      "wifi": true,
+      "indoorSeating": true,
+      "outdoorSeating": false,
+      "wheelchairAccessible": true,
+      "outlets": true,
+      "creditCards": true
+    },
+    "priceRange": "$$",
+    "hours": {
+      "mon": "10:30am - 7:00pm",
+      "tue": "10:30am - 7:00pm",
+      "wed": "10:30am - 7:00pm",
+      "thu": "10:30am - 7:00pm",
+      "fri": "10:30am - 7:30pm",
+      "sat": "10:30am - 7:30pm",
+      "sun": "10:30am - 7:30pm"
+    },
+    "yelp": "https://www.yelp.com/biz/asha-tea-house-berkeley"
   }
 ]

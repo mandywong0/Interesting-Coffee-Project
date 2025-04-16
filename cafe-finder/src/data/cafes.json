@@ -931,5 +931,55 @@
       "sun": "Closed"
     },
     "yelp": "https://www.yelp.com/biz/bench-berkeley-2"
-  }
+  }, 
+  {
+    "name": "Lavender Bread & Cafe",
+    "images": {
+      "exterior": [
+        "/images/lavender/exterior1.jpg",
+        "/images/lavender/exterior2.jpg",
+        "/images/lavender/exterior3.jpg"
+      ],
+      "interior": [
+        "/images/lavender/interior1.jpg",
+        "/images/lavender/interior2.jpg",
+        "/images/lavender/interior3.jpg"
+      ]
+    },
+    "uniqueItems": [
+      "Gibraltar",
+      "Pain Au Chocolate",
+      "Matcha"
+    ],
+    "about": "Lavender Bakery, celebrated for its French and European pastries, unveils its second location on San Pablo Ave, Berkeley. This expansion introduces organic breads and third wave coffee, blending traditional baking with contemporary tastes",
+    "tags": ["Coffee", "Pasteries"],
+    "address": "2101 San Pablo Ave Berkeley, CA 94702",
+    "phone": 3412199569,
+    "website": "https://www.lavenderbakeries.com/",
+    "reviews": [
+      "Cute little place with sidewalk seating and a great pastry selection. Coffee selection is the basics and took longer than expected to receive 2 lattes.\nLots of options in the pastry case and all looked very yummy. I got the apricot danish and it was very good, full of fruit. Decent variety of breakfast/toast options too.\nSidewalk seating is nice for people watching. Lots of activity on a Sunday morning.", 
+      "The perfect neighborhood cafe. You can get the freshest croissants in the morning & can even purchase the homemade jam that they use on their ricotta toasts. The coffees are wonderful as well. Definitely busy in the mornings, but the line moves quickly & totally worth it. Grab a coffee, then walk down to the marina is a perfect activity.", 
+      "This would be a great place to study. The inside looks new. There are plenty of tables. However, parking isn't abundant and the neighborhood can feel a little sketch at times."
+     ],
+    "amenities": {
+      "bathroom": true,
+      "wifi": true,
+      "indoorSeating": true,
+      "outdoorSeating": true,
+      "wheelchairAccessible": true,
+      "outlets": true,
+      "creditCards": true
+    },
+    "priceRange": "$$",
+    "hours": {
+      "mon": "8:00am - 5:00pm",
+      "tue": "7:30am - 5:00pm",
+      "wed": "7:30am - 5:00pm",
+      "thu": "7:30am - 5:00pm",
+      "fri": "7:30am - 5:00pm",
+      "sat": "7:30am - 5:00pm",
+      "sun": "8:00am - 5:00pm"
+    },
+    "yelp": "https://www.yelp.com/biz/lavender-bread-and-cafe-berkeley"
+  },
 ]

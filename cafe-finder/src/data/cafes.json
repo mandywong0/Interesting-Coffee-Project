@@ -472,5 +472,464 @@
       "sun": "10:30am - 7:30pm"
     },
     "yelp": "https://www.yelp.com/biz/asha-tea-house-berkeley"
+  },
+  {
+    "name": "The Hidden Cafe",
+    "images": {
+      "exterior": [
+        "/images/hidden/exterior1.jpg",
+        "/images/hidden/exterior2.jpg",
+        "/images/hidden/exterior3.jpg"
+      ],
+      "interior": [
+        "/images/hidden/interior1.jpg",
+        "/images/hidden/interior2.jpg",
+        "/images/hidden/interior3.jpg"
+      ]
+    },
+    "uniqueItems": ["Kokuto Latte", "Cashmere Chai", "Sweet Potato Brownie"],
+    "about": null,
+    "tags": ["Coffee & Tea", "Patisserie/Cake shop", "Desserts"],
+    "address": "1250 Addison St Ste 111 Berkeley, CA 94702",
+    "phone": "(415) 855-1029",
+    "website": "https://www.thehiddencafe.life",
+    "reviews": [
+      "This cafe is tucked away right next to a small cute park, perfect for an afternoon outdoors! The cafe itself has limited seating inside and a few small tables outside. It has a cozy atmosphere lined with books everywhere.",
+      "What sets The Hidden Cafe apart is its cozy seating areas inside and out. The inside seating has open air windows and a classic wooden look that makes you feel like you walked into a European style library. \nWith views of the park, it's the perfect place to sip your coffee while enjoying the fresh air. On a sunny day, it's a lovely spot to relax with a good book or catch up with friends.",
+      "The inside is pretty small and too packed to study at one large long table and a couple window seats via bar stools. My friend and I happened to come early enough to grab a small table and 2 chairs to work off of--no outlets outside. \nCute place to come and hangout or read a book. If you plan on doing a full day of online work might not be the best option for you."
+    ],
+    "amenities": {
+      "bathroom": true,
+      "wifi": true,
+      "indoorSeating": true,
+      "outdoorSeating": true,
+      "wheelchairAccessible": true,
+      "outlets": true,
+      "creditCards": true
+    },
+    "priceRange": "$$",
+    "hours": {
+      "mon": "Closed",
+      "tue": "8:30am - 5:00pm",
+      "wed": "8:30am - 5:00pm",
+      "thu": "8:30am - 5:00pm",
+      "fri": "8:30am - 5:00pm",
+      "sat": "8:30am - 5:00pm",
+      "sun": "8:30am - 5:00pm"
+    },
+    "yelp": "https://www.yelp.com/biz/the-hidden-cafe-berkeley"
+  },
+  {
+    "name": "Caffe Strada",
+    "images": {
+      "exterior": [
+        "/images/strada/exterior1.jpg",
+        "/images/strada/exterior2.jpg",
+        "/images/strada/exterior3.jpg"
+      ],
+      "interior": [
+        "/images/strada/interior1.jpg",
+        "/images/strada/interior2.jpg",
+        "/images/strada/interior3.jpg"
+      ]
+    },
+    "uniqueItems": ["Strada Bianca Mocha", "Mint Matcha Latte", "White Hot Chocolate"],
+    "about": "You may be new to Strada, or maybe you’ve known us for a long time. We’ve been around for over 30 years. We’re a Berkeley landmark specializing in delicious espresso drinks.\n And though we talk about espresso a lot, we’re proud to say we’re the originators of the White Hot Chocolate. (Just ask Guittard Chocolate in Burlingame.)\n We’re happy we’ve been named “Best café” many times and even one of the 50 best coffeehouses in the US. (Thank you, Complex Magazine!). Over the years many people have enjoyed our drinks on our lovely patio at the crossroads of town and gown, overlooking the UC Berkeley campus.\n When he was vice-president, Al Gore even dropped by to check us out. ",
+    "tags": ["Coffee & Tea"],
+    "address": "2300 College Ave Berkeley, CA 94704",
+    "phone": "(510) 843-5282",
+    "website": "https://caffestrada.com",
+    "reviews": [
+      "Caffe Strada is a classic Berkeley coffee shop with a vibe to match. It's always abuzz with college students cramming for exams or catching up with friends. There's plenty of seating, both inside and out on the patio under the trees. Though given how busy it gets, the seating area is almost always full.\nIf you're looking for a quick coffee fix in a lively atmosphere, Caffe Strada will do the trick. Just be prepared for a bit of inconsistency depending on the day and time of your visit. The staff is friendly, though, which is always a plus. When you are in that part of the Berkeley campus, this is THE only coffee shop that's close by, so there's that for what it's worth.",
+      "One of my favorites with all the cafe chatter and sunlight ambience. \nLove how outdoors it is and the business comes throughout the day in different waves. Even if it looks packed you'll like find a seat with 5-10 minutes. They recently updated their lighting and outlets, so anywhere you sit you'll find an outlet right near your seat!",
+      "Though it sits on a busy corner, this is by far one of my most favourite Berkeley cafés! Their service is very quick, their pastries are delightful, and seating is almost always available.\nIt can get a little noisy, but if you don't mind the chatter of students or the random revving of an engine rounding the corner, check this place out!"
+    ],
+    "amenities": {
+      "bathroom": true,
+      "wifi": true,
+      "indoorSeating": true,
+      "outdoorSeating": true,
+      "wheelchairAccessible": true,
+      "outlets": true,
+      "creditCards": true
+    },
+    "priceRange": "$",
+    "hours": {
+      "mon": "Closed",
+      "tue": "6:00am - 12:00am",
+      "wed": "6:00am - 12:00am",
+      "thu": "6:00am - 12:00am",
+      "fri": "6:00am - 12:00am",
+      "sat": "6:00am - 12:00am",
+      "sun": "6:00am - 12:00am"
+    },
+    "yelp": "https://www.yelp.com/biz/caffe-strada-berkeley"
+  },
+  {
+    "name": "MY Coffee Roastery",
+    "images": {
+      "exterior": [
+        "/images/my/exterior1.jpg",
+        "/images/my/exterior2.jpg",
+        "/images/my/exterior3.jpg"
+      ],
+      "interior": [
+        "/images/my/interior1.jpg",
+        "/images/my/interior2.jpg",
+        "/images/my/interior3.jpg"
+      ]
+    },
+    "uniqueItems": ["Orange Blossom Latte", "Affogato", "Apple Turnover"],
+    "about": "In July of 2019, we opened our first storefront in downtown Berkeley.\nWe strive to achieve 'less is more,' believing that quality will always surpass quantity. Our coffee is no exception.\n First, we only source high-quality green coffee beans. However, even with high-quality beans, 3-7% will have some impurities and need to be removed. Therefore, we purposefully hand sort our beans before and after roasting, to ensure all impurities are removed.\n To preserve maximum freshness, we utilize finely tuned small-batch roasting. Like wine, coffee beans also need to breathe and age. We allow the beans to rest for several days, capturing the mellowness and richness of the coffee. We complete our espresso with organic whole milk to create an exceptionally smooth and perfectly balanced taste.\n Through sourcing high-quality green coffee beans, diligently hand sorting, and using finely tuned small-batch roasting, we can capture the mellowness and richness of the coffee. Our selection is expertly curated to bring depth of flavor and satisfaction to your daily coffee.",
+    "tags": ["Coffee & Tea", "Coffee Roasteries", "Cafes"],
+    "address": "2080 Martin Luther King Jr Berkeley, CA 94704",
+    "phone": null,
+    "website": "https://www.mycoffeeroastery.com/",
+    "reviews": [
+      "Adorable little cozy, 'cottagecore'-esque cafe nestled on bustling MLK Jr. Way. Rather than being a detriment, the small interior imparts a pleasant level of intimacy. Although their menu is limited, their drinks are high quality and are more than enough to compensate.\n Another Yelp review described MY Coffee Roastery as reminiscent of Lord of the Rings, and I highly agree. It almost feels out of place, with so much vehicular and pedestrian traffic right outside, but the cozy atmosphere it almost a reprieve from the outside chaos. Highly recommend stopping by, especially if you want a quiet moment to sit or read.",
+      "You can't get more 'home-y' than having your mom&pop establishment in a litte brick cottage, and that's exactly what MY Coffee Roastery is.\n The owners, a sweet middle aged couple, know SO much about coffee and are so warm and friendly. I was stuck with what to order, and they helped me narrow down options until I decided upon a latte. There's also so many lovely pour-over options which I'd love to try next - MY roasts their own beans!",
+      "Lovely little shop. Three different areas to sit - front patio, front room, and back room. I ordered the orange blossom latte with oat milk and it was just right. Just enough orange, just enough coffee. Got the pan du chocolat (not heated but they offer that) and also...just right. There's a space heater overhead inside so it was warm enough and I sat at the front room counter overlooking the patio and the street beyond. Love that. They also have a restroom which you need the key for. It was clean. Service was friendly. I would definitely return."
+    ],
+    "amenities": {
+      "bathroom": true,
+      "wifi": true,
+      "indoorSeating": true,
+      "outdoorSeating": true,
+      "wheelchairAccessible": true,
+      "outlets": null,
+      "creditCards": true
+    },
+    "priceRange": "$",
+    "hours": {
+      "mon": "Closed",
+      "tue": "Closed",
+      "wed": "8:00am - 4:00pm",
+      "thu": "8:00am - 4:00pm",
+      "fri": "8:00am - 4:00pm",
+      "sat": "8:30am - 4:00pm",
+      "sun": "8:30am - 4:00pm"
+    },
+    "yelp": "https://www.yelp.com/biz/my-coffee-roastery-berkeley"
+  },
+  {
+    "name": "elaichi co.",
+    "images": {
+      "exterior": [
+        "/images/elaichi/exterior1.jpg",
+        "/images/elaichi/exterior2.jpg",
+        "/images/elaichi/exterior3.jpg"
+      ],
+      "interior": [
+        "/images/elaichi/interior1.jpg",
+        "/images/elaichi/interior2.jpg",
+        "/images/elaichi/interior3.jpg"
+      ]
+    },
+    "uniqueItems": ["Karak Chai", "Elaichi Bun", "Pistachio Loaf Cake"],
+    "about": "elaichi co. exists to weave a tapestry of connections, through the cozy embrace of our spaces and the culinary tales we share. With every aroma and taste, we invite souls to reconnect with their roots, intertwine with diverse cultures, and create heartwarming memories together.",
+    "tags": ["Coffee & Tea"],
+    "address": "2161 Allston Way Ste C Berkeley, CA 94704",
+    "phone": "(510) 291-8464",
+    "website": "https://www.elaichico.com",
+    "reviews": [
+      "But now, especially on the weekends, it honestly feels like an unofficial extension of the UC campus. A study hall if you will. That's because all the tables and counter space are taken over by laptop-toting students. If you know that going in, you'll be fine.",
+      "Traditionally brewed chai served in earthenware mugs? A walkable location with limited parking? A particularly dismal seating situation? You won't find a location that absolutely bellows 'Berkeley cafe' more than elaichi co.\n Water and wifi are provided that make for a very enjoyable study experience if you can get a seat. I'll be back if I'm in a patient sort of mood but it's definitely worth the wait.",
+      "Elaichi is the ultimate study spot serving delicious hot chai, perfect for cold weather. This quaint coffeeshop is tucked away in a corner of downtown berkeley, but inside hosts a wonderfully warm and inviting atmosphere full of students and lively music!\n They have free unlimited wifi and the ambiance is both cozy and comfortable --the best for a rainy or cold day in. I came here with a friend to study and we ended up staying for the whole night. At 5PM, you can expect it to be pretty packed and the chances of getting a table low, however, if you stay persistent one eventually opens up and I believe it's worth the wait! I loved the cups they serve their drinks it and the quality of their chai and coffee were top-notch. I definitely want to come back to study and to try their pastries!"
+    ],
+    "amenities": {
+      "bathroom": true,
+      "wifi": true,
+      "indoorSeating": true,
+      "outdoorSeating": true,
+      "wheelchairAccessible": true,
+      "outlets": false,
+      "creditCards": true
+    },
+    "priceRange": "$$",
+    "hours": {
+      "mon": "8:00am - 10:00pm",
+      "tue": "8:00am - 10:00pm",
+      "wed": "8:00am - 10:00pm",
+      "thu": "8:00am - 10:00pm",
+      "fri": "8:00am - 11:00pm",
+      "sat": "8:00am - 11:00pm",
+      "sun": "8:00am - 10:00pm"
+    },
+    "yelp": "https://www.yelp.com/biz/elaichi-co-berkeley"
+  },
+  {
+    "name": "1951 Coffee Company",
+    "images": {
+      "exterior": [
+        "/images/1951/exterior1.jpg",
+        "/images/1951/exterior2.jpg",
+        "/images/1951/exterior3.jpg"
+      ],
+      "interior": [
+        "/images/1951/interior1.jpg",
+        "/images/1951/interior2.jpg",
+        "/images/1951/interior3.jpg"
+      ]
+    },
+    "uniqueItems": ["Iced Honey Lavendar Latte", "Iced Matcha Latte", "Pistachio Rose Latte"],
+    "about": "At 1951 Coffee Company, we blend the warmth of coffee with the strength of community to uplift refugees on their journey to new beginnings in the United States.",
+    "tags": ["Coffee & Tea", "Community Service/Non-Profit"],
+    "address": "2410 Channing Way Berkeley, CA 94704",
+    "phone": "(510) 280-6171",
+    "website": "https://1951coffee.com",
+    "reviews": [
+      "I do really like the outdoor courtyard that 1951 shares with the neighboring church; it's a lovely outdoor space that is pretty quiet and secluded from the hustle and bustle of outside.",
+      "We had a hard time finding a coffee shop that was open early. We walked and ended up here a little after 8. It was nice and quiet. We were pleasantly surprised by how spacious this place was. The cashier and barista were kind. We sat on the corner and noticed there were plenty of charging spots for your electronics which was a nice touch for students.\n We ordered the honey oat latte and the masala chai, both of which were fantastic.",
+      "For some reason, the name made me imagine I will have time-traveled back to 1951 anytime I visit here haha. It has a sleek, modern interior (not that different from game/bar rooms nowadays) with nice lively staff heading this place. I got myself a matcha mochi donut (on the small side but very good and highly matcha-flavored) and honey lavender latte (not too sweet, just enough lavender to let me know it's in there). Quite a chill place to kill some time or savor your daily dose of coffee."
+    ],
+    "amenities": {
+      "bathroom": true,
+      "wifi": true,
+      "indoorSeating": true,
+      "outdoorSeating": true,
+      "wheelchairAccessible": true,
+      "outlets": null,
+      "creditCards": true
+    },
+    "priceRange": "$$",
+    "hours": {
+      "mon": "7:00am - 5:00pm",
+      "tue": "7:00am - 5:00pm",
+      "wed": "7:00am - 5:00pm",
+      "thu": "7:00am - 5:00pm",
+      "fri": "7:00am - 5:00pm",
+      "sat": "8:00am - 3:00pm",
+      "sun": "8:00am - 3:00pm"
+    },
+    "yelp": "https://www.yelp.com/biz/1951-coffee-company-berkeley-4"
+  },
+  {
+    "name": "Delah Coffee House",
+    "images": {
+      "exterior": [
+        "/images/delah/exterior1.jpg",
+        "/images/delah/exterior2.jpg",
+        "/images/delah/exterior3.jpg"
+      ],
+      "interior": [
+        "/images/delah/interior1.jpg",
+        "/images/delah/interior2.jpg",
+        "/images/delah/interior3.jpg"
+      ]
+    },
+    "uniqueItems": ["Yemeni Latte", "Rose Delah Latte", "Jubani"],
+    "about": "We believe that every aspect of our coffee-making process, from the sourcing of our beans to the roasting and preparation of our coffee, is a matter of heart, body, and soul. We understand that great coffee isn’t just about the taste – it’s about the entire experience, from the moment the beans are picked to the moment you take your first sip.",
+    "tags": ["Coffee & Tea", "Desserts", "Juice Bars & Smoothies"],
+    "address": "1807 Euclid Ave Berkeley, CA 94709",
+    "phone": "(510) 529-2201",
+    "website": "https://delahcoffee.com",
+    "reviews": [
+      "Delah Coffee House opened where Brewed Awakening was. Cavernous space totally renovated with Yemenese decor. Soft music in background.",
+      "Definitely an aesthetically pleasing coffee shop. Located close to campus so expect lots of students, but there is plenty of seating.\n Overall, definitely a welcome experience to trying new coffee and pastries, but it was pricier than I normally would spend, especially for how much you get.",
+      "Just like the Bee Bite, lovely and unique. Very very open space, very uniquely appointed. Feels a bit like you've stepped into a different ... country? The scent of incense lingers in the air -- not overly heavy at all. Just a hint. It's nice."
+    ],
+    "amenities": {
+      "bathroom": true,
+      "wifi": true,
+      "indoorSeating": true,
+      "outdoorSeating": true,
+      "wheelchairAccessible": true,
+      "outlets": true,
+      "creditCards": true
+    },
+    "priceRange": "$$",
+    "hours": {
+      "mon": "7:00am - 9:00pm",
+      "tue": "7:00am - 9:00pm",
+      "wed": "7:00am - 9:00pm",
+      "thu": "7:00am - 9:00pm",
+      "fri": "7:00am - 10:00pm",
+      "sat": "7:00am - 11:00pm",
+      "sun": "7:00am - 9:00pm"
+    },
+    "yelp": "https://www.yelp.com/biz/delah-coffee-house-berkeley"
+  },
+  {
+    "name": "Milyar Cafe",
+    "images": {
+      "exterior": [
+        "/images/milyar/exterior1.jpg",
+        "/images/milyar/exterior2.jpg",
+        "/images/milyar/exterior3.jpg"
+      ],
+      "interior": [
+        "/images/milyar/interior1.jpg",
+        "/images/milyar/interior2.jpg",
+        "/images/milyar/interior3.jpg"
+      ]
+    },
+    "uniqueItems": ["Yemeni Tea", "Pistachio Latte", "Jubani Qahwah"],
+    "about": "Delighted to serve you an experience you won’t forget at our authentic cuisine where taste meets tradition!",
+    "tags": ["Coffee & Tea", "Desserts", "Themed Cafes"],
+    "address": "3300 Adeline St Berkeley, CA 94703",
+    "phone": "(341) 512-9986",
+    "website": null,
+    "reviews": [
+      "I came by to try them on a Saturday afternoon. I ordered the rose latte, iced, 16oz, and pistachio latte, iced, 16oz. It was $7.75 for each of these drinks, no price difference for hot vs. iced. \nThe cafe is pretty large inside with beautiful gold accents and a variety of seating options.\n It took over 10 mins for drinks, this might've been due to both some people having ordered ahead of me and also could possibly indicate the process of making the drinks took some time.",
+      "If you've been to another Yemeni cafe, Milyar is pretty similar, but the decor/color scheme feels more fancy, and the space is huge. It does feel a bit cold and less cozy than other Yemeni cafes, but maybe that was just because it was pretty empty when I visited a year ago? Or maybe that's just how I was feeling.",
+      "Such a beautiful café right at the intersection of Adeline and Alcatraz. The interior is gorgeous and the furnishings are intricate and thoughtful. Feels like a high-end café with a great open space with folks chatting and working and relaxing. I was blown away by the space and the location, particularly the lighting and comfort. Plenty of seats too. My husband and I had the Yemeni latte with honey , iced and hot. So delicious and flavorful!"
+    ],
+    "amenities": {
+      "bathroom": true,
+      "wifi": true,
+      "indoorSeating": true,
+      "outdoorSeating": true,
+      "wheelchairAccessible": true,
+      "outlets": null,
+      "creditCards": true
+    },
+    "priceRange": "$$",
+    "hours": {
+      "mon": "7:00am - 12:00am",
+      "tue": "7:00am - 12:00am",
+      "wed": "7:00am - 12:00am",
+      "thu": "7:00am - 12:00am",
+      "fri": "7:00am - 12:00am",
+      "sat": "7:00am - 12:00am",
+      "sun": "7:00am - 12:00am"
+    },
+    "yelp": "https://www.yelp.com/biz/milyar-cafe-berkeley-3"
+  },
+  {
+    "name": "Cafe Milano",
+    "images": {
+      "exterior": [
+        "/images/milano/exterior1.jpg",
+        "/images/milano/exterior2.jpg",
+        "/images/milano/exterior3.jpg"
+      ],
+      "interior": [
+        "/images/milano/interior1.jpg",
+        "/images/milano/interior2.jpg",
+        "/images/milano/interior3.jpg"
+      ]
+    },
+    "uniqueItems": ["Chai Latte", "Matcha Latte", "Italian Salad"],
+    "about": null,
+    "tags": ["Cafes"],
+    "address": "2522 Bancroft Way Berkeley, CA 94704",
+    "phone": "(510) 644-3100",
+    "website": null,
+    "reviews": [
+      "I became a regular there the past summer and I believe that it's such a good spot to study and drink a coffee with friends./n Ambiance: LITERALLY SO CUTE. The trees and atmosphere here makes it such a unique place in all of Berkeley that even after you leave the city you want to find a similar experience. 2/1 stars",
+      "The ambiance is alright - I would say it is enjoyable in the early mornings, when it is quieter and you can easily find seating. But after that it can get very cramped and stuffy in my experience, especially in the upstairs seating area. I have also noticed there are a lot of flies inside so it does take away from the experience too. Wifi is not the most reliable and can be spotty sometimes.",
+      "I love the big plants inside and the vibe! It makes you feel you're in a tree house. I can see why people hang and do work here. \nI didn't get to take pics of our drinks and pastry.\n As I stepped out someone was playing the piano :)\n Service was fast. The staff was really nice, more so the barista. \nParking can be challenging."
+    ],
+    "amenities": {
+      "bathroom": true,
+      "wifi": true,
+      "indoorSeating": true,
+      "outdoorSeating": false,
+      "wheelchairAccessible": null,
+      "outlets": true,
+      "creditCards": true
+    },
+    "priceRange": "$",
+    "hours": {
+      "mon": "7:00am - 10:00pm",
+      "tue": "7:00am - 10:00pm",
+      "wed": "7:00am - 10:00pm",
+      "thu": "7:00am - 10:00pm",
+      "fri": "7:00am - 10:00pm",
+      "sat": "8:00am - 8:00pm",
+      "sun": "8:00am - 8:00pm"
+    },
+    "yelp": "https://www.yelp.com/biz/cafe-milano-berkeley"
+  },
+  {
+    "name": "Coffee Conscious",
+    "images": {
+      "exterior": [
+        "/images/conscious/exterior1.jpg",
+        "/images/conscious/exterior2.jpg",
+        "/images/conscious/exterior3.jpg"
+      ],
+      "interior": [
+        "/images/conscious/interior1.jpg",
+        "/images/conscious/interior2.jpg",
+        "/images/conscious/interior3.jpg"
+      ]
+    },
+    "uniqueItems": ["Ghost Pepper Mocha", "Turkish Cortado", "Vegan Donuts"],
+    "about": null,
+    "tags": ["Coffee & Tea", "Donuts"],
+    "address": "1312 Gilman St Berkeley, CA 94706",
+    "phone": "(510) 526-2204",
+    "website": "https://www.vegandonut.farm/locations-berkeley",
+    "reviews": [
+      "A café with a vaguely punk aesthetic.\n Good, strong cappuccino will ensure that you leave with a buzz. Vegan donuts with a good selection (the earlier in the day, the better). Service is fine, and they prefer cash but can accept cards.\n I see that they are trying to make it a cozy place to hang, with a bookshelf and some games. But the seating options just aren't set up for that, and they don't have any non-disposable cups.",
+      "New, clean, great coffee, wonderful spacious, quiet outdoor patio. I'm a Peet's fan, and this coffee is not as strong or dark. But it's tasty and good quality. And it's right near the Cheeseboard in the Berkeley gourmet ghetto, so location doesn't get better than that!",
+      "This spot in one of my favorite little shopping districts in Berkeley brings back early personal and thus warm memories, but I had never been overwhelmed by the quality of coffee in this town. This is perhaps ironic, given that Peet's began here, as did a number of foodie destinations. But Coffee Conscious turns out to be something that I still appreciate about this OTHER city by the Bay: good quality and that slightly weird Berserkeley vibe."
+    ],
+    "amenities": {
+      "bathroom": true,
+      "wifi": false,
+      "indoorSeating": true,
+      "outdoorSeating": true,
+      "wheelchairAccessible": null,
+      "outlets": null,
+      "creditCards": true
+    },
+    "priceRange": "$$",
+    "hours": {
+      "mon": "7:00am - 4:00pm",
+      "tue": "7:00am - 4:00pm",
+      "wed": "7:00am - 4:00pm",
+      "thu": "7:00am - 4:00pm",
+      "fri": "7:00am - 5:00pm",
+      "sat": "7:00am - 5:00pm",
+      "sun": "7:00am - 5:00pm"
+    },
+    "yelp": "https://www.yelp.com/biz/coffee-conscious-berkeley-2"
+  },
+  {
+    "name": "Bench",
+    "images": {
+      "exterior": [
+        "/images/bench/exterior1.jpg",
+        "/images/bench/exterior2.jpg"
+      ],
+      "interior": [
+        "/images/bench/interior1.jpg",
+        "/images/bench/interior2.jpg",
+        "/images/bench/interior3.jpg"
+      ]
+    },
+    "uniqueItems": ["Banana Cream Iced Coffee", "Persian Rose Tea", "Herb Frittata"],
+    "about": "our pastries are fresh baked (daily) from organic ingredients. we proudly serve Tay tea and Highwire coffee.",
+    "tags": ["Coffee & Tea", "Bakeries"],
+    "address": "1947 Martin Luther King Jr Way Berkeley, CA 94704",
+    "phone": null,
+    "website": null,
+    "reviews": [
+      "Small coffee shop along MLK near trader Joe's. There is not too much seating, so don't expect to be able to sit and do work while enjoying your coffee and pastries. Service was fast and friendly. It would be nice to have some placards saying what pastries were in each display, but being told in person was fine!",
+      "The vibes in the cafe is great! Definitely go here if you like calm and relaxed environments. From the coffee to the decor, everything was great and beautiful. I tried their ivl (iced vanilla latte) and it was sooooo good. Service was amazing.",
+      "Popped by for a matcha latte and savory scone after being in the neighborhood. Cute, light filled spot with friendly service. The scone was ham and cheese and super tasty! My latte was made perfectly. I sat and did a little work- it wasn't too busy seating wise, so I was lucky to carve out a little space for myself. I would definitely come back to this adorable little spot and hope to try more of the baked goodies next time."
+    ],
+    "amenities": {
+      "bathroom": true,
+      "wifi": true,
+      "indoorSeating": true,
+      "outdoorSeating": true,
+      "wheelchairAccessible": true,
+      "outlets": null,
+      "creditCards": true
+    },
+    "priceRange": null,
+    "hours": {
+      "mon": "Closed",
+      "tue": "8:00am - 3:00pm",
+      "wed": "8:00am - 3:00pm",
+      "thu": "8:00am - 3:00pm",
+      "fri": "8:00am - 3:00pm",
+      "sat": "8:00am - 3:00pm",
+      "sun": "Closed"
+    },
+    "yelp": "https://www.yelp.com/biz/bench-berkeley-2"
   }
 ]

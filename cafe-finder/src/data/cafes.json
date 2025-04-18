@@ -954,7 +954,7 @@
     "about": "Lavender Bakery, celebrated for its French and European pastries, unveils its second location on San Pablo Ave, Berkeley. This expansion introduces organic breads and third wave coffee, blending traditional baking with contemporary tastes",
     "tags": ["Coffee", "Pasteries"],
     "address": "2101 San Pablo Ave Berkeley, CA 94702",
-    "phone": 3412199569,
+    "phone": "(341) 219-9569",
     "website": "https://www.lavenderbakeries.com/",
     "reviews": [
       "Cute little place with sidewalk seating and a great pastry selection. Coffee selection is the basics and took longer than expected to receive 2 lattes.\nLots of options in the pastry case and all looked very yummy. I got the apricot danish and it was very good, full of fruit. Decent variety of breakfast/toast options too.\nSidewalk seating is nice for people watching. Lots of activity on a Sunday morning.", 
@@ -981,5 +981,5 @@
       "sun": "8:00am - 5:00pm"
     },
     "yelp": "https://www.yelp.com/biz/lavender-bread-and-cafe-berkeley"
-  },
+  }
 ]

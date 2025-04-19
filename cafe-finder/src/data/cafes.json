@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "Mind Coffee",
     "images": {
       "exterior": [
@@ -50,6 +51,7 @@
     "yelp": "https://www.yelp.com/biz/mind-coffee-berkeley?osq=Mind+Coffee"
   },
   {
+    "id": 2,
     "name": "SoDoI Coffee Tasting House",
     "images": {
       "exterior": [
@@ -100,6 +102,7 @@
     "yelp": "https://www.yelp.com/biz/sodoi-coffee-tasting-house-berkeley-2"
   },
   {
+    "id": 3,
     "name": "Binge Coffee House",
     "images": {
       "exterior": [
@@ -146,6 +149,7 @@
     "yelp": "https://www.yelp.com/biz/binge-coffee-house-berkeley?osq=Binge+Coffee+House"
   },
   {
+    "id": 4,
     "name": "Cha Thai Tea",
     "images": {
       "exterior": [
@@ -198,6 +202,7 @@
     "yelp": "https://www.yelp.com/biz/cha-thai-tea-berkeley"
   },
   {
+    "id": 5,
     "name": "Victory Point Cafe",
     "images": {
       "exterior": [
@@ -211,7 +216,11 @@
         "/images/victory/interior3.jpg"
       ]
     },
-    "uniqueItems": ["Honey Lavender Latte", "House Made Cold Brew", "Honey Mustard Club"],
+    "uniqueItems": [
+      "Honey Lavender Latte",
+      "House Made Cold Brew",
+      "Honey Mustard Club"
+    ],
     "about": "Victory Point Cafe was born from a love of three key cornerstones: coffee, beer, and board games. We saw how popular similar cafes were doing across the continent and wanted to bring that experience to the Bay Area. We see board games as a chance to disconnect from our digital world and interact with our fellow neighbors over cardboard and dice.",
     "tags": ["Coffee", "Tea", "Beer Bar", "Tabletop Games"],
     "address": "1797 Shattuck Ave Ste A Berkeley, CA 94709",
@@ -244,6 +253,7 @@
     "yelp": "https://www.yelp.com/biz/victory-point-cafe-berkeley"
   },
   {
+    "id": 6,
     "name": "Cafe Parisien",
     "images": {
       "exterior": [
@@ -290,6 +300,7 @@
     "yelp": "https://www.yelp.com/biz/cafe-parisien-berkeley-2"
   },
   {
+    "id": 7,
     "name": "Cafenated Coffee Company",
     "images": {
       "exterior": [
@@ -305,7 +316,14 @@
     },
     "uniqueItems": ["Coffee", "Matcha", "Latte"],
     "about": "Passionate about coffee. I’d like you to experience our beverages and food like no other place.  Our coffeehouse and our online store is designed to convey our enthusiasm about coffee.  Our mission is to help women coffee farmers live better and our customers to taste and feel their hard work.  We have partnered with local chefs, bakers, breweries, wineries, and coffee equipment makers like Fellow Industries to bring you the best-of-the-best.",
-    "tags": ["Breakfast", "Lunch", "Wine Bars", "Coffee", "Tea", "Moderate Noise"],
+    "tags": [
+      "Breakfast",
+      "Lunch",
+      "Wine Bars",
+      "Coffee",
+      "Tea",
+      "Moderate Noise"
+    ],
     "address": "2085 Vine St Berkeley, CA 94709",
     "phone": "(800) 388-4049",
     "website": "https://www.cafenated.co/",
@@ -336,6 +354,7 @@
     "yelp": "https://www.yelp.com/biz/cafenated-coffee-company-berkeley"
   },
   {
+    "id": 8,
     "name": "Roast & Toast Cafe",
     "images": {
       "exterior": [
@@ -382,6 +401,7 @@
     "yelp": "https://www.yelp.com/biz/roast-and-toast-cafe-berkeley"
   },
   {
+    "id": 9,
     "name": "Peet's Coffee",
     "images": {
       "exterior": [
@@ -395,7 +415,11 @@
         "/images/peets/interior3.jpg"
       ]
     },
-    "uniqueItems": ["Lavender Vanilla Latte", "Iced Expresso", "Iced Cappuccino"],
+    "uniqueItems": [
+      "Lavender Vanilla Latte",
+      "Iced Expresso",
+      "Iced Cappuccino"
+    ],
     "about": "Peet's Coffee is the premier specialty coffee company in the United States. Peet's Coffee offers superior quality coffees in multiple forms, by sourcing the best quality coffee beans in the world, adhering to strict high-quality and taste standards, and controlling product quality.",
     "tags": ["Coffee", "Tea"],
     "address": "2124 Vine St Berkeley, CA 94709",
@@ -428,6 +452,7 @@
     "yelp": "https://www.yelp.com/biz/peets-coffee-berkeley"
   },
   {
+    "id": 10,
     "name": "Asha Tea House",
     "images": {
       "exterior": [
@@ -474,6 +499,7 @@
     "yelp": "https://www.yelp.com/biz/asha-tea-house-berkeley"
   },
   {
+    "id": 11,
     "name": "The Hidden Cafe",
     "images": {
       "exterior": [
@@ -489,7 +515,7 @@
     },
     "uniqueItems": ["Kokuto Latte", "Cashmere Chai", "Sweet Potato Brownie"],
     "about": null,
-    "tags": ["Coffee & Tea", "Patisserie/Cake shop", "Desserts"],
+    "tags": ["Coffee", "Tea", "Patisserie/Cake shop", "Desserts"],
     "address": "1250 Addison St Ste 111 Berkeley, CA 94702",
     "phone": "(415) 855-1029",
     "website": "https://www.thehiddencafe.life",
@@ -520,6 +546,7 @@
     "yelp": "https://www.yelp.com/biz/the-hidden-cafe-berkeley"
   },
   {
+    "id": 12,
     "name": "Caffe Strada",
     "images": {
       "exterior": [
@@ -533,9 +560,13 @@
         "/images/strada/interior3.jpg"
       ]
     },
-    "uniqueItems": ["Strada Bianca Mocha", "Mint Matcha Latte", "White Hot Chocolate"],
+    "uniqueItems": [
+      "Strada Bianca Mocha",
+      "Mint Matcha Latte",
+      "White Hot Chocolate"
+    ],
     "about": "You may be new to Strada, or maybe you’ve known us for a long time. We’ve been around for over 30 years. We’re a Berkeley landmark specializing in delicious espresso drinks.\n And though we talk about espresso a lot, we’re proud to say we’re the originators of the White Hot Chocolate. (Just ask Guittard Chocolate in Burlingame.)\n We’re happy we’ve been named “Best café” many times and even one of the 50 best coffeehouses in the US. (Thank you, Complex Magazine!). Over the years many people have enjoyed our drinks on our lovely patio at the crossroads of town and gown, overlooking the UC Berkeley campus.\n When he was vice-president, Al Gore even dropped by to check us out. ",
-    "tags": ["Coffee & Tea"],
+    "tags": ["Coffee", "Tea"],
     "address": "2300 College Ave Berkeley, CA 94704",
     "phone": "(510) 843-5282",
     "website": "https://caffestrada.com",
@@ -566,6 +597,7 @@
     "yelp": "https://www.yelp.com/biz/caffe-strada-berkeley"
   },
   {
+    "id": 13,
     "name": "MY Coffee Roastery",
     "images": {
       "exterior": [
@@ -581,7 +613,7 @@
     },
     "uniqueItems": ["Orange Blossom Latte", "Affogato", "Apple Turnover"],
     "about": "In July of 2019, we opened our first storefront in downtown Berkeley.\nWe strive to achieve 'less is more,' believing that quality will always surpass quantity. Our coffee is no exception.\n First, we only source high-quality green coffee beans. However, even with high-quality beans, 3-7% will have some impurities and need to be removed. Therefore, we purposefully hand sort our beans before and after roasting, to ensure all impurities are removed.\n To preserve maximum freshness, we utilize finely tuned small-batch roasting. Like wine, coffee beans also need to breathe and age. We allow the beans to rest for several days, capturing the mellowness and richness of the coffee. We complete our espresso with organic whole milk to create an exceptionally smooth and perfectly balanced taste.\n Through sourcing high-quality green coffee beans, diligently hand sorting, and using finely tuned small-batch roasting, we can capture the mellowness and richness of the coffee. Our selection is expertly curated to bring depth of flavor and satisfaction to your daily coffee.",
-    "tags": ["Coffee & Tea", "Coffee Roasteries", "Cafes"],
+    "tags": ["Coffee", "Tea", "Coffee Roasteries", "Cafes"],
     "address": "2080 Martin Luther King Jr Berkeley, CA 94704",
     "phone": null,
     "website": "https://www.mycoffeeroastery.com/",
@@ -612,6 +644,7 @@
     "yelp": "https://www.yelp.com/biz/my-coffee-roastery-berkeley"
   },
   {
+    "id": 14,
     "name": "elaichi co.",
     "images": {
       "exterior": [
@@ -627,7 +660,7 @@
     },
     "uniqueItems": ["Karak Chai", "Elaichi Bun", "Pistachio Loaf Cake"],
     "about": "elaichi co. exists to weave a tapestry of connections, through the cozy embrace of our spaces and the culinary tales we share. With every aroma and taste, we invite souls to reconnect with their roots, intertwine with diverse cultures, and create heartwarming memories together.",
-    "tags": ["Coffee & Tea"],
+    "tags": ["Coffee", "Tea"],
     "address": "2161 Allston Way Ste C Berkeley, CA 94704",
     "phone": "(510) 291-8464",
     "website": "https://www.elaichico.com",
@@ -658,6 +691,7 @@
     "yelp": "https://www.yelp.com/biz/elaichi-co-berkeley"
   },
   {
+    "id": 15,
     "name": "1951 Coffee Company",
     "images": {
       "exterior": [
@@ -671,9 +705,13 @@
         "/images/1951/interior3.jpg"
       ]
     },
-    "uniqueItems": ["Iced Honey Lavendar Latte", "Iced Matcha Latte", "Pistachio Rose Latte"],
+    "uniqueItems": [
+      "Iced Honey Lavendar Latte",
+      "Iced Matcha Latte",
+      "Pistachio Rose Latte"
+    ],
     "about": "At 1951 Coffee Company, we blend the warmth of coffee with the strength of community to uplift refugees on their journey to new beginnings in the United States.",
-    "tags": ["Coffee & Tea", "Community Service/Non-Profit"],
+    "tags": ["Coffee", "Tea", "Community Service/Non-Profit"],
     "address": "2410 Channing Way Berkeley, CA 94704",
     "phone": "(510) 280-6171",
     "website": "https://1951coffee.com",
@@ -704,6 +742,7 @@
     "yelp": "https://www.yelp.com/biz/1951-coffee-company-berkeley-4"
   },
   {
+    "id": 16,
     "name": "Delah Coffee House",
     "images": {
       "exterior": [
@@ -719,7 +758,7 @@
     },
     "uniqueItems": ["Yemeni Latte", "Rose Delah Latte", "Jubani"],
     "about": "We believe that every aspect of our coffee-making process, from the sourcing of our beans to the roasting and preparation of our coffee, is a matter of heart, body, and soul. We understand that great coffee isn’t just about the taste – it’s about the entire experience, from the moment the beans are picked to the moment you take your first sip.",
-    "tags": ["Coffee & Tea", "Desserts", "Juice Bars & Smoothies"],
+    "tags": ["Coffee", "Tea", "Desserts", "Juice Bars", "Smoothies"],
     "address": "1807 Euclid Ave Berkeley, CA 94709",
     "phone": "(510) 529-2201",
     "website": "https://delahcoffee.com",
@@ -750,6 +789,7 @@
     "yelp": "https://www.yelp.com/biz/delah-coffee-house-berkeley"
   },
   {
+    "id": 17,
     "name": "Milyar Cafe",
     "images": {
       "exterior": [
@@ -765,7 +805,7 @@
     },
     "uniqueItems": ["Yemeni Tea", "Pistachio Latte", "Jubani Qahwah"],
     "about": "Delighted to serve you an experience you won’t forget at our authentic cuisine where taste meets tradition!",
-    "tags": ["Coffee & Tea", "Desserts", "Themed Cafes"],
+    "tags": ["Coffee", "Tea", "Desserts", "Themed Cafes"],
     "address": "3300 Adeline St Berkeley, CA 94703",
     "phone": "(341) 512-9986",
     "website": null,
@@ -796,6 +836,7 @@
     "yelp": "https://www.yelp.com/biz/milyar-cafe-berkeley-3"
   },
   {
+    "id": 18,
     "name": "Cafe Milano",
     "images": {
       "exterior": [
@@ -842,6 +883,7 @@
     "yelp": "https://www.yelp.com/biz/cafe-milano-berkeley"
   },
   {
+    "id": 19,
     "name": "Coffee Conscious",
     "images": {
       "exterior": [
@@ -857,7 +899,7 @@
     },
     "uniqueItems": ["Ghost Pepper Mocha", "Turkish Cortado", "Vegan Donuts"],
     "about": null,
-    "tags": ["Coffee & Tea", "Donuts"],
+    "tags": ["Coffee", "Tea", "Donuts"],
     "address": "1312 Gilman St Berkeley, CA 94706",
     "phone": "(510) 526-2204",
     "website": "https://www.vegandonut.farm/locations-berkeley",
@@ -888,6 +930,7 @@
     "yelp": "https://www.yelp.com/biz/coffee-conscious-berkeley-2"
   },
   {
+    "id": 20,
     "name": "Bench",
     "images": {
       "exterior": [
@@ -900,9 +943,13 @@
         "/images/bench/interior3.jpg"
       ]
     },
-    "uniqueItems": ["Banana Cream Iced Coffee", "Persian Rose Tea", "Herb Frittata"],
+    "uniqueItems": [
+      "Banana Cream Iced Coffee",
+      "Persian Rose Tea",
+      "Herb Frittata"
+    ],
     "about": "our pastries are fresh baked (daily) from organic ingredients. we proudly serve Tay tea and Highwire coffee.",
-    "tags": ["Coffee & Tea", "Bakeries"],
+    "tags": ["Coffee", "Tea", "Bakeries"],
     "address": "1947 Martin Luther King Jr Way Berkeley, CA 94704",
     "phone": null,
     "website": null,
@@ -931,8 +978,9 @@
       "sun": "Closed"
     },
     "yelp": "https://www.yelp.com/biz/bench-berkeley-2"
-  }, 
+  },
   {
+    "id": 21,
     "name": "Lavender Bread & Cafe",
     "images": {
       "exterior": [
@@ -946,21 +994,17 @@
         "/images/lavender/interior3.jpg"
       ]
     },
-    "uniqueItems": [
-      "Gibraltar",
-      "Pain Au Chocolate",
-      "Matcha"
-    ],
+    "uniqueItems": ["Gibraltar", "Pain Au Chocolate", "Matcha"],
     "about": "Lavender Bakery, celebrated for its French and European pastries, unveils its second location on San Pablo Ave, Berkeley. This expansion introduces organic breads and third wave coffee, blending traditional baking with contemporary tastes",
     "tags": ["Coffee", "Pasteries"],
     "address": "2101 San Pablo Ave Berkeley, CA 94702",
     "phone": "(341) 219-9569",
     "website": "https://www.lavenderbakeries.com/",
     "reviews": [
-      "Cute little place with sidewalk seating and a great pastry selection. Coffee selection is the basics and took longer than expected to receive 2 lattes.\nLots of options in the pastry case and all looked very yummy. I got the apricot danish and it was very good, full of fruit. Decent variety of breakfast/toast options too.\nSidewalk seating is nice for people watching. Lots of activity on a Sunday morning.", 
-      "The perfect neighborhood cafe. You can get the freshest croissants in the morning & can even purchase the homemade jam that they use on their ricotta toasts. The coffees are wonderful as well. Definitely busy in the mornings, but the line moves quickly & totally worth it. Grab a coffee, then walk down to the marina is a perfect activity.", 
+      "Cute little place with sidewalk seating and a great pastry selection. Coffee selection is the basics and took longer than expected to receive 2 lattes.\nLots of options in the pastry case and all looked very yummy. I got the apricot danish and it was very good, full of fruit. Decent variety of breakfast/toast options too.\nSidewalk seating is nice for people watching. Lots of activity on a Sunday morning.",
+      "The perfect neighborhood cafe. You can get the freshest croissants in the morning & can even purchase the homemade jam that they use on their ricotta toasts. The coffees are wonderful as well. Definitely busy in the mornings, but the line moves quickly & totally worth it. Grab a coffee, then walk down to the marina is a perfect activity.",
       "This would be a great place to study. The inside looks new. There are plenty of tables. However, parking isn't abundant and the neighborhood can feel a little sketch at times."
-     ],
+    ],
     "amenities": {
       "bathroom": true,
       "wifi": true,

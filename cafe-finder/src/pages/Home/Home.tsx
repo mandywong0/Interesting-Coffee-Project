@@ -2,6 +2,8 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Home.css";
 import cafesData from "../../data/cafes.json";
+import { useSettings } from "../../context/SettingsContext";
+
 export interface Cafe {
   id: number;
   name: string;
@@ -36,7 +38,6 @@ export interface Cafe {
     sun: string;
   };
   yelp: string;
-  // TODO: Will need to adjust based on user preference
 }
 
 interface CafeCardProps {
@@ -46,15 +47,13 @@ interface CafeCardProps {
 }
 
 const CafeCard: React.FC<CafeCardProps> = ({ cafe, onClick }) => {
-  const { id, name, images, about, tags, uniqueItems, address, priceRange } =
-    cafe;
+  const { id, name, images, about, tags, uniqueItems, priceRange } = cafe;
 
   const ignoredWords = ["cafe", "coffee", "caffe", "the"];
 
   const words = cafe.name.split(" ");
   let firstMeaningfulWord = words[0];
 
-  // Skip leading ignored words
   for (let i = 0; i < words.length; i++) {
     if (!ignoredWords.includes(words[i].toLowerCase())) {
       firstMeaningfulWord = words[i];
@@ -102,10 +101,27 @@ const CafeCard: React.FC<CafeCardProps> = ({ cafe, onClick }) => {
 const Home: React.FC = () => {
   const navigate = useNavigate();
   const cafes: Cafe[] = cafesData;
+  const { preferredSeating, preferredPayment, pricePreference } = useSettings();
 
   const handleCafeClick = (id: number) => {
     navigate(`/cafe/${id}`);
   };
+
+  const filteredCafes = cafes.filter(cafe => {
+    if (pricePreference === '$$' && cafe.priceRange !== '$$') {
+      return false;
+    }
+    
+    if (preferredSeating === 'outdoor' && !cafe.amenities.outdoorSeating) {
+      return false;
+    }
+    
+    if (preferredPayment === 'creditCard' && !cafe.amenities.creditCards) {
+      return false;
+    }
+    
+    return true;
+  });
 
   return (
     <div className="home-page">
@@ -117,7 +133,7 @@ const Home: React.FC = () => {
       <h2 className="section-title">Recommended For You:</h2>
 
       <div className="cafe-list">
-        {cafes.map((cafe) => (
+        {filteredCafes.map((cafe) => (
           <CafeCard
             key={cafe.id}
             id={cafe.id}
@@ -133,6 +149,9 @@ const Home: React.FC = () => {
         </Link>
         <Link to="/match" className="nav-icon">
           😊
+        </Link>
+        <Link to="/settings" className="nav-icon">
+          ⚙️
         </Link>
       </div>
     </div>

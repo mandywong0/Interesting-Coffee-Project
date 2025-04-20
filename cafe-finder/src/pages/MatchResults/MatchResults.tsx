@@ -80,6 +80,12 @@ const MatchResults: React.FC = () => {
           />
         ))}
       </div>
+
+      <div className="bottom-nav">
+        <Link to="/" className="nav-icon">🔍</Link>
+        <Link to="/match" className="nav-icon active">😊</Link>
+        <Link to="/settings" className="nav-icon">⚙️</Link>
+      </div>
     </div>
   );
 };

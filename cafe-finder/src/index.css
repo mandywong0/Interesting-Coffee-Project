@@ -5,9 +5,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #301D15;
+  background-color: var(--background-color);
   height: 100vh;
   overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+body.light-theme {
+  background-color: var(--background-color);
+}
+
+body.dark-theme {
+  background-color: var(--background-color);
 }
 
 code {

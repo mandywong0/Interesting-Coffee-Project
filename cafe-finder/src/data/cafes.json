@@ -1196,15 +1196,15 @@
     "name": "Artís Coffee",
     "images": {
       "exterior": [
-        "/images/artis/exterior1.jpg",
-        "/images/artis/exterior2.jpg",
-        "/images/artis/exterior3.jpg"
+        "/images/artís/exterior1.jpg",
+        "/images/artís/exterior2.jpg",
+        "/images/artís/exterior3.jpg"
       ],
       "interior": [
-        "/images/artis/interior1.jpg",
-        "/images/artis/interior2.jpg",
-        "/images/artis/interior3.jpg"
-      ], "menu": "/images/artis/menu.jpg"
+        "/images/artís/interior1.jpg",
+        "/images/artís/interior2.jpg",
+        "/images/artís/interior3.jpg"
+      ], "menu": "/images/artís/menu.jpg"
     },
     "uniqueItems": ["Honey Lavender Latte", "Mint Foam Cold Brew", "Mole Latte"],
     "about": "Local craft coffee shop with an emphasis on freshly roasted beans, seasonal drinks, and a spacious, modern environment ideal for working or relaxing.",
@@ -1244,15 +1244,15 @@
     "name": "Third Culture Bakery",
     "images": {
       "exterior": [
-        "/images/thirdculture/exterior1.jpg",
-        "/images/thirdculture/exterior2.jpg",
-        "/images/thirdculture/exterior3.jpg"
+        "/images/third/exterior1.jpg",
+        "/images/third/exterior2.jpg",
+        "/images/third/exterior3.jpg"
       ],
       "interior": [
-        "/images/thirdculture/interior1.jpg",
-        "/images/thirdculture/interior2.jpg",
-        "/images/thirdculture/interior3.jpg"
-      ], "menu": "/images/thirdculture/menu.jpg"
+        "/images/third/interior1.jpg",
+        "/images/third/interior2.jpg",
+        "/images/third/interior3.jpg"
+      ], "menu": "/images/third/menu.jpg"
     },
     "uniqueItems": ["Mochi Donuts", "Strawberry Lychee Matcha Latte", "Black Sesame Latte"],
     "about": "Gluten-free bakery and cafe inspired by Third Culture upbringings, featuring creative matcha drinks and chewy mochi pastries.",
@@ -1340,15 +1340,15 @@
     "name": "Blue Bottle Coffee",
     "images": {
       "exterior": [
-        "/images/bluebottle/exterior1.jpg",
-        "/images/bluebottle/exterior2.jpg",
-        "/images/bluebottle/exterior3.jpg"
+        "/images/blue/exterior1.jpg",
+        "/images/blue/exterior2.jpg",
+        "/images/blue/exterior3.jpg"
       ],
       "interior": [
-        "/images/bluebottle/interior1.jpg",
-        "/images/bluebottle/interior2.jpg",
-        "/images/bluebottle/interior3.jpg"
-      ], "menu": "/images/bluebottle/menu.jpg"
+        "/images/blue/interior1.jpg",
+        "/images/blue/interior2.jpg",
+        "/images/blue/interior3.jpg"
+      ], "menu": "/images/blue/menu.jpg"
     },
     "uniqueItems": ["New Orleans Iced Coffee", "Iced Nola", "Single Origin Pour Over"],
     "about": "Downtown Berkeley branch of the famed roastery, serving expertly crafted pour overs, espresso drinks, and freshly made waffles in a minimalistic setting.",
@@ -1432,15 +1432,15 @@
     "name": "Gold Bean Cafe",
     "images": {
       "exterior": [
-        "/images/goldbean/exterior1.jpg",
-        "/images/goldbean/exterior2.jpg",
-        "/images/goldbean/exterior3.jpg"
+        "/images/gold/exterior1.jpg",
+        "/images/gold/exterior2.jpg",
+        "/images/gold/exterior3.jpg"
       ],
       "interior": [
-        "/images/goldbean/interior1.jpg",
-        "/images/goldbean/interior2.jpg",
-        "/images/goldbean/interior3.jpg"
-      ], "menu": "/images/goldbean/menu.jpg"
+        "/images/gold/interior1.jpg",
+        "/images/gold/interior2.jpg",
+        "/images/gold/interior3.jpg"
+      ], "menu": "/images/gold/menu.jpg"
     },
     "uniqueItems": ["Oat Horchata Matcha", "Ube Matcha", "Veggie Bagel"],
     "about": "A cozy cafe in downtown Berkeley offering creative lattes, hearty bagels, and a relaxed atmosphere with plenty of indoor seating. Known for its Oat Horchata Matcha and brown sugar espresso drinks.",

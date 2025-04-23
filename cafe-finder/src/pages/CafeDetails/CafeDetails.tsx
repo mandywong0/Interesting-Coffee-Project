@@ -1,6 +1,8 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import './CafeDetails.css';
+import cafesData from "../../data/cafes.json";
+import ImageSlideshow from '../../components/imageSlideshow';
 
 interface VibeProps {
   vibes: string[];
@@ -9,7 +11,7 @@ interface VibeProps {
 const Vibes: React.FC<VibeProps> = ({ vibes }) => {
   return (
     <div className="vibes">
-      {vibes.join(' - ')}
+      {vibes.join(' • ')}
     </div>
   );
 };
@@ -43,29 +45,44 @@ const DetailItem: React.FC<DetailItemProps> = ({ text }) => {
 const CafeDetails: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
-  
-  const cafeData = {
-    id: id,
-    name: "Cafe Name",
-    vibes: ["Vibe #1", "Vibe #2", "Vibe #3"],
-    ratings: {
-      wifi: 75,
-      ambience: 60,
-      food: 85
-    },
-    details: [
-      "Open 8am - 10pm daily",
-      "Located in Downtown",
-      "Specialty: Cold Brew"
-    ]
-  };
+
+  const cafe = cafesData.find((c) => c.id === Number(id));
+  if (!cafe) return <div>Cafe not found</div>;
 
   const handleBack = () => {
     navigate(-1);
   };
 
   const handleBookmark = () => {
-    console.log("Bookmarked cafe:", cafeData.name);
+    console.log("Bookmarked cafe:", cafe.name);
+  };
+
+  const renderAmenities = (amenities: { [key: string]: boolean | null }) =>
+    Object.entries(amenities).map(
+      ([amenity, isAvailable]) =>
+        isAvailable !== null && (
+          <div className="amenity-row" key={amenity}>
+            <span className="amenity-name">
+              {amenity.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/\b\w/g, char => char.toUpperCase())}
+            </span>
+            <span className={`amenity-symbol ${isAvailable ? '' : 'unavailable'}`}>
+              {isAvailable ? '✔' : '✘'}
+            </span>
+          </div>
+        )
+    );
+
+  const renderHours = () => {
+    const daysOfWeek = [
+      'mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'
+    ];
+
+    return daysOfWeek.map((day) => (
+      <div key={day} className="hours-item">
+        {day.charAt(0).toUpperCase() + day.slice(1)}: 
+        <span>{cafe.hours[day as keyof typeof cafe.hours]}</span>
+      </div>
+    ));
   };
 
   return (
@@ -77,24 +94,26 @@ const CafeDetails: React.FC = () => {
 
       <div className="cafe-details-content">
         <div className="cafe-name-container">
-          <h1 className="cafe-name-large">{cafeData.name}</h1>
+          <h1 className="cafe-name-large">{cafe.name}</h1>
         </div>
         
         <div className="cafe-info-container">
-          <Vibes vibes={cafeData.vibes} />
+          <Vibes vibes={cafe.vibeTags} />
+          <ImageSlideshow images={cafe.images.interior || []} />
+          <a className="menu-button-link" href={cafe.images.menu} target="_blank" rel="noopener noreferrer">
+            <button className="menu-button">Menu</button>
+          </a>
           
-          <div className="rating-bars">
-            <RatingBar icon="📶" value={cafeData.ratings.wifi} />
-            <RatingBar icon="👥" value={cafeData.ratings.ambience} />
-            <RatingBar icon="📊" value={cafeData.ratings.food} />
+          <div className="amenities-list">
+          {renderAmenities(cafe.amenities)}
           </div>
-          
-          <button className="menu-button">Menu</button>
-          
+
           <div className="details-list">
-            {cafeData.details.map((detail, index) => (
-              <DetailItem key={index} text={detail} />
-            ))}
+            <div className="detail-item"><strong>Hours:</strong>{renderHours()}</div>
+            <div className="detail-item"><strong>Location:</strong><span className="detail-item-body">{cafe.address}</span></div>
+            {cafe.uniqueItems.length > 0 && (
+              <div className="detail-item"><strong>Specialty:</strong><span className="detail-item-body">{cafe.uniqueItems.join(", ")}</span></div>
+            )}
           </div>
         </div>
       </div>

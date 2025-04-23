@@ -66,7 +66,7 @@ const CafeCard: React.FC<CafeCardProps> = ({ cafe, onClick }) => {
     <div className="cafe-card" onClick={() => onClick(id)}>
       {images.exterior?.[0] && (
         <img
-          src={`/${folderName}/exterior1.jpg`}
+          src={`/images/${folderName}/exterior1.jpg`}
           alt={`${name} exterior`}
           className="cafe-image"
         />

@@ -1,0 +1,40 @@
+
+.image-slideshow {
+  position: relative;
+  width: 75%;
+  max-width: 500px;  
+  margin: 0 auto;
+}
+  
+.slideshow-image {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: opacity 0.3s ease-in-out;
+}
+  
+.slideshow-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+  
+.slideshow-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.slideshow-button.next {
+  right: 0.1px;
+}
+  

@@ -1,25 +1,25 @@
 :root {
-  --background-color: #301D15;
-  --card-color: #D9D9D9;
-  --text-color: #000;
-  --button-color: #8B5C44;
-  --accent-color: #E9B68A;
+  --background-color: #8D7B68;
+  --card-color: #f6f1ea;
+  --text-color: #201403;
+  --button-color: #514332;
+  --accent-color: #e6cfb2;
 }
 
 .dark-theme {
-  --background-color: #301D15;
-  --card-color: #D9D9D9;
-  --text-color: #000;
-  --button-color: #8B5C44;
-  --accent-color: #E9B68A;
+  --background-color: #201403;
+  --card-color: #e6cfb2;
+  --text-color: #201403;
+  --button-color: #514332;
+  --accent-color: #f6f1ea;
 }
 
 .light-theme {
-  --background-color: #E9B68A;
-  --card-color: #FFFFFF;
-  --text-color: #000;
-  --button-color: #8B5C44;
-  --accent-color: #301D15;
+  --background-color: #8D7B68;
+  --card-color: #f6f1ea;
+  --text-color: #201403;
+  --button-color: #514332;
+  --accent-color: #e6cfb2;
 }
 
 * {

@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Settings.css';
-import { useSettings } from '../../context/SettingsContext';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Settings.css";
+import { useSettings } from "../../context/SettingsContext";
 
 const Settings: React.FC = () => {
   const {
@@ -9,32 +9,55 @@ const Settings: React.FC = () => {
     preferredSeating,
     preferredPayment,
     pricePreference,
+    preferredNoise,
+    wheelchairAccessible,
+    userBlurb,
     setTheme,
     setPreferredSeating,
     setPreferredPayment,
-    setPricePreference
+    setPricePreference,
+    setPreferredNoise,
+    setWheelchairAccessible,
+    setUserBlurb,
   } = useSettings();
 
   return (
     <div className="settings-page">
       <div className="settings-header">
         <h1>Settings</h1>
-        <Link to="/" className="close-button">✕</Link>
+        <Link to="/" className="close-button">
+          ✕
+        </Link>
       </div>
+
 
       <div className="settings-content">
         <div className="setting-section">
+          <h2>About You!</h2>
+          <textarea
+            className="user-blurb-input"
+            placeholder="Tell us anything you'd like!"
+            value={userBlurb}
+            onChange={(e) => setUserBlurb(e.target.value)}
+            rows={4}
+          />
+        </div>
+        <div className="setting-section">
           <h2>Preferred Seating</h2>
           <div className="setting-options">
-            <button 
-              className={`option-button ${preferredSeating === 'indoor' ? 'selected' : ''}`}
-              onClick={() => setPreferredSeating('indoor')}
+            <button
+              className={`option-button ${
+                preferredSeating === "indoor" ? "selected" : ""
+              }`}
+              onClick={() => setPreferredSeating("indoor")}
             >
               Indoor
             </button>
-            <button 
-              className={`option-button ${preferredSeating === 'outdoor' ? 'selected' : ''}`}
-              onClick={() => setPreferredSeating('outdoor')}
+            <button
+              className={`option-button ${
+                preferredSeating === "outdoor" ? "selected" : ""
+              }`}
+              onClick={() => setPreferredSeating("outdoor")}
             >
               Outdoor
             </button>
@@ -44,15 +67,19 @@ const Settings: React.FC = () => {
         <div className="setting-section">
           <h2>Preferred Payment</h2>
           <div className="setting-options">
-            <button 
-              className={`option-button ${preferredPayment === 'cash' ? 'selected' : ''}`}
-              onClick={() => setPreferredPayment('cash')}
+            <button
+              className={`option-button ${
+                preferredPayment === "cash" ? "selected" : ""
+              }`}
+              onClick={() => setPreferredPayment("cash")}
             >
               Cash
             </button>
-            <button 
-              className={`option-button ${preferredPayment === 'creditCard' ? 'selected' : ''}`}
-              onClick={() => setPreferredPayment('creditCard')}
+            <button
+              className={`option-button ${
+                preferredPayment === "creditCard" ? "selected" : ""
+              }`}
+              onClick={() => setPreferredPayment("creditCard")}
             >
               Credit Card
             </button>
@@ -62,15 +89,19 @@ const Settings: React.FC = () => {
         <div className="setting-section">
           <h2>Price Preference</h2>
           <div className="setting-options">
-            <button 
-              className={`option-button ${pricePreference === '$' ? 'selected' : ''}`}
-              onClick={() => setPricePreference('$')}
+            <button
+              className={`option-button ${
+                pricePreference === "$" ? "selected" : ""
+              }`}
+              onClick={() => setPricePreference("$")}
             >
               $
             </button>
-            <button 
-              className={`option-button ${pricePreference === '$$' ? 'selected' : ''}`}
-              onClick={() => setPricePreference('$$')}
+            <button
+              className={`option-button ${
+                pricePreference === "$$" ? "selected" : ""
+              }`}
+              onClick={() => setPricePreference("$$")}
             >
               $$
             </button>
@@ -78,17 +109,61 @@ const Settings: React.FC = () => {
         </div>
 
         <div className="setting-section">
+          <h2>Noise Preference</h2>
+          <div className="setting-options">
+            <button
+              className={`option-button ${
+                preferredNoise === "quiet" ? "selected" : ""
+              }`}
+              onClick={() => setPreferredNoise("quiet")}
+            >
+              Quiet
+            </button>
+            <button
+              className={`option-button ${
+                preferredNoise === "cafeSounds" ? "selected" : ""
+              }`}
+              onClick={() => setPreferredNoise("cafeSounds")}
+            >
+              Cafe Sounds
+            </button>
+          </div>
+        </div>
+
+        <div className="setting-section">
+          <h2>Wheelchair Accessibility</h2>
+          <div className="setting-options">
+            <button
+              className={`option-button ${
+                wheelchairAccessible === true ? "selected" : ""
+              }`}
+              onClick={() => setWheelchairAccessible(true)}
+            >
+              True
+            </button>
+            <button
+              className={`option-button ${
+                wheelchairAccessible === false ? "selected" : ""
+              }`}
+              onClick={() => setWheelchairAccessible(false)}
+            >
+              False
+            </button>
+          </div>
+        </div>
+
+        <div className="setting-section">
           <h2>App Theme</h2>
           <div className="setting-options">
-            <button 
-              className={`option-button ${theme === 'light' ? 'selected' : ''}`}
-              onClick={() => setTheme('light')}
+            <button
+              className={`option-button ${theme === "light" ? "selected" : ""}`}
+              onClick={() => setTheme("light")}
             >
               Light
             </button>
-            <button 
-              className={`option-button ${theme === 'dark' ? 'selected' : ''}`}
-              onClick={() => setTheme('dark')}
+            <button
+              className={`option-button ${theme === "dark" ? "selected" : ""}`}
+              onClick={() => setTheme("dark")}
             >
               Dark
             </button>
@@ -111,4 +186,4 @@ const Settings: React.FC = () => {
   );
 };
 
-export default Settings; 
+export default Settings;

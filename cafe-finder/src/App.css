@@ -7,19 +7,19 @@
 }
 
 .dark-theme {
-  --background-color: #201403;
-  --card-color: #e6cfb2;
+  --background-color: #392303;
+  --card-color: rgb(250, 247, 236);
   --text-color: #201403;
   --button-color: #514332;
-  --accent-color: #f6f1ea;
+  --accent-color: #fdddb0;
 }
 
 .light-theme {
-  --background-color: #8D7B68;
-  --card-color: #f6f1ea;
+  --background-color: #e0c59f;
+  --card-color: #faf8f5;
   --text-color: #201403;
   --button-color: #514332;
-  --accent-color: #e6cfb2;
+  --accent-color: #ffba5a;
 }
 
 * {

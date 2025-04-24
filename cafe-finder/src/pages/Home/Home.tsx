@@ -18,6 +18,7 @@ export interface Cafe {
   phone: string | null;
   website: string | null;
   reviews: string[];
+  vibeTags: string[];
   amenities: {
     bathroom: boolean | null;
     wifi: boolean | null;
@@ -47,9 +48,9 @@ interface CafeCardProps {
 }
 
 const CafeCard: React.FC<CafeCardProps> = ({ cafe, onClick }) => {
-  const { id, name, images, about, tags, uniqueItems, priceRange } = cafe;
+  const { id, name, images, about, tags, vibeTags, uniqueItems, priceRange } = cafe;
 
-  const ignoredWords = ["cafe", "coffee", "caffe", "the"];
+  const ignoredWords = ["cafe", "coffee", "caffe", "the", "a"];
 
   const words = cafe.name.split(" ");
   let firstMeaningfulWord = words[0];
@@ -73,12 +74,17 @@ const CafeCard: React.FC<CafeCardProps> = ({ cafe, onClick }) => {
       )}
 
       <div className="cafe-info">
-        <h3 className="cafe-name">{name}</h3>
-        {priceRange && <span className="cafe-price-range">{priceRange}</span>}
-
+        <div className="cafe-name">{name}</div>
+        <div className="cafe-tags">
+          {vibeTags.map((tag, idx) => (
+            <span key={idx} className="cafe-tag">
+              {tag}
+            </span>
+          ))}
+        </div>
         {about && <p className="cafe-about">{about}</p>}
 
-        <div className="cafe-unique-items">
+        <div className="cafe-unique-items" >
           {uniqueItems.length > 0 && (
             <p>
               <strong>Signature Menu Items:</strong> {uniqueItems.join(", ")}
@@ -86,13 +92,7 @@ const CafeCard: React.FC<CafeCardProps> = ({ cafe, onClick }) => {
           )}
         </div>
 
-        <div className="cafe-tags">
-          {tags.map((tag, idx) => (
-            <span key={idx} className="cafe-tag">
-              {tag}
-            </span>
-          ))}
-        </div>
+        {priceRange && <span className="cafe-price-range">{priceRange}</span>}
       </div>
     </div>
   );
@@ -107,19 +107,19 @@ const Home: React.FC = () => {
     navigate(`/cafe/${id}`);
   };
 
-  const filteredCafes = cafes.filter(cafe => {
-    if (pricePreference === '$$' && cafe.priceRange !== '$$') {
+  const filteredCafes = cafes.filter((cafe) => {
+    if (pricePreference === "$$" && cafe.priceRange !== "$$") {
       return false;
     }
-    
-    if (preferredSeating === 'outdoor' && !cafe.amenities.outdoorSeating) {
+
+    if (preferredSeating === "outdoor" && !cafe.amenities.outdoorSeating) {
       return false;
     }
-    
-    if (preferredPayment === 'creditCard' && !cafe.amenities.creditCards) {
+
+    if (preferredPayment === "creditCard" && !cafe.amenities.creditCards) {
       return false;
     }
-    
+
     return true;
   });
 

@@ -28,8 +28,9 @@
 }
 
 .cafe-name {
-  font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #453105;
 }
 
 .search-bar input {
@@ -40,7 +41,7 @@
 }
 
 .cafe-card {
-  border: 1px solid none;
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 12px;
   padding: 16px;
   display: flex;
@@ -69,10 +70,6 @@
   gap: 8px;
 }
 
-.cafe-name {
-  font-size: 20px;
-  font-weight: bold;
-}
 
 .cafe-about {
   font-size: 14px;
@@ -82,6 +79,8 @@
 .cafe-unique-items {
   font-size: 13px;
   color: #555;
+  align-self: flex-start;
+  text-align: left;
 }
 
 .cafe-tags {
@@ -100,5 +99,6 @@
 .cafe-address,
 .cafe-price-range {
   font-size: 13px;
-  color: #666;
+  color: #5d4206;
+  font-weight: 700;
 }

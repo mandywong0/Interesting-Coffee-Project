@@ -28,6 +28,7 @@ const CafeMatch: React.FC = () => {
       <div className="bottom-nav">
         <Link to="/" className="nav-icon">🔍</Link>
         <Link to="/match" className="nav-icon active">😊</Link>
+        <Link to="/bookmarks" className="nav-icon">🔖</Link>
         <Link to="/settings" className="nav-icon">⚙️</Link>
       </div>
     </div>

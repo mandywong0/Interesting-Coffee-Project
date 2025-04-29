@@ -5,6 +5,7 @@ import Home from './pages/Home/Home';
 import CafeMatch from './pages/CafeMatch/CafeMatch';
 import MatchResults from './pages/MatchResults/MatchResults';
 import CafeDetails from './pages/CafeDetails/CafeDetails';
+import Bookmarks from './pages/Bookmarks/Bookmarks';
 import Settings from './pages/Settings/Settings';
 import { SettingsProvider, useSettings } from './context/SettingsContext';
 
@@ -22,6 +23,7 @@ const AppContent = () => {
         <Route path="/" element={<Home />} />
         <Route path="/match" element={<CafeMatch />} />
         <Route path="/results" element={<MatchResults />} />
+        <Route path="/bookmarks" element={<Bookmarks />} />
         <Route path="/cafe/:id" element={<CafeDetails />} />
         <Route path="/settings" element={<Settings />} />
       </Routes>

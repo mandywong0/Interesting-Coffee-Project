@@ -178,6 +178,9 @@ const Settings: React.FC = () => {
         <Link to="/match" className="nav-icon">
           😊
         </Link>
+        <Link to="/bookmarks" className="nav-icon">
+          🔖
+        </Link>
         <Link to="/settings" className="nav-icon active">
           ⚙️
         </Link>

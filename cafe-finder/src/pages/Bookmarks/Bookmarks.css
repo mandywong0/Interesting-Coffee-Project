@@ -1,0 +1,26 @@
+.page-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+.bookmarks-page {
+  display: flex;
+  flex-direction: column; 
+  height: 100%; 
+  padding-bottom: 50px;
+}
+
+.bookmarks-cafe-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  flex-grow: 1;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}

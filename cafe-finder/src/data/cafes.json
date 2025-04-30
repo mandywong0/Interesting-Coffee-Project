@@ -744,15 +744,15 @@
     "name": "Peet's Coffee",
     "images": {
       "exterior": [
-        "/images/peets/exterior1.jpg",
-        "/images/peets/exterior2.jpg",
-        "/images/peets/exterior3.jpg"
+        "/images/peet's/exterior1.jpg",
+        "/images/peet's/exterior2.jpg",
+        "/images/peet's/exterior3.jpg"
       ],
       "interior": [
-        "/images/peets/interior1.jpg",
-        "/images/peets/interior2.jpg",
-        "/images/peets/interior3.jpg"
-      ], "menu": "/images/peets/menu.jpg"
+        "/images/peet's/interior1.jpg",
+        "/images/peet's/interior2.jpg",
+        "/images/peet's/interior3.jpg"
+      ], "menu": "/images/peet's/menu.jpg"
     },
     "uniqueItems": [
       "Lavender Vanilla Latte",

@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "Mind Coffee",
     "images": {
       "exterior": [
@@ -11,15 +12,14 @@
         "/images/mind/interior1.jpg",
         "/images/mind/interior2.jpg",
         "/images/mind/interior3.jpg"
-      ], 
-      "menu": "/images/mind/menu.jpg"
+      ], "menu": "/images/mind/menu.jpg"
     },
     "uniqueItems": [
       "Hojicha Latte",
       "Ceremonial Matcha Latte",
       "Iced Dirty Matcha Latte"
     ],
-    "menu-items": [
+    "menuItems": [
       "Ceremonial Matcha Latte",
       "Latte",
       "Vanilla Latte",
@@ -71,7 +71,7 @@
     ],
     "about": "We are a specialty coffee shop that serves drinks that inspire. We are on a mission to change the narrative around mental health and strengthen the mental health of our community, all while serving high-quality, great tasting coffee, tea, and signature drinks. All of our beans are roasted by us, all of our syrups made in house, and all of our crema / whipped creams are made in house. We don't make our own pastries, but we do have pastry happy hour - from 4-5pm all pastries are 30% off.",
     "tags": ["Coffee", "Tea", "Coffee Roasteries", "Quiet"],
-    "vibe-tags": 	["minimalist", "calm", "study-friendly"],
+    "vibeTags": ["minimalist", "quiet", "student friendly"], 
     "address": "1816 Euclid Ave Berkeley, CA 94709",
     "phone": null,
     "website": "https://www.themindcoffee.com/",
@@ -102,6 +102,7 @@
     "yelp": "https://www.yelp.com/biz/mind-coffee-berkeley?osq=Mind+Coffee"
   },
   {
+    "id": 2,
     "name": "SoDoI Coffee Tasting House",
     "images": {
       "exterior": [
@@ -113,15 +114,14 @@
         "/images/sodoi/interior1.jpg",
         "/images/sodoi/interior2.jpg",
         "/images/sodoi/interior3.jpg"
-      ], 
-      "menu": "/images/sodoi/menu.jpg"
+      ], "menu": "/images/sodoi/menu.jpg"
     },
     "uniqueItems": [
       "Red Velvet Latte",
       "Strawberry Matcha",
       "Iced Vanilla Latte"
     ],
-    "menu-items": [
+    "menuItems": [
       "MyDream, MyCoffee",
       "Open Your Heart",
       "Memory of Arashiyama",
@@ -162,7 +162,7 @@
     ], 
     "about": "At SoDoI, we don't believe providing great coffee is enough. As our name suggests, we're part of the SoDoI movement, and it's our mission to deliver hope and inspiration with every cup we serve. With 200 combined years of roasting, blending, and serving experience, we're proud to say we've mastered our craft, and we can't wait to share that with the people of Berkeley and beyond. Our shop is a testament to our message, and we hope that our success in the community will encourage you to never give up on your dreams, to always be truthful and open your heart to others, and to love life while making as many memories as you can.",
     "tags": ["Coffee", "Tea", "Quiet"],
-    "vibe-tags": ["hidden gem", "spacious", "relaxed"],
+    "vibeTags": ["hidden gem", "spacious", "student friendly"],
     "address": "2438 Durant Ave Berkeley, CA 94704",
     "phone": "(510) 990-6487",
     "website": "https://sodoicoffee.com/",
@@ -193,6 +193,7 @@
     "yelp": "https://www.yelp.com/biz/sodoi-coffee-tasting-house-berkeley-2"
   },
   {
+    "id": 3,
     "name": "Binge Coffee House",
     "images": {
       "exterior": [
@@ -204,11 +205,10 @@
         "/images/binge/interior1.jpg",
         "/images/binge/interior2.jpg",
         "/images/binge/interior3.jpg"
-      ], 
-      "menu": "/images/binge/menu.jpg"
+      ], "menu": "/images/binge/menu.jpg"
     },
     "uniqueItems": ["Sesame Matcha", "Banh Mi", "Egg Coffee"],
-    "menu-items": [
+    "menuItems": [
       "Strawberry Matcha Latte",
       "Ube Matcha Latte",
       "Uji Matcha Latte",
@@ -256,7 +256,7 @@
     ], 
     "about": "At SoDoI, we don't believe providing great coffee is enough. As our name suggests, we're part of the SoDoI movement, and it's our mission to deliver hope and inspiration with every cup we serve. With 200 combined years of roasting, blending, and serving experience, we're proud to say we've mastered our craft, and we can't wait to share that with the people of Berkeley and beyond. Our shop is a testament to our message, and we hope that our success in the community will encourage you to never give up on your dreams, to always be truthful and open your heart to others, and to love life while making as many memories as you can.",
     "tags": ["Coffee", "Tea", "Vietnamese", "Bubble Tea", "Moderate Noise"],
-    "vibe-tags": ["bustling", "student-popular", "quick bites"],
+    "vibeTags": ["lively", "asian inspired", "modern"],
     "address": "2199 Bancroft Way Berkeley, CA 94720",
     "phone": "(341) 229-1296",
     "website": "https://www.bingecoffeehouse.com/",
@@ -287,6 +287,7 @@
     "yelp": "https://www.yelp.com/biz/binge-coffee-house-berkeley?osq=Binge+Coffee+House"
   },
   {
+    "id": 4,
     "name": "Cha Thai Tea",
     "images": {
       "exterior": [
@@ -298,11 +299,10 @@
         "/images/cha/interior1.jpg",
         "/images/cha/interior2.jpg",
         "/images/cha/interior3.jpg"
-      ],
-      "menu": "/images/cha/menu.jpg"
+      ], "menu": "/images/cha/menu.jpg"
     },
     "uniqueItems": ["Pang Cha", "Mango Sticky Rice", "Avacado Smash"],
-    "menu-items": [
+    "menuItems": [
       "Cha Thai Milk Tea",
       "Cha Thai Black Tea",
       "Oat Milk Thai Tea",
@@ -347,7 +347,7 @@
       "Smoothies",
       "Moderate Noise"
     ],
-    "vibe-tags": 	["cozy", "minimalist", "thai-inspired"],
+    "vibeTags": ["asian inspired", "cozy", "quiet"],
     "address": "1796 Shattuck Ave Berkeley, CA 94709",
     "phone": "(510) 225-9781",
     "website": null,
@@ -378,6 +378,7 @@
     "yelp": "https://www.yelp.com/biz/cha-thai-tea-berkeley"
   },
   {
+    "id": 5,
     "name": "Victory Point Cafe",
     "images": {
       "exterior": [
@@ -389,11 +390,14 @@
         "/images/victory/interior1.jpg",
         "/images/victory/interior2.jpg",
         "/images/victory/interior3.jpg"
-      ], 
-      "menu": "/images/victory/menu.jpg"
+      ], "menu": "/images/victory/menu.jpg"
     },
-    "uniqueItems": ["Honey Lavender Latte", "House Made Cold Brew", "Honey Mustard Club"],
-    "menu-items": [
+    "uniqueItems": [
+      "Honey Lavender Latte",
+      "House Made Cold Brew",
+      "Honey Mustard Club"
+    ],
+    "menuItems": [
       "Espresso",
       "Cortado",
       "Cappuccino",
@@ -438,7 +442,7 @@
     ],
     "about": "Victory Point Cafe was born from a love of three key cornerstones: coffee, beer, and board games. We saw how popular similar cafes were doing across the continent and wanted to bring that experience to the Bay Area. We see board games as a chance to disconnect from our digital world and interact with our fellow neighbors over cardboard and dice.",
     "tags": ["Coffee", "Tea", "Beer Bar", "Tabletop Games"],
-    "vibe-tags": ["lively", "social", "board-games"],
+    "vibeTags": ["lively", "board games", "social"],
     "address": "1797 Shattuck Ave Ste A Berkeley, CA 94709",
     "phone": "(510) 982-6325",
     "website": "https://www.victorypointcafe.com/",
@@ -469,6 +473,7 @@
     "yelp": "https://www.yelp.com/biz/victory-point-cafe-berkeley"
   },
   {
+    "id": 6,
     "name": "Cafe Parisien",
     "images": {
       "exterior": [
@@ -480,11 +485,10 @@
         "/images/parisien/interior1.jpg",
         "/images/parisien/interior2.jpg",
         "/images/parisien/interior3.jpg"
-      ], 
-      "menu": "/images/parisien/menu.jpg"
+      ], "menu": "/images/parisien/menu.jpg"
     },
     "uniqueItems": ["Chocolate Croissant", "Apple Danish", "Genoise"],
-    "menu-items": [
+    "menuItems": [
       "House Coffee",
       "Espresso",
       "Café Latte",
@@ -568,7 +572,7 @@
     ],
     "about": null,
     "tags": ["Cafes", "French", "Coffee", "Tea"],
-    "vibe-tags": 	["cozy", "european-style", "neighborhood-gem"],
+    "vibeTags": ["french inspired", "cozy", "quiet"],
     "address": "1625 Shattuck Ave Berkeley, CA 94709",
     "phone": "(510) 529-4309",
     "website": null,
@@ -599,6 +603,7 @@
     "yelp": "https://www.yelp.com/biz/cafe-parisien-berkeley-2"
   },
   {
+    "id": 7,
     "name": "Cafenated Coffee Company",
     "images": {
       "exterior": [
@@ -610,11 +615,10 @@
         "/images/cafenated/interior1.jpg",
         "/images/cafenated/interior2.jpg",
         "/images/cafenated/interior3.jpg"
-      ], 
-      "menu": "/images/cafenated/menu.jpg"
+      ], "menu": "/images/cafenated/menu.jpg"
     },
     "uniqueItems": ["Coffee", "Matcha", "Latte"],
-    "menu-items": [
+    "menuItems": [
       "Latte",
       "Cafe Macchiato",
       "Cortado",
@@ -635,8 +639,15 @@
       "IPA cans"
     ],
     "about": "Passionate about coffee. I’d like you to experience our beverages and food like no other place.  Our coffeehouse and our online store is designed to convey our enthusiasm about coffee.  Our mission is to help women coffee farmers live better and our customers to taste and feel their hard work.  We have partnered with local chefs, bakers, breweries, wineries, and coffee equipment makers like Fellow Industries to bring you the best-of-the-best.",
-    "tags": ["Breakfast", "Lunch", "Wine Bars", "Coffee", "Tea", "Moderate Noise"],
-    "vibe-tags": 	["garden-patio", "upscale", "bright"],
+    "tags": [
+      "Breakfast",
+      "Lunch",
+      "Wine Bars",
+      "Coffee",
+      "Tea",
+      "Moderate Noise"
+    ],
+    "vibeTags": ["garden seating", "bright", "trendy"],
     "address": "2085 Vine St Berkeley, CA 94709",
     "phone": "(800) 388-4049",
     "website": "https://www.cafenated.co/",
@@ -667,6 +678,7 @@
     "yelp": "https://www.yelp.com/biz/cafenated-coffee-company-berkeley"
   },
   {
+    "id": 8,
     "name": "Roast & Toast Cafe",
     "images": {
       "exterior": [
@@ -678,11 +690,10 @@
         "/images/roast/interior1.jpg",
         "/images/roast/interior2.jpg",
         "/images/roast/interior3.jpg"
-      ], 
-      "menu": "/images/roastandtoast/menu.jpg"
+      ], "menu": "/images/roast/menu.jpg"
     },
     "uniqueItems": ["Knafeh", "Italian Macchiato", "Cortado"],
-    "menu-items": [
+    "menuItems": [
       "The Heat",
       "Smokehouse Special",
       "Smokey Mountain Stack",
@@ -698,7 +709,7 @@
     ],
     "about": null,
     "tags": ["Cafes", "Sandwiches", "Coffee", "Tea", "Moderate Noise"],
-    "vibe-tags": 	["chill", "friendly", "middle eastern-inspired"],
+    "vibeTags": ["casual", "family owned", "warm"],
     "address": "1746 Shattuck Ave Berkeley, CA 94709",
     "phone": "(510) 356-4419",
     "website": null,
@@ -729,6 +740,7 @@
     "yelp": "https://www.yelp.com/biz/roast-and-toast-cafe-berkeley"
   },
   {
+    "id": 9,
     "name": "Peet's Coffee",
     "images": {
       "exterior": [
@@ -740,11 +752,14 @@
         "/images/peets/interior1.jpg",
         "/images/peets/interior2.jpg",
         "/images/peets/interior3.jpg"
-      ], 
-      "menu": "/images/peets/menu.jpg"
+      ], "menu": "/images/peets/menu.jpg"
     },
-    "uniqueItems": ["Lavender Vanilla Latte", "Iced Expresso", "Iced Cappuccino"],
-    "menu-items": [
+    "uniqueItems": [
+      "Lavender Vanilla Latte",
+      "Iced Expresso",
+      "Iced Cappuccino"
+    ],
+    "menuItems": [
       "Americano",
       "Caffe Latte",
       "Matcha Latte",
@@ -769,7 +784,7 @@
     ], 
     "about": "Peet's Coffee is the premier specialty coffee company in the United States. Peet's Coffee offers superior quality coffees in multiple forms, by sourcing the best quality coffee beans in the world, adhering to strict high-quality and taste standards, and controlling product quality.",
     "tags": ["Coffee", "Tea"],
-    "vibe-tags": ["classic", "historic", "quick-stop"],
+    "vibeTags": ["classic", "busy", "historic"],
     "address": "2124 Vine St Berkeley, CA 94709",
     "phone": "(510) 841-0564",
     "website": "https://www.peets.com/pages/store-locator?stockist-query=berkeley,%20ca&selected=4th%20Street",
@@ -800,6 +815,7 @@
     "yelp": "https://www.yelp.com/biz/peets-coffee-berkeley"
   },
   {
+    "id": 10,
     "name": "Asha Tea House",
     "images": {
       "exterior": [
@@ -811,11 +827,10 @@
         "/images/asha/interior1.jpg",
         "/images/asha/interior2.jpg",
         "/images/asha/interior3.jpg"
-      ], 
-      "menu": "/images/asha/menu.jpg"
+      ], "menu": "/images/asha/menu.jpg"
     },
     "uniqueItems": ["Hong Kong Milk Tea", "Iced Matcha Latte", "Hojicha Latte"],
-    "menu-items": [
+    "menuItems": [
       "Matcha Latte",
       "Blood Orange Matcha Latte",
       "Strawberry Matcha Latte",
@@ -862,7 +877,7 @@
     ],
     "about": "There is a cup of tea out there for everyone, whether it's a simple glass of straight tea, or a crafted cup of flavored tea. At Asha, we strive to feed your love for tea by serving high-quality whole leaf tea and hand-crafted tea drinks made with fresh, pure and real ingredients. We travel extensively to source teas directly from growers and make almost everything from scratch so that we know exactly what we're serving. We also purposely limit our drink and tea selections to showcase a small but comprehensive representation of what the tea world has to offer, and we make a big effort to share everything we're learning as we help build America's tea culture. But we also know that drinking tea isn't just about the drink. It's also about where you drink it and who you drink it with--which is why we designed every element of our tea house to maximize your tea-drinking enjoyment.",
     "tags": ["Bubble Tea", "Tea Rooms"],
-    "vibe-tags": ["aesthetic", "tea-focused", "sunny"],
+    "vibeTags": ["minimalist", "aesthetic", "quiet"],
     "address": "2086 University Ave Berkeley, CA 94704",
     "phone": "(510) 549-9137",
     "website": "https://ashateahouse.com/",
@@ -893,6 +908,7 @@
     "yelp": "https://www.yelp.com/biz/asha-tea-house-berkeley"
   },
   {
+    "id": 11,
     "name": "The Hidden Cafe",
     "images": {
       "exterior": [
@@ -904,11 +920,10 @@
         "/images/hidden/interior1.jpg",
         "/images/hidden/interior2.jpg",
         "/images/hidden/interior3.jpg"
-      ], 
-      "menu": "/images/hidden/menu.jpg"
+      ], "menu": "/images/hidden/menu.jpg"
     },
     "uniqueItems": ["Kokuto Latte", "Cashmere Chai", "Sweet Potato Brownie"],
-    "menu-items": [
+    "menuItems": [
       "Hōjicha Latte",
       "Matcha Latte",
       "Assam",
@@ -942,8 +957,8 @@
       "Hot Coco"
     ],
     "about": null,
-    "tags": ["Coffee & Tea", "Patisserie/Cake shop", "Desserts"],
-    "vibe-tags": 	["hidden-gem", "cozy", "library-like"],
+    "tags": ["Coffee", "Tea", "Patisserie/Cake shop", "Desserts"],
+    "vibeTags": ["hidden gem", "cozy", "nature adjacent"],
     "address": "1250 Addison St Ste 111 Berkeley, CA 94702",
     "phone": "(415) 855-1029",
     "website": "https://www.thehiddencafe.life",
@@ -974,6 +989,7 @@
     "yelp": "https://www.yelp.com/biz/the-hidden-cafe-berkeley"
   },
   {
+    "id": 12,
     "name": "Caffe Strada",
     "images": {
       "exterior": [
@@ -985,11 +1001,14 @@
         "/images/strada/interior1.jpg",
         "/images/strada/interior2.jpg",
         "/images/strada/interior3.jpg"
-      ], 
-      "menu": "/images/strada/menu.png"
+      ], "menu": "/images/strada/menu.jpg"
     },
-    "uniqueItems": ["Strada Bianca Mocha", "Mint Matcha Latte", "White Hot Chocolate"],
-    "menu-items": [
+    "uniqueItems": [
+      "Strada Bianca Mocha",
+      "Mint Matcha Latte",
+      "White Hot Chocolate"
+    ],
+    "menuItems": [
       "Espresso",
       "Americano",
       "Latte",
@@ -1037,8 +1056,8 @@
       "Overnight Oats with Dried Fruit"
     ],
     "about": "You may be new to Strada, or maybe you’ve known us for a long time. We’ve been around for over 30 years. We’re a Berkeley landmark specializing in delicious espresso drinks.\n And though we talk about espresso a lot, we’re proud to say we’re the originators of the White Hot Chocolate. (Just ask Guittard Chocolate in Burlingame.)\n We’re happy we’ve been named “Best café” many times and even one of the 50 best coffeehouses in the US. (Thank you, Complex Magazine!). Over the years many people have enjoyed our drinks on our lovely patio at the crossroads of town and gown, overlooking the UC Berkeley campus.\n When he was vice-president, Al Gore even dropped by to check us out. ",
-    "tags": ["Coffee & Tea"],
-    "vibe-tags": 	["lively", "patio-vibes", "college-hangout"],
+    "tags": ["Coffee", "Tea"],
+    "vibeTags": ["outdoor seating", "busy", "student friendly"],
     "address": "2300 College Ave Berkeley, CA 94704",
     "phone": "(510) 843-5282",
     "website": "https://caffestrada.com",
@@ -1069,6 +1088,7 @@
     "yelp": "https://www.yelp.com/biz/caffe-strada-berkeley"
   },
   {
+    "id": 13,
     "name": "MY Coffee Roastery",
     "images": {
       "exterior": [
@@ -1080,11 +1100,10 @@
         "/images/my/interior1.jpg",
         "/images/my/interior2.jpg",
         "/images/my/interior3.jpg"
-      ], 
-      "menu": "/images/my/menu.png"
+      ], "menu": "/images/my/menu.jpg"
     },
     "uniqueItems": ["Orange Blossom Latte", "Affogato", "Apple Turnover"],
-    "menu-items": [
+    "menuItems": [
       "Espresso",
       "Single Origin Espresso",
       "Americano",
@@ -1110,8 +1129,8 @@
       "Chocolate Chip Cookie"
     ],
     "about": "In July of 2019, we opened our first storefront in downtown Berkeley.\nWe strive to achieve 'less is more,' believing that quality will always surpass quantity. Our coffee is no exception.\n First, we only source high-quality green coffee beans. However, even with high-quality beans, 3-7% will have some impurities and need to be removed. Therefore, we purposefully hand sort our beans before and after roasting, to ensure all impurities are removed.\n To preserve maximum freshness, we utilize finely tuned small-batch roasting. Like wine, coffee beans also need to breathe and age. We allow the beans to rest for several days, capturing the mellowness and richness of the coffee. We complete our espresso with organic whole milk to create an exceptionally smooth and perfectly balanced taste.\n Through sourcing high-quality green coffee beans, diligently hand sorting, and using finely tuned small-batch roasting, we can capture the mellowness and richness of the coffee. Our selection is expertly curated to bring depth of flavor and satisfaction to your daily coffee.",
-    "tags": ["Coffee & Tea", "Coffee Roasteries", "Cafes"],
-    "vibe-tags": 	["cottagecore", "intimate", "artisan"],
+    "tags": ["Coffee", "Tea", "Coffee Roasteries", "Cafes"],
+    "vibeTags": ["cottagecore", "quiet", "artisan"],
     "address": "2080 Martin Luther King Jr Berkeley, CA 94704",
     "phone": null,
     "website": "https://www.mycoffeeroastery.com/",
@@ -1142,6 +1161,7 @@
     "yelp": "https://www.yelp.com/biz/my-coffee-roastery-berkeley"
   },
   {
+    "id": 14,
     "name": "elaichi co.",
     "images": {
       "exterior": [
@@ -1153,11 +1173,10 @@
         "/images/elaichi/interior1.jpg",
         "/images/elaichi/interior2.jpg",
         "/images/elaichi/interior3.jpg"
-      ], 
-      "menu": "/images/elaichi/menu.png"
+      ], "menu": "/images/elaichi/menu.jpg"
     },
     "uniqueItems": ["Karak Chai", "Elaichi Bun", "Pistachio Loaf Cake"],
-    "menu-items": [
+    "menuItems": [
       "Karak Chai",
       "Oat Chai",
       "Espresso",
@@ -1178,8 +1197,8 @@
       "Cake Rusk"
     ], 
     "about": "elaichi co. exists to weave a tapestry of connections, through the cozy embrace of our spaces and the culinary tales we share. With every aroma and taste, we invite souls to reconnect with their roots, intertwine with diverse cultures, and create heartwarming memories together.",
-    "tags": ["Coffee & Tea"],
-    "vibe-tags": ["warm", "chai-focused", "student-hub"],
+    "tags": ["Coffee", "Tea"],
+    "vibeTags": ["cultural", "warm", "student friendly"],
     "address": "2161 Allston Way Ste C Berkeley, CA 94704",
     "phone": "(510) 291-8464",
     "website": "https://www.elaichico.com",
@@ -1210,6 +1229,7 @@
     "yelp": "https://www.yelp.com/biz/elaichi-co-berkeley"
   },
   {
+    "id": 15,
     "name": "1951 Coffee Company",
     "images": {
       "exterior": [
@@ -1221,11 +1241,14 @@
         "/images/1951/interior1.jpg",
         "/images/1951/interior2.jpg",
         "/images/1951/interior3.jpg"
-      ], 
-      "menu": "/images/1951/menu.jpg"
+      ], "menu": "/images/1951/menu.jpg"
     },
-    "uniqueItems": ["Iced Honey Lavendar Latte", "Iced Matcha Latte", "Pistachio Rose Latte"],
-    "menu-items": [
+    "uniqueItems": [
+      "Iced Honey Lavendar Latte",
+      "Iced Matcha Latte",
+      "Pistachio Rose Latte"
+    ],
+    "menuItems": [
       "Iced Honey Lavender Latte",
       "Iced Matcha Latte",
       "Pistachio Rose Latte",
@@ -1249,8 +1272,8 @@
       "Cherry Vanilla Latte"
     ],
     "about": "At 1951 Coffee Company, we blend the warmth of coffee with the strength of community to uplift refugees on their journey to new beginnings in the United States.",
-    "tags": ["Coffee & Tea", "Community Service/Non-Profit"],
-    "vibe-tags": ["community-focused", "spacious", "calm"],
+    "tags": ["Coffee", "Tea", "Community Service/Non-Profit"],
+    "vibeTags": ["social mission", "student friendly", "casual"],
     "address": "2410 Channing Way Berkeley, CA 94704",
     "phone": "(510) 280-6171",
     "website": "https://1951coffee.com",
@@ -1281,6 +1304,7 @@
     "yelp": "https://www.yelp.com/biz/1951-coffee-company-berkeley-4"
   },
   {
+    "id": 16,
     "name": "Delah Coffee House",
     "images": {
       "exterior": [
@@ -1292,11 +1316,10 @@
         "/images/delah/interior1.jpg",
         "/images/delah/interior2.jpg",
         "/images/delah/interior3.jpg"
-      ], 
-      "menu": "/images/delah/menu.jpg"
+      ], "menu": "/images/delah/menu.jpg"
     },
     "uniqueItems": ["Yemeni Latte", "Rose Delah Latte", "Jubani"],
-    "menu-items": [
+    "menuItems": [
       "Yemeni Latte",
       "Rose Delah Latte",
       "Jubani",
@@ -1317,8 +1340,8 @@
       "Pink Socotra Refresher"
     ],
     "about": "We believe that every aspect of our coffee-making process, from the sourcing of our beans to the roasting and preparation of our coffee, is a matter of heart, body, and soul. We understand that great coffee isn’t just about the taste – it’s about the entire experience, from the moment the beans are picked to the moment you take your first sip.",
-    "tags": ["Coffee & Tea", "Desserts", "Juice Bars & Smoothies"],
-    "vibe-tags": 	["cultural", "open-space", "relaxed"],
+    "tags": ["Coffee", "Tea", "Desserts", "Juice Bars", "Smoothies"],
+    "vibeTags": ["middle eastern inspired", "spacious", "cultural"],
     "address": "1807 Euclid Ave Berkeley, CA 94709",
     "phone": "(510) 529-2201",
     "website": "https://delahcoffee.com",
@@ -1349,6 +1372,7 @@
     "yelp": "https://www.yelp.com/biz/delah-coffee-house-berkeley"
   },
   {
+    "id": 17,
     "name": "Milyar Cafe",
     "images": {
       "exterior": [
@@ -1360,11 +1384,10 @@
         "/images/milyar/interior1.jpg",
         "/images/milyar/interior2.jpg",
         "/images/milyar/interior3.jpg"
-      ],
-      "menu": "/images/milyar/menu.jpg"
+      ], "menu": "/images/milyar/menu.jpg"
     },
     "uniqueItems": ["Yemeni Tea", "Pistachio Latte", "Jubani Qahwah"],
-    "menu-items": [
+    "menuItems": [
       "Yemeni Tea",
       "Pistachio Latte",
       "Jubani Qahwah",
@@ -1386,8 +1409,8 @@
       "Cheesecake"
     ],
     "about": "Delighted to serve you an experience you won’t forget at our authentic cuisine where taste meets tradition!",
-    "tags": ["Coffee & Tea", "Desserts", "Themed Cafes"],
-    "vibe-tags": ["luxurious", "spacious", "middle eastern-inspired"],
+    "tags": ["Coffee", "Tea", "Desserts", "Themed Cafes"],
+    "vibeTags": ["spacious", "cultural", "fancy"],
     "address": "3300 Adeline St Berkeley, CA 94703",
     "phone": "(341) 512-9986",
     "website": null,
@@ -1418,6 +1441,7 @@
     "yelp": "https://www.yelp.com/biz/milyar-cafe-berkeley-3"
   },
   {
+    "id": 18,
     "name": "Cafe Milano",
     "images": {
       "exterior": [
@@ -1429,11 +1453,10 @@
         "/images/milano/interior1.jpg",
         "/images/milano/interior2.jpg",
         "/images/milano/interior3.jpg"
-      ], 
-      "menu": "/images/milano/menu.jpg"
+      ], "menu": "/images/milano/menu.jpg"
     },
     "uniqueItems": ["Chai Latte", "Matcha Latte", "Italian Salad"],
-    "menu-items": [
+    "menuItems": [
       "Mocha Bianca",
       "House Coffee",
       "Hot Tea",
@@ -1463,7 +1486,7 @@
     ], 
     "about": null,
     "tags": ["Cafes"],
-    "vibe-tags": ["treehouse-feel", "student-heavy", "airy"],
+    "vibeTags": ["treehouse vibes", "busy", "student friendly"],
     "address": "2522 Bancroft Way Berkeley, CA 94704",
     "phone": "(510) 644-3100",
     "website": null,
@@ -1494,6 +1517,7 @@
     "yelp": "https://www.yelp.com/biz/cafe-milano-berkeley"
   },
   {
+    "id": 19,
     "name": "Coffee Conscious",
     "images": {
       "exterior": [
@@ -1505,11 +1529,10 @@
         "/images/conscious/interior1.jpg",
         "/images/conscious/interior2.jpg",
         "/images/conscious/interior3.jpg"
-      ], 
-      "menu": "/images/conscious/menu.jpg"
+      ], "menu": "/images/conscious/menu.jpg"
     },
     "uniqueItems": ["Ghost Pepper Mocha", "Turkish Cortado", "Vegan Donuts"],
-    "menu-items": [
+    "menuItems": [
       "Espresso",
       "Macchiato",
       "Cortado",
@@ -1534,8 +1557,8 @@
       "Steamer"
     ],
     "about": null,
-    "tags": ["Coffee & Tea", "Donuts"],
-    "vibe-tags": ["punk-vibes", "vegan-friendly", "laid-back"],
+    "tags": ["Coffee", "Tea", "Donuts"],
+    "vibeTags": ["punk vibe", "vegan friendly", "laid back"],
     "address": "1312 Gilman St Berkeley, CA 94706",
     "phone": "(510) 526-2204",
     "website": "https://www.vegandonut.farm/locations-berkeley",
@@ -1566,6 +1589,7 @@
     "yelp": "https://www.yelp.com/biz/coffee-conscious-berkeley-2"
   },
   {
+    "id": 20,
     "name": "Bench",
     "images": {
       "exterior": [
@@ -1576,11 +1600,14 @@
         "/images/bench/interior1.jpg",
         "/images/bench/interior2.jpg",
         "/images/bench/interior3.jpg"
-      ], 
-      "menu": "/images/bench/menu.jpg"
+      ], "menu": "/images/bench/menu.jpg"
     },
-    "uniqueItems": ["Banana Cream Iced Coffee", "Persian Rose Tea", "Herb Frittata"],
-    "menu-items": [
+    "uniqueItems": [
+      "Banana Cream Iced Coffee",
+      "Persian Rose Tea",
+      "Herb Frittata"
+    ],
+    "menuItems": [
       "Cappuccino",
       "Blueberry Scone",
       "Latte",
@@ -1600,8 +1627,8 @@
       "Coconut Milk"
     ], 
     "about": "our pastries are fresh baked (daily) from organic ingredients. we proudly serve Tay tea and Highwire coffee.",
-    "tags": ["Coffee & Tea", "Bakeries"],
-    "vibe-tags": ["sunny", "cozy", "hidden-spot"],
+    "tags": ["Coffee", "Tea", "Bakeries"],
+    "vibeTags": ["calm", "minimalist", "cozy"],
     "address": "1947 Martin Luther King Jr Way Berkeley, CA 94704",
     "phone": null,
     "website": null,
@@ -1630,8 +1657,9 @@
       "sun": "Closed"
     },
     "yelp": "https://www.yelp.com/biz/bench-berkeley-2"
-  }, 
+  },
   {
+    "id": 21,
     "name": "Lavender Bread & Cafe",
     "images": {
       "exterior": [
@@ -1643,15 +1671,10 @@
         "/images/lavender/interior1.jpg",
         "/images/lavender/interior2.jpg",
         "/images/lavender/interior3.jpg"
-      ], 
-      "menu": "/images/lavender/menu.jpg"
+      ], "menu": "/images/lavender/menu.jpg"
     },
-    "uniqueItems": [
-      "Gibraltar",
-      "Pain Au Chocolate",
-      "Matcha"
-    ],
-    "menu-items": [
+    "uniqueItems": ["Gibraltar", "Pain Au Chocolate", "Matcha"],
+    "menuItems": [
       "Latte",
       "Salted Caramel Latte",
       "Cappuccino",
@@ -1709,15 +1732,15 @@
     ],
     "about": "Lavender Bakery, celebrated for its French and European pastries, unveils its second location on San Pablo Ave, Berkeley. This expansion introduces organic breads and third wave coffee, blending traditional baking with contemporary tastes",
     "tags": ["Coffee", "Pasteries"],
-    "vibe-tags": ["charming", "pastry-forward", "bright"],
+    "vibeTags": ["baker focused", "bright", "neighborhood favorite"],
     "address": "2101 San Pablo Ave Berkeley, CA 94702",
     "phone": "(341) 219-9569",
     "website": "https://www.lavenderbakeries.com/",
     "reviews": [
-      "Cute little place with sidewalk seating and a great pastry selection. Coffee selection is the basics and took longer than expected to receive 2 lattes.\nLots of options in the pastry case and all looked very yummy. I got the apricot danish and it was very good, full of fruit. Decent variety of breakfast/toast options too.\nSidewalk seating is nice for people watching. Lots of activity on a Sunday morning.", 
-      "The perfect neighborhood cafe. You can get the freshest croissants in the morning & can even purchase the homemade jam that they use on their ricotta toasts. The coffees are wonderful as well. Definitely busy in the mornings, but the line moves quickly & totally worth it. Grab a coffee, then walk down to the marina is a perfect activity.", 
+      "Cute little place with sidewalk seating and a great pastry selection. Coffee selection is the basics and took longer than expected to receive 2 lattes.\nLots of options in the pastry case and all looked very yummy. I got the apricot danish and it was very good, full of fruit. Decent variety of breakfast/toast options too.\nSidewalk seating is nice for people watching. Lots of activity on a Sunday morning.",
+      "The perfect neighborhood cafe. You can get the freshest croissants in the morning & can even purchase the homemade jam that they use on their ricotta toasts. The coffees are wonderful as well. Definitely busy in the mornings, but the line moves quickly & totally worth it. Grab a coffee, then walk down to the marina is a perfect activity.",
       "This would be a great place to study. The inside looks new. There are plenty of tables. However, parking isn't abundant and the neighborhood can feel a little sketch at times."
-     ],
+    ],
     "amenities": {
       "bathroom": true,
       "wifi": true,
@@ -1740,6 +1763,7 @@
     "yelp": "https://www.yelp.com/biz/lavender-bread-and-cafe-berkeley"
   },
   {
+    "id": 22,
     "name": "Masterpiece Coffee",
     "images": {
       "exterior": [
@@ -1751,15 +1775,10 @@
         "/images/masterpiece/interior1.jpg",
         "/images/masterpiece/interior2.jpg",
         "/images/masterpiece/interior3.jpg"
-      ], 
-      "menu": "/images/masterpiece/menu.jpg"
+      ], "menu": "/images/masterpiece/menu.jpg"
     },
-    "uniqueItems": [
-      "Kuro (Okinawa Black Sugar Oatmilk Latte)",
-      "Shiro (White Miso Oatmilk Latte)",
-      "Hong (Gochugaru Chocolate Oatmilk Latte)"
-    ],
-    "menu-items": [
+    "uniqueItems": ["Kuro Latte", "Matcha Latte", "Oat Milk Lattes"],
+    "menuItems": [
       "Kuro",
       "White",
       "Green",
@@ -1804,24 +1823,24 @@
       "Masterpiece Branded Lowball Tumbler",
       "Cold Tumbler with Straw"
     ],
-    "about": "Masterpiece Coffee is a specialty coffee and matcha pop-up turned brick-and-mortar cafe located behind Min'na Boutique in Berkeley. Known for their creative, handcrafted drinks and curated coffee beans, Masterpiece offers a serene outdoor patio and a minimalist slow-bar coffee experience.",
-    "tags": ["Coffee", "Matcha", "Specialty Drinks", "Outdoor Seating"],
-    "vibe-tags": ["serene", "artisanal", "hidden-gem"],
+    "about": "Minimalist specialty coffee shop serving crafted espresso drinks and matcha with a slow bar format. Focused on high-quality ingredients and a curated experience.",
+    "tags": ["Coffee", "Tea", "Coffee Roasteries"],
+    "vibeTags": ["minimalist", "artisanal", "quiet"],
     "address": "1714 San Pablo Ave, Berkeley, CA 94702",
     "phone": null,
     "website": "https://masterpiececoffee.us",
     "reviews": [
-      "True to its name. Owner's extremely friendly, drinks are unique and delicious, and the interior is wonderful. Easily the most likeable coffee spot in the area.",
-      "24 hours after visiting Masterpiece Coffee and my fiancé is still talking about how delicious the Kuro was. Definitely busy in the mornings, but worth the wait for these unique drinks.",
-      "Hidden gem! Serene patio, super high quality drinks like Kuro and Shiro, and the owner makes all the specialty add-ons by hand. A must-visit spot in Berkeley!"
+      "A lot of places make matcha too sweet, but the bitterness and flavors here were fantastic. Highly recommend!",
+      "24 hours later and my fiancé is still talking about how delicious the Kuro was.",
+      "Specialty coffee and matcha spot with a slow bar format. Minimal menu but every drink is crafted perfectly."
     ],
     "amenities": {
-      "bathroom": false,
-      "wifi": false,
+      "bathroom": true,
+      "wifi": true,
       "indoorSeating": true,
       "outdoorSeating": true,
-      "wheelchairAccessible": null,
-      "outlets": false,
+      "wheelchairAccessible": true,
+      "outlets": null,
       "creditCards": true
     },
     "priceRange": "$$",
@@ -1835,8 +1854,9 @@
       "sun": "10:00am - 4:00pm"
     },
     "yelp": "https://www.yelp.com/biz/masterpiece-coffee-berkeley"
-  }, 
+  },
   {
+    "id": 23,
     "name": "Jaffa Coffee Roasters",
     "images": {
       "exterior": [
@@ -1848,16 +1868,10 @@
         "/images/jaffa/interior1.jpg",
         "/images/jaffa/interior2.jpg",
         "/images/jaffa/interior3.jpg"
-      ], 
-      "menu": "/images/jaffa/menu.jpg"
+      ], "menu": "/images/jaffa/menu.jpg"
     },
-    "uniqueItems": [
-      "Orange Jaffa Latte",
-      "Tatreezelnut Latte",
-      "Strawberry Sage Latte",
-      "Chocolate Rummanya"
-    ],
-    "menu-items": [
+    "uniqueItems": ["Orange Jaffa Latte", "Mumkin Latte", "Chai with Strawberry Sage Whip"],
+    "menuItems": [
       "Espresso | Midnight In Jerusalem",
       "Drip Beans | Old City to New City | Typica | Light Roast",
       "Pour Over Beans | Bride of the Sea | Pacamara | Light Roast",
@@ -1882,23 +1896,23 @@
       "Fellow Carter Move Mug Really Red",
       "Fellow Carter Move Mug Cargo Green"
     ],
-    "about": "Jaffa Coffee Roasters is a Palestinian-owned specialty coffee shop in Berkeley known for its creative lattes infused with spices, fruits, and herbs. The bright, welcoming space is ideal for studying or catching up with friends, with unique drinks you can't find anywhere else.",
-    "tags": ["Coffee", "Specialty Drinks", "Palestinian Inspired", "Wifi"],
-    "vibe-tags": 	["bright", "creative", "peaceful"],
+    "about": "A cozy coffee roastery offering Middle Eastern inspired lattes and pastries, specializing in unique whipped cream flavors and creative espresso drinks.",
+    "tags": ["Coffee", "Tea", "Coffee Roasteries"],
+    "vibeTags": ["cozy", "middle eastern inspired", "artsy"],
     "address": "1701 University Ave, Berkeley, CA 94703",
     "phone": null,
     "website": "https://jaffacoffee.com",
     "reviews": [
-      "The customer service is immaculate — probably the best I've ever experienced. Orange Jaffa Latte was divine and perfectly balanced.",
-      "Bright, clean, and peaceful interior. Loved the Tatreezelnut latte, although rosemary was a little strong. Overall, an amazing spot for coworking!",
-      "Unique lattes with Palestinian flavors. Loved the Chocolate Rummanya and Strawberry Sage Creek lattes — subtle, creative, and delicious."
+      "The Orange Jaffa Latte is absolutely fantastic. Perfect balance of citrus and coffee flavors.",
+      "Friendly staff and beautiful whipped cream flavors like strawberry sage — a must try!",
+      "The vibe is very chill and artsy, perfect for hanging out or working on a laptop."
     ],
     "amenities": {
       "bathroom": true,
       "wifi": true,
       "indoorSeating": true,
-      "outdoorSeating": false,
-      "wheelchairAccessible": false,
+      "outdoorSeating": true,
+      "wheelchairAccessible": true,
       "outlets": true,
       "creditCards": true
     },
@@ -1913,8 +1927,9 @@
       "sun": "7:00am - 4:00pm"
     },
     "yelp": "https://www.yelp.com/biz/jaffa-coffee-roasters-berkeley"
-  }, 
+  },
   {
+    "id": 24,
     "name": "Belmo Cafe",
     "images": {
       "exterior": [
@@ -1926,16 +1941,10 @@
         "/images/belmo/interior1.jpg",
         "/images/belmo/interior2.jpg",
         "/images/belmo/interior3.jpg"
-      ],
-      "menu": "/images/belmo/menu.jpg"
+      ], "menu": "/images/belmo/menu.jpg"
     },
-    "uniqueItems": [
-      "Chocolate Pistachio Baklava",
-      "Lamb Merguez Sandwich",
-      "Turkish Delight",
-      "Pistachio Mille Feuille"
-    ],
-    "menu-items": [
+    "uniqueItems": ["Turkish Delight", "Chocolate Pistachio Baklava", "Lamb Merguez Sandwich"],
+    "menuItems": [
       "Smoked Salmon Sandwich",
       "Turkey Sandwich",
       "Beef Sandwich",
@@ -1977,24 +1986,24 @@
       "Eclair",
       "Butter Croissant"
     ], 
-    "about": "Belmo Cafe is a family-owned bakery and cafe offering a vibrant mix of French, Turkish, and Algerian pastries in West Berkeley. With a wide selection of sweets, sandwiches, and organic coffee, Belmo Cafe is a hidden gem perfect for a quick treat or a leisurely coffee break.",
-    "tags": ["Bakery", "Coffee", "Pastries", "Middle Eastern Inspired"],
-    "vibe-tags": 	["middle eastern-sweets", "friendly", "cozy"],
+    "about": "European-style cafe and bakery offering pastries, coffee, tea, and Mediterranean specialties in a cozy and welcoming atmosphere.",
+    "tags": ["Coffee", "Tea", "Patisserie/Cake Shop", "Sandwiches"],
+    "vibeTags": ["european inspired", "bright", "family friendly"],
     "address": "1160 University Ave, Berkeley, CA 94702",
     "phone": "(510) 901-9152",
     "website": "https://belmocafe.com",
     "reviews": [
-      "The best baklava I've ever had! Great service — the owner often offers samples and is extremely welcoming.",
-      "Huge variety of pastries and treats. Loved the pistachio croissant and lamb sausage sandwich. Fast service and great coffee too!",
-      "A true hidden gem. French-Algerian pastries, Turkish delight, and fantastic coffee. Super warm and friendly atmosphere."
+      "The Turkish Delight and pastries are so fresh and delicious. Beautiful outdoor seating as well.",
+      "Super cozy spot with delicious sweets — perfect for a quiet morning.",
+      "Fruit tarts and mint tea were fantastic! Love the ambiance here."
     ],
     "amenities": {
       "bathroom": true,
-      "wifi": false,
+      "wifi": true,
       "indoorSeating": true,
       "outdoorSeating": true,
       "wheelchairAccessible": true,
-      "outlets": false,
+      "outlets": true,
       "creditCards": true
     },
     "priceRange": "$$",
@@ -2004,33 +2013,28 @@
       "wed": "7:30am - 10:00pm",
       "thu": "7:30am - 10:00pm",
       "fri": "7:30am - 11:00pm",
-      "sat": "7:30am - 12:00am",
-      "sun": "7:30am - 12:00am"
+      "sat": "7:30am - 12:00am (next day)",
+      "sun": "7:30am - 12:00am (next day)"
     },
     "yelp": "https://www.yelp.com/biz/belmo-cafe-berkeley"
-  }, 
+  },
   {
+    "id": 25,
     "name": "Artís Coffee",
     "images": {
       "exterior": [
-        "/images/artis/exterior1.jpg",
-        "/images/artis/exterior2.jpg",
-        "/images/artis/exterior3.jpg"
+        "/images/artís/exterior1.jpg",
+        "/images/artís/exterior2.jpg",
+        "/images/artís/exterior3.jpg"
       ],
       "interior": [
-        "/images/artis/interior1.jpg",
-        "/images/artis/interior2.jpg",
-        "/images/artis/interior3.jpg"
-      ],
-      "menu": "/images/artis/menu.jpg"
+        "/images/artís/interior1.jpg",
+        "/images/artís/interior2.jpg",
+        "/images/artís/interior3.jpg"
+      ], "menu": "/images/artís/menu.jpg"
     },
-    "uniqueItems": [
-      "Honey Lavender Latte",
-      "Mole Latte",
-      "Mint Foam Cold Brew",
-      "Tahini Mole Mocha"
-    ],
-    "menu-items": [
+    "uniqueItems": ["Honey Lavender Latte", "Mint Foam Cold Brew", "Mole Latte"],
+    "menuItems": [
       "Latte",
       "Cortado",
       "Espresso",
@@ -2069,16 +2073,16 @@
       "Blueberry Scone",
       "Blackberry Cheese Danish"
     ],
-    "about": "Artís Coffee is a spacious, eco-friendly specialty cafe in Berkeley known for roasting their own beans on-site. Offering a variety of single-origin coffees and creative seasonal drinks, Artís is a welcoming spot for studying, catching up with friends, and experiencing unique handcrafted flavors.",
-    "tags": ["Coffee", "Specialty Drinks", "Eco-Friendly", "Study Friendly"],
-    "vibe-tags": ["eco-friendly", "study-spot", "spacious"],
+    "about": "Local craft coffee shop with an emphasis on freshly roasted beans, seasonal drinks, and a spacious, modern environment ideal for working or relaxing.",
+    "tags": ["Coffee", "Tea", "Coffee Roasteries"],
+    "vibeTags": ["modern", "bright", "student friendly"],
     "address": "1717B 4th St, Berkeley, CA 94710",
     "phone": null,
     "website": "https://artiscoffee.com",
     "reviews": [
-      "Spacious, bright, and a fantastic place to study or hang out. Loved the Honey Lavender Latte — subtle and balanced.",
-      "The Mint Foam Cold Brew was unique and refreshing. Friendly staff and lots of space inside for working or meeting up with friends.",
-      "High-quality single-origin coffee with thoughtful seasonal drinks like Tahini Mole Mocha. Perfect vibe for Fourth Street wanderers!"
+      "The Mint Foam Cold Brew was so refreshing and unique. Highly recommend!",
+      "Huge space, plenty of natural light, great study spot!",
+      "Loved the seasonal lattes here — super creative and really good quality coffee."
     ],
     "amenities": {
       "bathroom": true,
@@ -2099,423 +2103,25 @@
       "sat": "9:00am - 6:00pm",
       "sun": "9:00am - 6:00pm"
     },
-    "yelp": "https://www.yelp.com/biz/art%C3%ADs-coffee-berkeley-2"
-  }, 
+    "yelp": "https://www.yelp.com/biz/artis-coffee-berkeley"
+  }  ,
   {
-    "name": "Souvenir Coffee",
+    "id": 26,
+    "name": "Third Culture Bakery",
     "images": {
       "exterior": [
-        "/images/souvenir/exterior1.jpg",
-        "/images/souvenir/exterior2.jpg",
-        "/images/souvenir/exterior3.jpg"
+        "/images/third/exterior1.jpg",
+        "/images/third/exterior2.jpg",
+        "/images/third/exterior3.jpg"
       ],
       "interior": [
-        "/images/souvenir/interior1.jpg",
-        "/images/souvenir/interior2.jpg",
-        "/images/souvenir/interior3.jpg"
-      ], 
-      "menu": "/images/souvenir/menu.jpg"
+        "/images/third/interior1.jpg",
+        "/images/third/interior2.jpg",
+        "/images/third/interior3.jpg"
+      ], "menu": "/images/third/menu.jpg"
     },
-    "uniqueItems": [
-      "Brown Sugar Sage Latte",
-      "Vietnamese Iced Coffee",
-      "Bloom Latte"
-    ],
-    "menu-items": [
-      "Drip Coffee",
-      "House Blend Dark Roast",
-      "Rotating Single Origin",
-      "Espresso",
-      "Americano (12/16oz)",
-      "Macchiato",
-      "Cortado",
-      "Flat White",
-      "Cappuccino",
-      "Latte (12/16oz)",
-      "Mocha (12/16oz)",
-      "Nitro Cold Brew",
-      "Vietnamese Iced Coffee",
-      "Matcha Latte (Jade Leaf Matcha)",
-      "Chai Latte (Tipu's Chai)",
-      "Hot Tea (Far Leaves: Rose Earl Grey, English Breakfast, Black Mango, Moroccan Mint, Cloud Mist, Lemon Ginger, Herbal Chai)",
-      "Iced Tea (Black Mango, Moroccan Mint)",
-      "House Lemonade",
-      "Arnold Palmer",
-      "The Standard",
-      "Happy Veggie",
-      "The Hobb's",
-      "Breakfast Club",
-      "Cheesy Bird",
-      "Veggie Slaw",
-      "Triple Threat Grilled Cheese",
-      "Bagels: Plain, The Works, Asiago, Poppy, Blueberry",
-      "Groovy Guava",
-      "Tomato-Tomahto",
-      "Fully Loaded",
-      "Jalapeño Popper",
-      "Avo-Beet Toast",
-      "Breakfast Toast",
-      "Far Out Salad",
-      "Not Your Cobb Salad",
-      "Oatmeal (Warm Apple Cinnamon)",
-      "Oatmeal (Blue Coconut)",
-      "Chia Pudding",
-      "Yogurt Parfait",
-      "Overnight Oats"
-    ],
-    "about": "Souvenir Coffee is a neighborhood favorite for its cozy setting, affordable flavored lattes, and easygoing atmosphere. Locally roasted and great for casual work or socializing.",
-    "tags": ["Coffee", "Local Roastery", "Study Friendly", "Affordable"],
-    "vibe-tags": 	["affordable", "cozy", "neighborhood-favorite"],
-    "address": "3084 Claremont Ave, Berkeley, CA 94705",
-    "phone": "(510) 450-0505",
-    "website": "https://souvenir-coffee.com",
-    "reviews": [
-      "Great flavors like brown sugar sage and pumpkin spice without breaking the bank. Chill vibes and friendly staff!",
-      "Perfect spot to work or catch up with friends. Love their seasonal latte options.",
-      "Coffee was decent but space can feel a little cramped when busy."
-    ],
-    "amenities": {
-      "bathroom": true,
-      "wifi": true,
-      "indoorSeating": true,
-      "outdoorSeating": true,
-      "wheelchairAccessible": true,
-      "creditCards": true
-    },
-    "priceRange": "$$",
-    "hours": {
-      "mon": "7:00am - 5:00pm",
-      "tue": "7:00am - 5:00pm",
-      "wed": "7:00am - 5:00pm",
-      "thu": "7:00am - 5:00pm",
-      "fri": "7:00am - 5:00pm",
-      "sat": "8:00am - 5:00pm",
-      "sun": "8:00am - 5:00pm"
-    },
-    "yelp": "https://www.yelp.com/biz/souvenir-coffee-berkeley"
-  }, 
-  {
-    "name": "Penelope's Coffee and Tea",
-    "images": {
-      "exterior": [
-        "/images/penelopes/exterior1.jpg"
-      ],
-      "interior": [
-        "/images/penelopes/interior1.jpg",
-        "/images/penelopes/interior2.jpg",
-        "/images/penelopes/interior3.jpg"
-      ], 
-      "menu": "/images/penelopes/menu.jpg"
-    },
-    "uniqueItems": [
-      "Lillian Latte",
-      "Penelope's Samoas Latte",
-      "Popeye's Womelette"
-    ],
-    "menu-items": [
-      "Lillian Latte",
-      "Hot Chocolate",
-      "Chocolate Milk",
-      "Cappuccino",
-      "Latte",
-      "Flavored Latte",
-      "White Mocha",
-      "Wild Berry Latte",
-      "Cookie Monster",
-      "Salted Caramel",
-      "Shortcake (Strawberry & French Vanilla)",
-      "Coconut Cupcake",
-      "Penelope’s Samoas",
-      "Cinnamon Dolce",
-      "Mocha",
-      "Caramel Macchiato",
-      "Americano",
-      "Espresso Shot",
-      "Greek Coffee (Hot/Iced)",
-      "Standard Coffee",
-      "Brewed Coffee",
-      "Iced Coffee",
-      "Cold Brew",
-      "London Fog",
-      "Berry Topia",
-      "Party at the Beach",
-      "Mango Madness",
-      "Gummy Bear Tea",
-      "Georgia Peach",
-      "Kosta Kosta",
-      "T-Mojito",
-      "Unicorn",
-      "Caramel Cookie",
-      "Hot/Iced Teas",
-      "Infused Teas",
-      "3 Little Bears",
-      "Chai Latte",
-      "Brazilian Amber (Pour Over)",
-      "Tanzanian Peaberry",
-      "Costa Rican Joe",
-      "Cup of Joe",
-      "Ethiopian Jebena",
-      "Amazing Guatemala",
-      "Mela Dark Guatemala",
-      "Midnight Sun",
-      "French Roast",
-      "7 Wonders (Decaf)",
-      "Midnight Moon (Ultra Dark Decaf)",
-      "Aroma",
-      "Humble",
-      "Kona Blue Pour Over",
-      "Womelette",
-      "Crispy Belgian Waffle",
-      "French Toast",
-      "French Berry Toast",
-      "Free Range Toast",
-      "Baklava Sundae",
-      "Bougatsa",
-      "Berry Cream Waffle",
-      "Tella Cream Waffle",
-      "Vanilla Ice Cream",
-
-      "Breakfast Burrito"
-    ],
-
-    "about": "Penelope's Coffee and Tea is a bright and spacious spot offering creative specialty lattes, hearty brunch items, and an energetic community vibe. A great place for study sessions or casual brunch.",
-    "tags": ["Coffee", "Brunch", "Spacious", "Student Friendly"],
-    "vibe-tags": 	["brunchy", "spacious", "community-vibes"],
-    "address": "2255 Shattuck Ave, Berkeley, CA 94704",
-    "phone": "(510) 229-3768",
-    "website": "https://penelopescoffee.com",
-    "reviews": [
-      "Super cozy, massive menu, and very affordable for Berkeley. Their Lillian Latte is a must-try!",
-      "Awesome vibes, great brunch menu, and tons of seating for students.",
-      "Some food items were hit or miss, but the friendly staff and atmosphere make up for it."
-    ],
-    "amenities": {
-      "bathroom": true,
-      "wifi": true,
-      "indoorSeating": true,
-      "outdoorSeating": true,
-      "wheelchairAccessible": true,
-      "creditCards": true
-    },
-    "priceRange": "$$",
-    "hours": {
-      "mon": "6:30am - 8:00pm",
-      "tue": "6:30am - 8:00pm",
-      "wed": "6:30am - 8:00pm",
-      "thu": "6:30am - 8:00pm",
-      "fri": "6:30am - 8:00pm",
-      "sat": "6:30am - 8:00pm",
-      "sun": "6:30am - 4:30pm"
-    },
-    "yelp": "https://www.yelp.com/biz/penelopes-coffee-and-tea-berkeley"
-  },
-  {
-    "name": "SIGNAL Coffee Roasters",
-    "images": {
-      "exterior": [
-        "/images/signal/exterior1.jpg",
-        "/images/signal/exterior2.jpg",
-        "/images/signal/exterior3.jpg"
-      ],
-      "interior": [
-        "/images/signal/interior1.jpg",
-        "/images/signal/interior2.jpg",
-        "/images/signal/interior3.jpg"
-      ], 
-      "menu": "/images/signal/menu.jpg"
-    },
-    "uniqueItems": [
-      "Ube Latte",
-      "Black Sesame Latte",
-      "Mexican Mocha",
-      "Dulce de Leche Latte"
-    ],
-    "menu-items": [
-      "Boichik Bagels",
-      "Latte",
-      "Black Sesame Latte",
-      "El Porteño Empanadas",
-      "Signal Breakfast Sandwich",
-      "Dulce de Leche Latte",
-      "Matcha Latte",
-      "Burnt Honey Latte",
-      "Hojicha Latte",
-      "Cold Brew",
-      "Mexican Mocha",
-      "Ube Latte"
-    ],
-    "about": "SIGNAL Coffee Roasters is a small-batch roastery focused on approachable, natural-process coffees. Their unique lattes and strong single-origins make this Solano Ave spot a must-visit for coffee adventurers.",
-    "tags": ["Coffee", "Small Batch Roaster", "Specialty Lattes", "Chill Vibes"],
-    "vibe-tags": ["small-batch", "chill", "artisan-coffee"],
-    "address": "1707 Solano Ave, Berkeley, CA 94707",
-    "phone": "(510) 705-1698",
-    "website": "https://signalcoffee.com",
-    "reviews": [
-      "Delicious Ube and Black Sesame lattes — not too sweet, just right. Cute neighborhood vibe!",
-      "Strong focus on high-quality coffee and fun seasonal drinks. Love their small-batch approach.",
-      "Limited seating but excellent pastries from local bakeries like Starter Bakery."
-    ],
-    "amenities": {
-      "bathroom": true,
-      "wifi": true,
-      "indoorSeating": true,
-      "outdoorSeating": true,
-      "wheelchairAccessible": true,
-      "creditCards": true
-    },
-    "priceRange": "$$",
-    "hours": {
-      "mon": "7:00am - 4:00pm",
-      "tue": "7:00am - 4:00pm",
-      "wed": "7:00am - 4:00pm",
-      "thu": "7:00am - 4:00pm",
-      "fri": "7:00am - 4:00pm",
-      "sat": "8:00am - 4:00pm",
-      "sun": "8:00am - 4:00pm"
-    },
-    "yelp": "https://www.yelp.com/biz/signal-coffee-roasters-berkeley"
-  }, 
-  {
-    "name": "The Line Coffee",
-    "images": {
-      "exterior": [
-        "/images/line/exterior1.jpg",
-        "/images/line/exterior2.jpg",
-        "/images/line/exterior3.jpg"
-      ],
-      "interior": [
-        "/images/line/interior1.jpg",
-        "/images/line/interior2.jpg",
-        "/images/line/interior3.jpg"
-      ], 
-      "menu": "/images/line/menu.jpg"
-    },
-    "uniqueItems": [
-      "Alta Bates Latte (lavender + rose)",
-      "Green Eyed Lady (pistachio + white chocolate)",
-      "Louisiana Hot Link Croissant",
-      "Boudin Sausage Croissant"
-    ],
-    "menu-items": [
-      "Cafe Au Lait",
-      "House Coffee",
-      "Pour Over Coffee",
-      "Nitro Cold Brew",
-      "Nitro Cold Brew Bottle",
-      "Alta Bates Latte",
-      "Green Eyed Lady",
-      "Latte",
-      "John's Mocha",
-      "The Tuxedo",
-      "Bon-Bon",
-      "Vietnamese Coffee",
-      "Cafe Americano",
-      "Cortado",
-      "Cappuccino",
-      "Mocha",
-      "Flat White",
-      "Macchiato",
-      "White Mocha",
-      "Double Shot Espresso",
-      "Single Shot Espresso",
-      "Existential Redemption",
-      "Cookie Butter Latte",
-      "Praline Cappuccino",
-      "Beef Brat Croissant",
-      "Louisiana Hot Link Croissant",
-      "Chai Latte",
-      "House Smoothie",
-      "Whole Bean Coffee",
-      "Kombucha",
-      "San Pelligrino",
-      "Coca Cola Can",
-      "Naked Juice",
-      "Pressed (Wellness Smoothie)",
-      "Water, Bottled",
-      "Califia Almond Milk",
-      "Mexican Hot Chocolate",
-      "Hot Tea",
-      "Matcha Latte",
-      "London Fog",
-      "Croissant, Ham & Cheese",
-      "Croissant, Almond Marzipan",
-      "Muffin, Lemon Poppyseed",
-      "Polish Sausage Croissant",
-      "Cinnamon Bun",
-      "Coffee Cake Muffin",
-      "Croissant, Spinach Kale",
-      "Muffin, Blueberry Rice Flour GF",
-      "Tomato Basil Egg Bite",
-      "Croissant, Plain",
-      "Peanut Butter Cookie",
-      "Croissant, Chocolate",
-      "Croissant, Blueberry Cheese",
-      "Breakfast Basket",
-      "GF Peanut Butter Cookie",
-      "Quiche",
-      "Avocado Spring Roll",
-      "Cookie",
-      "Banana Muffin",
-      "Straus Half & Half",
-      "Straus Whole Milk",
-      "Califia Oat Milk",
-      "Hot Water",
-      "Cookies",
-      "Double Chocolate Muffin"
-    ],
-    "about": "The Line Coffee is a charming micro-café in Berkeley known for creative specialty lattes and hearty savory croissants. It’s a small, welcoming neighborhood gem with a friendly vibe.",
-    "tags": ["Coffee", "Specialty Lattes", "Neighborhood Favorite", "Savory Pastries"],
-    "vibe-tags": ["tiny", "specialty-lattes", "friendly"],
-    "address": "3001 Telegraph Ave Ste E, Berkeley, CA 94705",
-    "phone": null,
-    "website": "https://thelinecoffee-order.com",
-    "reviews": [
-      "The Alta Bates Latte with lavender and rose is a must-try — beautifully floral and unique.",
-      "Incredible housemade croissants and breakfast baskets; savory pastries are next-level.",
-      "Tiny and cozy with outdoor seating only, but the drinks and service are exceptional."
-    ],
-    "amenities": {
-      "bathroom": false,
-      "wifi": false,
-      "indoorSeating": false,
-      "outdoorSeating": true,
-      "wheelchairAccessible": true,
-      "creditCards": true
-    },
-    "priceRange": "$$",
-    "hours": {
-      "mon": "6:00am - 3:00pm",
-      "tue": "6:00am - 3:00pm",
-      "wed": "6:00am - 3:00pm",
-      "thu": "6:00am - 3:00pm",
-      "fri": "6:00am - 3:00pm",
-      "sat": "7:00am - 2:00pm",
-      "sun": "8:00am - 2:00pm"
-    },
-    "yelp": "https://www.yelp.com/biz/the-line-coffee-berkeley"
-  }, 
-  {
-    "name": "Third Culture Bakery - Berkeley",
-    "images": {
-      "exterior": [
-        "/images/thirdculture/exterior1.jpg",
-        "/images/thirdculture/exterior2.jpg",
-        "/images/thirdculture/exterior3.jpg"
-      ],
-      "interior": [
-        "/images/thirdculture/interior1.jpg",
-        "/images/thirdculture/interior2.jpg",
-        "/images/thirdculture/interior3.jpg"
-      ], 
-      "menu": "/images/thirdculture/menu.jpg"
-    },
-    "uniqueItems": [
-      "Guava Cheesecake Mochi Donut",
-      "Strawberry Lychee Roasted Matcha Latte",
-      "Salted Maple Matcha Latte",
-      "Pandan Mochi Donut"
-    ],
-    "menu-items": [
+    "uniqueItems": ["Mochi Donuts", "Strawberry Lychee Matcha Latte", "Black Sesame Latte"],
+    "menuItems": [
       "Dark Chocolate Butter Mochi Donut",
       "Matcha Butter Mochi Donut",
       "Mango Passion Fruit Butter Mochi Donut",
@@ -2534,23 +2140,24 @@
       "Hand-whisked Matcha",
       "Coffee"
     ],
-    "about": "Third Culture Bakery is a beloved Berkeley spot known for its chewy mochi muffins and colorful matcha drinks. Everything is made gluten-free and inspired by Asian American flavors.",
-    "tags": ["Mochi Donuts", "Matcha", "Asian-Inspired", "Gluten-Free"],
-    "vibe-tags": ["colorful", "chewy-treats", "asian-inspired"],
+    "about": "Gluten-free bakery and cafe inspired by Third Culture upbringings, featuring creative matcha drinks and chewy mochi pastries.",
+    "tags": ["Bakery", "Coffee", "Desserts"],
+    "vibeTags": ["bright", "family-friendly", "creative"],
     "address": "2701 Eighth St, Berkeley, CA 94710",
     "phone": "(341) 333-2640",
     "website": "https://thirdculturebakery.com",
     "reviews": [
-      "The Guava Cheesecake Mochi Donut is insanely good — light, chewy, and perfectly sweet.",
-      "Their Strawberry Lychee Matcha Latte is pretty and refreshing, but more fruity than matcha-forward.",
-      "The mochi muffins have the perfect chewy texture with a crunchy exterior — a must-try."
+      "Their black sesame latte tastes just like a traditional Chinese dessert — rich and flavorful!",
+      "Loved the guava cheesecake mochi donut. The texture and flavor were amazing!",
+      "Fun spot with lots of creative mochi treats. Vibes were positive and welcoming!"
     ],
     "amenities": {
-      "bathroom": false,
+      "bathroom": true,
       "wifi": false,
       "indoorSeating": false,
       "outdoorSeating": true,
       "wheelchairAccessible": true,
+      "outlets": null,
       "creditCards": true
     },
     "priceRange": "$$",
@@ -2563,6 +2170,252 @@
       "sat": "9:00am - 4:00pm",
       "sun": "9:00am - 4:00pm"
     },
-    "yelp": "https://www.yelp.com/biz/third-culture-bakery-berkeley-berkeley"
+    "yelp": "https://www.yelp.com/biz/third-culture-bakery-berkeley"
+  },
+  {
+    "id": 27,
+    "name": "Qargo Coffee",
+    "images": {
+      "exterior": [
+        "/images/qargo/exterior1.jpg",
+        "/images/qargo/exterior2.jpg",
+        "/images/qargo/exterior3.jpg"
+      ],
+      "interior": [
+        "/images/qargo/interior1.jpg",
+        "/images/qargo/interior2.jpg",
+        "/images/qargo/interior3.jpg"
+      ], "menu": "/images/qargo/menu.jpg"
+    },
+    "uniqueItems": ["Honey Matcha Boba", "Passion Me Cold Brew", "Berry Smoothie"],
+    "menuItems":["Honey Matcha Boba", "Passion Me Cold Brew", "Berry Smoothie"],
+    "about": "Modern coffee shop near UC Berkeley offering Lavazza coffee, Italian pastries, and a large open space ideal for casual meetings and studying.",
+    "tags": ["Coffee", "Desserts", "Pastries"],
+    "vibeTags": ["modern", "student-friendly", "bright"],
+    "address": "2344 Telegraph Ave, Berkeley, CA 94704",
+    "phone": "(786) 913-9991",
+    "website": "https://qargocoffee.com",
+    "reviews": [
+      "Good for studying with lots of seating, but the music can be loud at times.",
+      "Tasty chai tea latte and savory croissants!",
+      "Service can be slow during peak hours, but coffee quality is solid."
+    ],
+    "amenities": {
+      "bathroom": true,
+      "wifi": true,
+      "indoorSeating": true,
+      "outdoorSeating": true,
+      "wheelchairAccessible": true,
+      "outlets": true,
+      "creditCards": true
+    },
+    "priceRange": "$$",
+    "hours": {
+      "mon": "8:00am - 11:00pm",
+      "tue": "8:00am - 11:00pm",
+      "wed": "8:00am - 11:00pm",
+      "thu": "8:00am - 11:00pm",
+      "fri": "8:00am - 11:00pm",
+      "sat": "8:00am - 11:00pm",
+      "sun": "8:00am - 11:00pm"
+    },
+    "yelp": "https://www.yelp.com/biz/qargo-coffee-berkeley"
+  },
+  {
+    "id": 28,
+    "name": "Blue Bottle Coffee",
+    "images": {
+      "exterior": [
+        "/images/blue/exterior1.jpg",
+        "/images/blue/exterior2.jpg",
+        "/images/blue/exterior3.jpg"
+      ],
+      "interior": [
+        "/images/blue/interior1.jpg",
+        "/images/blue/interior2.jpg",
+        "/images/blue/interior3.jpg"
+      ], "menu": "/images/blue/menu.jpg"
+    },
+    "uniqueItems": ["New Orleans Iced Coffee", "Iced Nola", "Single Origin Pour Over"],
+    "menuItems":["New Orleans Iced Coffee", "Iced Nola", "Single Origin Pour Over"],
+    "about": "Downtown Berkeley branch of the famed roastery, serving expertly crafted pour overs, espresso drinks, and freshly made waffles in a minimalistic setting.",
+    "tags": ["Coffee", "Pastries", "Desserts"],
+    "vibeTags": ["minimalist", "busy", "grab-and-go"],
+    "address": "2118 University Ave, Berkeley, CA 94704",
+    "phone": "(510) 653-3394",
+    "website": "https://bluebottlecoffee.com",
+    "reviews": [
+      "Signature Iced Nola coffee is a must-try! Smooth and perfectly sweet.",
+      "The pour over is incredible — worth the wait even if it’s crowded.",
+      "Coffee is top-notch but limited seating if you're planning to stay a while."
+    ],
+    "amenities": {
+      "bathroom": true,
+      "wifi": false,
+      "indoorSeating": true,
+      "outdoorSeating": true,
+      "wheelchairAccessible": true,
+      "outlets": false,
+      "creditCards": true
+    },
+    "priceRange": "$$",
+    "hours": {
+      "mon": "6:30am - 4:00pm",
+      "tue": "6:30am - 4:00pm",
+      "wed": "6:30am - 4:00pm",
+      "thu": "6:30am - 4:00pm",
+      "fri": "6:30am - 4:00pm",
+      "sat": "7:00am - 4:00pm",
+      "sun": "7:00am - 4:00pm"
+    },
+    "yelp": "https://www.yelp.com/biz/blue-bottle-coffee-berkeley"
+  },
+  {
+    "id": 29,
+    "name": "Poindexter Coffee",
+    "images": {
+      "exterior": [
+        "/images/poindexter/exterior1.jpg"
+      ],
+      "interior": [
+        "/images/poindexter/interior1.jpg"
+      ], "menu": "/images/poindexter/menu.jpg"
+    },
+    "uniqueItems": ["Iced Latte with Oat Milk", "Shaken Espresso", "Pastries from Starter Bakery"],
+    "menuItems":["Iced Latte with Oat Milk", "Shaken Espresso", "Pastries from Starter Bakery"],
+    "about": "Charming coffee shop located inside the Graduate Hotel Berkeley, serving local pastries and artisan coffee with a cozy, scholarly vibe.",
+    "tags": ["Coffee", "Pastries", "Breakfast"],
+    "vibeTags": ["cozy", "quiet", "hotel cafe"],
+    "address": "2600 Durant Ave, Berkeley, CA 94704",
+    "phone": "(510) 845-8981",
+    "website": "https://graduatehotels.com/berkeley/poindexter-coffee",
+    "reviews": [
+      "Cute quiet spot with friendly service and delicious lattes!",
+      "One of the best places to grab coffee near the UC Berkeley south side.",
+      "Great pastries from Starter Bakery — loved the ham and cheese croissant."
+    ],
+    "amenities": {
+      "bathroom": true,
+      "wifi": true,
+      "indoorSeating": true,
+      "outdoorSeating": true,
+      "wheelchairAccessible": true,
+      "outlets": true,
+      "creditCards": true
+    },
+    "priceRange": "$$",
+    "hours": {
+      "mon": "6:30am - 12:00pm",
+      "tue": "6:30am - 12:00pm",
+      "wed": "6:30am - 12:00pm",
+      "thu": "6:30am - 12:00pm",
+      "fri": "6:30am - 12:00pm",
+      "sat": "6:30am - 12:00pm",
+      "sun": "6:30am - 12:00pm"
+    },
+    "yelp": "https://www.yelp.com/biz/poindexter-coffee-berkeley"
+  },
+  {
+    "id": 30,
+    "name": "Gold Bean Cafe",
+    "images": {
+      "exterior": [
+        "/images/gold/exterior1.jpg",
+        "/images/gold/exterior2.jpg",
+        "/images/gold/exterior3.jpg"
+      ],
+      "interior": [
+        "/images/gold/interior1.jpg",
+        "/images/gold/interior2.jpg",
+        "/images/gold/interior3.jpg"
+      ], "menu": "/images/gold/menu.jpg"
+    },
+    "uniqueItems": ["Oat Horchata Matcha", "Ube Matcha", "Veggie Bagel"],
+    "menuItems":["Oat Horchata Matcha", "Ube Matcha", "Veggie Bagel"],
+    "about": "A cozy cafe in downtown Berkeley offering creative lattes, hearty bagels, and a relaxed atmosphere with plenty of indoor seating. Known for its Oat Horchata Matcha and brown sugar espresso drinks.",
+    "tags": ["Coffee", "Tea", "Bagels"],
+    "vibeTags": ["casual", "student-friendly", "bright"],
+    "address": "2131 Durant Ave, Berkeley, CA 94704",
+    "phone": "(510) 529-4429",
+    "website": null,
+    "reviews": [],
+    "amenities": {
+      "bathroom": true,
+      "wifi": true,
+      "indoorSeating": true,
+      "outdoorSeating": true,
+      "wheelchairAccessible": true,
+      "outlets": true,
+      "creditCards": true
+    },
+    "priceRange": "$$",
+    "hours": {
+      "mon": "7:00am - 6:00pm",
+      "tue": "7:00am - 6:00pm",
+      "wed": "7:00am - 6:00pm",
+      "thu": "7:00am - 6:00pm",
+      "fri": "7:00am - 6:00pm",
+      "sat": "8:00am - 6:00pm",
+      "sun": "9:00am - 6:00pm"
+    },
+    "yelp": "https://www.yelp.com/biz/gold-bean-cafe-berkeley"
+  }  , 
+  {
+    "id": 31,
+    "name": "Sasha Coffee",
+    "images": {
+      "exterior": [
+        "/images/sasha/exterior1.jpg",
+        "/images/sasha/exterior2.jpg",
+        "/images/sasha/exterior3.jpg"
+      ],
+      "interior": [
+        "/images/sasha/interior1.jpg",
+        "/images/sasha/interior2.jpg",
+        "/images/sasha/interior3.jpg"
+      ],
+      "menu": "/images/sasha/menu.jpg"
+    },
+    "uniqueItems": [
+      "Drip Coffee",
+      "Ham and Cheese Croissant",
+      "Cherry Cold Brew"
+    ],
+    "menuItems":[
+    "Drip Coffee",
+    "Ham and Cheese Croissant",
+    "Cherry Cold Brew"
+  ],
+    "about": "A cozy, high-quality coffee stand near Downtown Berkeley BART with rich espresso, fresh pastries, and friendly service. Sister cafe to Oakland's Haddon Hill Cafe, Sasha Coffee roasts its own beans and makes its pastries in-house.",
+    "tags": ["Coffee", "Tea", "Pastries", "Desserts"],
+    "vibeTags": ["small local", "friendly", "quick grab"],
+    "address": "2023 Center St, Berkeley, CA 94704",
+    "phone": "(510) 859-8717",
+    "website": "https://sashacoffee.com",
+    "reviews": [
+      "Sasha Coffee is an absolute gem of a coffee shop! Friendly and attentive service will make you feel right at home, and the mouthwatering food and coffee are irresistible. Highly recommend pairing the rich drip coffee with a ham and cheese croissant!",
+      "This place ruined espresso for me... Nothing else compares anymore. Ben pulls fantastic shots, and the roast is smooth and sweet. Easily the best coffee in Berkeley.",
+      "Cute little spot right by BART! Great latte that’s not too sour, and quick service. Only outdoor seating but perfect for grabbing coffee and a pastry to go."
+    ],
+    "amenities": {
+      "bathroom": false,
+      "wifi": false,
+      "indoorSeating": false,
+      "outdoorSeating": true,
+      "wheelchairAccessible": true,
+      "outlets": false,
+      "creditCards": true
+    },
+    "priceRange": "$$",
+    "hours": {
+      "mon": "7:00am - 2:00pm",
+      "tue": "7:00am - 2:00pm",
+      "wed": "7:00am - 2:00pm",
+      "thu": "7:00am - 2:00pm",
+      "fri": "7:00am - 2:00pm",
+      "sat": "Closed",
+      "sun": "Closed"
+    },
+    "yelp": "https://www.yelp.com/biz/sasha-coffee-berkeley"
   }  
 ]

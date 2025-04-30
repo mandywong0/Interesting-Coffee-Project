@@ -12,6 +12,7 @@ export interface Cafe {
     interior: string[];
   };
   uniqueItems: string[];
+  menuItems: string[];
   about: string | null;
   tags: string[];
   address: string;

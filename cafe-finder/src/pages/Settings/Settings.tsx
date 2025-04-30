@@ -175,9 +175,6 @@ const Settings: React.FC = () => {
         <Link to="/" className="nav-icon">
           🔍
         </Link>
-        <Link to="/match" className="nav-icon">
-          😊
-        </Link>
         <Link to="/bookmarks" className="nav-icon">
           🔖
         </Link>

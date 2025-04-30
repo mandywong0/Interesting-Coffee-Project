@@ -84,7 +84,7 @@ const Bookmarks: React.FC = () => {
 
       <div className="bookmarks-cafe-list">
         {bookmarkedCafes.length === 0 ? (
-          <p>No bookmarks yet! 🔖</p>
+          <p><b>No bookmarks yet! 🔖</b></p>
         ) : (
           bookmarkedCafes.map((cafe) => (
             <CafeCard
@@ -100,9 +100,6 @@ const Bookmarks: React.FC = () => {
       <div className="bottom-nav">
         <Link to="/" className="nav-icon">
           🔍
-        </Link>
-        <Link to="/match" className="nav-icon">
-          😊
         </Link>
         <Link to="/bookmarks" className="nav-icon active">
           🔖

@@ -101,21 +101,138 @@
   border-radius: 16px;
   font-size: 14px;
   cursor: pointer;
-  font-weight: 500;
-  transition: background-color 0.2s;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-width: 70px;
+  position: relative;
+  overflow: hidden;
 }
 
 .search-button:hover {
   background-color: #b07334;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.search-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Flash animation for search button */
+@keyframes flash-button {
+  0% { background-color: var(--accent-color); }
+  50% { background-color: #f0a260; box-shadow: 0 0 10px rgba(240, 162, 96, 0.7); }
+  100% { background-color: var(--accent-color); }
+}
+
+.flash-animation {
+  animation: flash-button 0.5s ease;
+}
+
+/* Search Suggestions Styles */
+.search-suggestions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.search-hint {
+  text-align: center;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+.search-hint strong {
+  color: var(--accent-color);
+}
+
+.suggestion-category {
+  width: 100%;
+}
+
+.category-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.suggestion-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.suggestion-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 5px 12px;
+  font-size: 13px;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.suggestion-button:hover {
+  background-color: var(--accent-color);
+  color: white;
+  border-color: var(--accent-color);
+}
+
+.suggestion-button:active {
+  transform: scale(0.95);
+}
+
+.add-symbol {
+  font-size: 11px;
+  opacity: 0.7;
+  font-weight: bold;
+}
+
+/* Search feedback and loading indicator */
+.search-feedback {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  padding: 10px 0;
+  font-style: italic;
 }
 
 .loading-indicator {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 30px 0;
   font-size: 16px;
   color: var(--text-color);
+  gap: 15px;
+}
+
+.spinner {
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  border-top: 3px solid var(--accent-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .search-error {
@@ -167,7 +284,6 @@
   gap: 8px;
 }
 
-
 .cafe-about {
   font-size: 14px;
   color: #444;
@@ -198,4 +314,19 @@
   font-size: 13px;
   color: #5d4206;
   font-weight: 700;
+}
+
+/* Debug button */
+.debug-button {
+  position: fixed;
+  bottom: 80px;
+  right: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  z-index: 999;
 }

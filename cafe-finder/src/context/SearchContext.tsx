@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext, ReactNode } from "react";
+import React, { createContext, useState, useContext, ReactNode, useRef, useCallback } from "react";
 import { Cafe } from "../pages/Home/Home";
 import { searchCafesWithNaturalLanguage } from "../services/searchService";
 import cafesData from "../data/cafes.json";
@@ -41,7 +41,8 @@ export const SearchProvider: React.FC<SearchProviderProps> = ({ children }) => {
   const [error, setError] = useState<string | null>(null);
   const [relevanceScores, setRelevanceScores] = useState<Map<number, number>>(new Map());
   
-  // Get user preferences from settings context
+  const searchRequestRef = useRef<number>(0);
+  
   const { 
     preferredSeating,
     preferredPayment,
@@ -50,7 +51,7 @@ export const SearchProvider: React.FC<SearchProviderProps> = ({ children }) => {
     wheelchairAccessible
   } = useSettings();
 
-  const performSearch = async (query: string) => {
+  const performSearch = useCallback(async (query: string) => {
     if (!query.trim()) {
       setSearchResults([]);
       setRelevanceScores(new Map());
@@ -61,10 +62,18 @@ export const SearchProvider: React.FC<SearchProviderProps> = ({ children }) => {
     setError(null);
     setSearchQuery(query);
 
+    const currentRequest = ++searchRequestRef.current;
+
     try {
+      await new Promise(resolve => setTimeout(resolve, 500));
+      
+      if (currentRequest !== searchRequestRef.current) {
+        console.log("Search request superseded by newer request");
+        return;
+      }
+
       const cafes = cafesData as Cafe[];
       
-      // Pass user preferences to the search function
       const userPreferences = {
         preferredSeating,
         preferredPayment,
@@ -74,28 +83,41 @@ export const SearchProvider: React.FC<SearchProviderProps> = ({ children }) => {
       };
       
       const results = await searchCafesWithNaturalLanguage(query, cafes, userPreferences);
-      setSearchResults(results.cafes);
-      setRelevanceScores(results.scores);
-    } catch (err) {
+      
+      if (currentRequest === searchRequestRef.current) {
+        setSearchResults(results.cafes);
+        setRelevanceScores(results.scores);
+      }
+    } catch (err: any) {
       console.error("Search failed:", err);
-      setError("Failed to perform search. Please try again.");
-      setSearchResults([]);
-      setRelevanceScores(new Map());
+      
+      if (currentRequest === searchRequestRef.current) {
+        if (err.message === "API key missing") {
+          setError("OpenAI API key is missing. Please add it to your .env file.");
+        } else {
+          setError("Failed to perform search. Please try again later.");
+        }
+        setSearchResults([]);
+        setRelevanceScores(new Map());
+      }
     } finally {
-      setIsSearching(false);
+      if (currentRequest === searchRequestRef.current) {
+        setIsSearching(false);
+      }
     }
-  };
+  }, [preferredSeating, preferredPayment, preferredNoise, pricePreference, wheelchairAccessible]);
 
-  const clearSearch = () => {
+  const clearSearch = useCallback(() => {
     setSearchQuery("");
     setSearchResults([]);
     setRelevanceScores(new Map());
     setError(null);
-  };
+    ++searchRequestRef.current;
+  }, []);
   
-  const getRelevanceScore = (cafeId: number): number => {
+  const getRelevanceScore = useCallback((cafeId: number): number => {
     return relevanceScores.get(cafeId) || 0;
-  };
+  }, [relevanceScores]);
 
   return (
     <SearchContext.Provider

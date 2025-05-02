@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Home.css";
 import cafesData from "../../data/cafes.json";
@@ -115,6 +115,15 @@ const CafeCard: React.FC<CafeCardProps> = ({ cafe, onClick, showScore = false, r
   );
 };
 
+// Common search suggestion categories
+const searchSuggestions = [
+  { category: "Popular", suggestions: ["Study spot", "Best coffee", "Quiet place", "Good wifi", "Cozy atmosphere"] },
+  { category: "Vibe", suggestions: ["Cozy", "Quiet", "Hipster", "Artsy", "Modern"] },
+  { category: "Drinks", suggestions: ["Tea", "Espresso", "Latte", "Cold Brew", "Matcha"] },
+  { category: "Food", suggestions: ["Pastries", "Avocado Toast", "Vegan", "Gluten-Free"] },
+  { category: "Features", suggestions: ["Wifi", "Outlets", "Outdoor Seating", "Study Spot"] }
+];
+
 const Home: React.FC = () => {
   const navigate = useNavigate();
   const cafes: Cafe[] = cafesData;
@@ -125,22 +134,109 @@ const Home: React.FC = () => {
     isSearching, 
     error, 
     performSearch, 
-    getRelevanceScore 
+    getRelevanceScore,
+    clearSearch
   } = useSearch();
   const [inputValue, setInputValue] = useState("");
+  
+  // Refs for debouncing search
+  const searchTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const [searchStatus, setSearchStatus] = useState<'idle' | 'typing' | 'debouncing' | 'searching'>('idle');
 
+  // Handle user navigating to cafe details
   const handleCafeClick = (id: number) => {
     navigate(`/cafe/${id}`);
   };
 
+  // Handle search form submission
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    performSearch(inputValue);
+    
+    // Clear any pending debounced searches
+    if (searchTimeoutRef.current) {
+      clearTimeout(searchTimeoutRef.current);
+      searchTimeoutRef.current = null;
+    }
+    
+    // Only search if there's something to search for
+    if (inputValue.trim()) {
+      setSearchStatus('searching');
+      performSearch(inputValue);
+    }
   };
 
+  // Handle input changes with debouncing
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setInputValue(e.target.value);
+    const value = e.target.value;
+    setInputValue(value);
+    setSearchStatus('typing');
+    
+    // If user clears the input, also clear the search results
+    if (value === '') {
+      clearSearch();
+      setSearchStatus('idle');
+      return;
+    }
+    
+    // Clear any pending debounced searches
+    if (searchTimeoutRef.current) {
+      clearTimeout(searchTimeoutRef.current);
+    }
+    
+    // Set up a new debounced search
+    searchTimeoutRef.current = setTimeout(() => {
+      if (value.trim()) {
+        setSearchStatus('debouncing');
+        performSearch(value);
+      }
+    }, 800); // Wait 800ms after user stops typing before searching
   };
+
+  // Handle suggestion clicks
+  const handleSuggestionClick = (suggestion: string) => {
+    // If input is empty, just use the suggestion
+    // If input already has text, add the suggestion with a space before it
+    const newValue = inputValue 
+      ? `${inputValue} ${suggestion.toLowerCase()}`
+      : suggestion.toLowerCase();
+    
+    // Only update the input value, don't trigger search
+    setInputValue(newValue);
+    
+    // Flash feedback to user
+    const searchInput = document.querySelector('.search-bar input') as HTMLInputElement;
+    if (searchInput) {
+      // Focus the input
+      searchInput.focus();
+      
+      // Flash the search button to indicate next step
+      const searchButton = document.querySelector('.search-button');
+      if (searchButton) {
+        searchButton.classList.add('flash-animation');
+        setTimeout(() => {
+          searchButton.classList.remove('flash-animation');
+        }, 500);
+      }
+    }
+  };
+  
+  // Update search status when isSearching changes
+  useEffect(() => {
+    if (isSearching) {
+      setSearchStatus('searching');
+    } else if (searchStatus === 'searching' || searchStatus === 'debouncing') {
+      setSearchStatus('idle');
+    }
+  }, [isSearching, searchStatus]);
+  
+  // Clean up timeout on unmount
+  useEffect(() => {
+    return () => {
+      if (searchTimeoutRef.current) {
+        clearTimeout(searchTimeoutRef.current);
+      }
+    };
+  }, []);
 
   // Filter cafes based on user preferences
   const filteredCafes = cafes.filter((cafe) => {
@@ -177,10 +273,47 @@ const Home: React.FC = () => {
         </button>
       </form>
 
+      <div className="search-suggestions">
+        <div className="search-hint">Click keywords to add to your search, then press <strong>Search</strong> to find cafes</div>
+        {searchSuggestions.map((category, idx) => (
+          <div key={idx} className="suggestion-category">
+            <div className="category-title">{category.category}</div>
+            <div className="suggestion-buttons">
+              {category.suggestions.map((suggestion, sIdx) => (
+                <button 
+                  key={sIdx} 
+                  className="suggestion-button"
+                  onClick={() => handleSuggestionClick(suggestion)}
+                  title="Add to search"
+                >
+                  <span className="add-symbol">+</span> {suggestion}
+                </button>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Show search feedback */}
+      {searchStatus === 'typing' && inputValue.length > 0 && (
+        <div className="search-feedback">
+          Type more or press Enter to search
+        </div>
+      )}
+      
+      {searchStatus === 'debouncing' && (
+        <div className="search-feedback">
+          Preparing search...
+        </div>
+      )}
+
       {error && <div className="search-error">{error}</div>}
 
       {isSearching ? (
-        <div className="loading-indicator">Searching for cafes...</div>
+        <div className="loading-indicator">
+          <div className="spinner"></div>
+          <div>Searching for cafes...</div>
+        </div>
       ) : (
         <>
           <h2 className="section-title">
@@ -219,6 +352,22 @@ const Home: React.FC = () => {
           ⚙️
         </Link>
       </div>
+      
+      {/* Debug button only shown in development */}
+      {process.env.NODE_ENV === 'development' && (
+        <button 
+          className="debug-button"
+          onClick={() => {
+            const currentValue = localStorage.getItem('MOCK_API') === 'true';
+            localStorage.setItem('MOCK_API', (!currentValue).toString());
+            // Set the environment variable for the current session
+            (window as any).REACT_APP_MOCK_API = (!currentValue).toString();
+            alert(`Mock API mode ${!currentValue ? 'enabled' : 'disabled'}. Refresh the page to apply.`);
+          }}
+        >
+          {localStorage.getItem('MOCK_API') === 'true' ? 'Disable' : 'Enable'} Mock API
+        </button>
+      )}
     </div>
   );
 };

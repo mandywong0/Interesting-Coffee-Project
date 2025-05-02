@@ -8,6 +8,7 @@ import CafeDetails from './pages/CafeDetails/CafeDetails';
 import Bookmarks from './pages/Bookmarks/Bookmarks';
 import Settings from './pages/Settings/Settings';
 import { SettingsProvider, useSettings } from './context/SettingsContext';
+import { SearchProvider } from './context/SearchContext';
 
 const AppContent = () => {
   const { theme } = useSettings();
@@ -34,9 +35,11 @@ const AppContent = () => {
 function App() {
   return (
     <SettingsProvider>
-      <Router>
-        <AppContent />
-      </Router>
+      <SearchProvider>
+        <Router>
+          <AppContent />
+        </Router>
+      </SearchProvider>
     </SettingsProvider>
   );
 }

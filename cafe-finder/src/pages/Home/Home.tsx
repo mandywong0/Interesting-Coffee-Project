@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./Home.css";
 import cafesData from "../../data/cafes.json";
 import { useSettings } from "../../context/SettingsContext";
+import { useSearch } from "../../context/SearchContext";
 
 export interface Cafe {
   id: number;
@@ -46,9 +47,11 @@ interface CafeCardProps {
   id: number;
   cafe: Cafe;
   onClick: (id: number) => void;
+  showScore?: boolean;
+  relevanceScore?: number;
 }
 
-const CafeCard: React.FC<CafeCardProps> = ({ cafe, onClick }) => {
+const CafeCard: React.FC<CafeCardProps> = ({ cafe, onClick, showScore = false, relevanceScore = 0 }) => {
   const { id, name, images, about, tags, vibeTags, uniqueItems, priceRange } = cafe;
 
   const ignoredWords = ["cafe", "coffee", "caffe", "the", "a"];
@@ -75,7 +78,15 @@ const CafeCard: React.FC<CafeCardProps> = ({ cafe, onClick }) => {
       )}
 
       <div className="cafe-info">
-        <div className="cafe-name">{name}</div>
+        <div className="cafe-header">
+          <div className="cafe-name">{name}</div>
+          {showScore && (
+            <div className="cafe-score">
+              <span className="score-value">{relevanceScore.toFixed(1)}</span>
+              <span className="score-label">/10</span>
+            </div>
+          )}
+        </div>
         <div className="cafe-tags">
           {vibeTags.map((tag, idx) => (
             <span key={idx} className="cafe-tag">
@@ -93,7 +104,12 @@ const CafeCard: React.FC<CafeCardProps> = ({ cafe, onClick }) => {
           )}
         </div>
 
-        {priceRange && <span className="cafe-price-range">{priceRange}</span>}
+        <div className="cafe-footer">
+          {priceRange && <span className="cafe-price-range">{priceRange}</span>}
+          {showScore && relevanceScore >= 8 && (
+            <span className="cafe-match-label">Perfect Match</span>
+          )}
+        </div>
       </div>
     </div>
   );
@@ -103,11 +119,30 @@ const Home: React.FC = () => {
   const navigate = useNavigate();
   const cafes: Cafe[] = cafesData;
   const { preferredSeating, preferredPayment, pricePreference } = useSettings();
+  const { 
+    searchQuery, 
+    searchResults, 
+    isSearching, 
+    error, 
+    performSearch, 
+    getRelevanceScore 
+  } = useSearch();
+  const [inputValue, setInputValue] = useState("");
 
   const handleCafeClick = (id: number) => {
     navigate(`/cafe/${id}`);
   };
 
+  const handleSearchSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    performSearch(inputValue);
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setInputValue(e.target.value);
+  };
+
+  // Filter cafes based on user preferences
   const filteredCafes = cafes.filter((cafe) => {
     if (pricePreference === "$$" && cafe.priceRange !== "$$") {
       return false;
@@ -124,25 +159,54 @@ const Home: React.FC = () => {
     return true;
   });
 
+  // Show search results if there's a search query, otherwise show filtered cafes
+  const displayedCafes = searchQuery ? searchResults : filteredCafes;
+
   return (
     <div className="home-page">
-      <div className="search-bar">
+      <form className="search-bar" onSubmit={handleSearchSubmit}>
         <span className="search-icon">🔍</span>
-        <input type="text" placeholder="keywords" />
-      </div>
+        <input 
+          type="text" 
+          placeholder="Ask anything (e.g., 'quiet place with good pastries')" 
+          value={inputValue}
+          onChange={handleInputChange}
+        />
+        <button type="submit" className="search-button">
+          Search
+        </button>
+      </form>
 
-      <h2 className="section-title">Recommended For You:</h2>
+      {error && <div className="search-error">{error}</div>}
 
-      <div className="cafe-list">
-        {filteredCafes.map((cafe) => (
-          <CafeCard
-            key={cafe.id}
-            id={cafe.id}
-            cafe={cafe}
-            onClick={handleCafeClick}
-          />
-        ))}
-      </div>
+      {isSearching ? (
+        <div className="loading-indicator">Searching for cafes...</div>
+      ) : (
+        <>
+          <h2 className="section-title">
+            {searchQuery ? `Results for "${searchQuery}"` : "Recommended For You:"}
+          </h2>
+
+          {displayedCafes.length === 0 ? (
+            <div className="no-results">
+              {searchQuery ? "No cafes match your search. Try different keywords." : "No cafes match your preferences."}
+            </div>
+          ) : (
+            <div className="cafe-list">
+              {displayedCafes.map((cafe) => (
+                <CafeCard
+                  key={cafe.id}
+                  id={cafe.id}
+                  cafe={cafe}
+                  onClick={handleCafeClick}
+                  showScore={searchQuery ? true : false}
+                  relevanceScore={getRelevanceScore(cafe.id)}
+                />
+              ))}
+            </div>
+          )}
+        </>
+      )}
 
       <div className="bottom-nav">
         <Link to="/" className="nav-icon active">

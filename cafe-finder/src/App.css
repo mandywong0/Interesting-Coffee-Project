@@ -1,7 +1,7 @@
 :root {
   --background-color: #8D7B68;
   --card-color: #f6f1ea;
-  --text-color: #201403;
+  --text-color: #453105
   --button-color: #514332;
   --accent-color: #e6cfb2;
 }
@@ -12,14 +12,20 @@
   --text-color: #201403;
   --button-color: #514332;
   --accent-color: #fdddb0;
+  --active-color: white;
+  --deactive-color: rgb(250, 247, 236);
+  --header-color: white;
 }
 
 .light-theme {
-  --background-color: #e0c59f;
+  --background-color: #edddc6;
   --card-color: #faf8f5;
   --text-color: #201403;
   --button-color: #514332;
   --accent-color: #ffba5a;
+  --active-color: #852518;
+  --deactive-color: #8e4c1d;
+  --header-color: #201403;
 }
 
 * {

@@ -1,4 +1,5 @@
 .page-title {
+  color: var(--header-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,6 +26,3 @@
   -ms-overflow-style: none;
 }
 
-p {
-  color: white;
-}

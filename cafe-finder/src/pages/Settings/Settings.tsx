@@ -1,7 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Settings.css";
 import { useSettings } from "../../context/SettingsContext";
+import BookmarkIcon from '@mui/icons-material/Bookmark';
+import SearchIcon from '@mui/icons-material/Search';
+import SettingsIcon from '@mui/icons-material/Settings';
 
 const Settings: React.FC = () => {
   const {
@@ -20,7 +23,8 @@ const Settings: React.FC = () => {
     setWheelchairAccessible,
     setUserBlurb,
   } = useSettings();
-
+  const location = useLocation();
+  const currentPath = location.pathname;
   return (
     <div className="settings-page">
       <div className="settings-header">
@@ -172,17 +176,27 @@ const Settings: React.FC = () => {
       </div>
 
       <div className="bottom-nav">
-        <Link to="/" className="nav-icon">
-          🔍
+        <Link
+          to="/"
+          className={`nav-icon ${currentPath === "/" ? "active" : ""}`}
+        >
+          <SearchIcon />
         </Link>
-        <Link to="/bookmarks" className="nav-icon">
-          🔖
+        <Link
+          to="/bookmarks"
+          className={`nav-icon ${currentPath === "/bookmarks" ? "active" : ""}`}
+        >
+          <BookmarkIcon />
         </Link>
-        <Link to="/settings" className="nav-icon active">
-          ⚙️
+        <Link
+          to="/settings"
+          className={`nav-icon ${currentPath === "/settings" ? "active" : ""}`}
+        >
+          <SettingsIcon />
         </Link>
       </div>
     </div>
+   
   );
 };
 

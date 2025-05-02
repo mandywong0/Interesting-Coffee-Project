@@ -1,9 +1,12 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import "./Home.css";
 import cafesData from "../../data/cafes.json";
 import { useSettings } from "../../context/SettingsContext";
 import { useSearch } from "../../context/SearchContext";
+import BookmarkIcon from "@mui/icons-material/Bookmark";
+import SearchIcon from "@mui/icons-material/Search";
+import SettingsIcon from "@mui/icons-material/Settings";
 
 export interface Cafe {
   id: number;
@@ -51,8 +54,14 @@ interface CafeCardProps {
   relevanceScore?: number;
 }
 
-const CafeCard: React.FC<CafeCardProps> = ({ cafe, onClick, showScore = false, relevanceScore = 0 }) => {
-  const { id, name, images, about, tags, vibeTags, uniqueItems, priceRange } = cafe;
+const CafeCard: React.FC<CafeCardProps> = ({
+  cafe,
+  onClick,
+  showScore = false,
+  relevanceScore = 0,
+}) => {
+  const { id, name, images, about, tags, vibeTags, uniqueItems, priceRange } =
+    cafe;
 
   const ignoredWords = ["cafe", "coffee", "caffe", "the", "a"];
 
@@ -96,7 +105,7 @@ const CafeCard: React.FC<CafeCardProps> = ({ cafe, onClick, showScore = false, r
         </div>
         {about && <p className="cafe-about">{about}</p>}
 
-        <div className="cafe-unique-items" >
+        <div className="cafe-unique-items">
           {uniqueItems.length > 0 && (
             <p>
               <strong>Signature Menu Items:</strong> {uniqueItems.join(", ")}
@@ -117,31 +126,56 @@ const CafeCard: React.FC<CafeCardProps> = ({ cafe, onClick, showScore = false, r
 
 // Common search suggestion categories
 const searchSuggestions = [
-  { category: "Popular", suggestions: ["Study spot", "Best coffee", "Quiet place", "Good wifi", "Cozy atmosphere"] },
-  { category: "Vibe", suggestions: ["Cozy", "Quiet", "Hipster", "Artsy", "Modern"] },
-  { category: "Drinks", suggestions: ["Tea", "Espresso", "Latte", "Cold Brew", "Matcha"] },
-  { category: "Food", suggestions: ["Pastries", "Avocado Toast", "Vegan", "Gluten-Free"] },
-  { category: "Features", suggestions: ["Wifi", "Outlets", "Outdoor Seating", "Study Spot"] }
+  {
+    category: "Popular",
+    suggestions: [
+      "Study spot",
+      "Best coffee",
+      "Quiet place",
+      "Good wifi",
+      "Cozy atmosphere",
+    ],
+  },
+  {
+    category: "Vibe",
+    suggestions: ["Cozy", "Quiet", "Hipster", "Artsy", "Modern"],
+  },
+  {
+    category: "Drinks",
+    suggestions: ["Tea", "Espresso", "Latte", "Cold Brew", "Matcha"],
+  },
+  {
+    category: "Food",
+    suggestions: ["Pastries", "Avocado Toast", "Vegan", "Gluten-Free"],
+  },
+  {
+    category: "Features",
+    suggestions: ["Wifi", "Outlets", "Outdoor Seating", "Study Spot"],
+  },
 ];
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
   const cafes: Cafe[] = cafesData;
   const { preferredSeating, preferredPayment, pricePreference } = useSettings();
-  const { 
-    searchQuery, 
-    searchResults, 
-    isSearching, 
-    error, 
-    performSearch, 
+  const {
+    searchQuery,
+    searchResults,
+    isSearching,
+    error,
+    performSearch,
     getRelevanceScore,
-    clearSearch
+    clearSearch,
   } = useSearch();
   const [inputValue, setInputValue] = useState("");
-  
+  const location = useLocation();
+  const currentPath = location.pathname;
+
   // Refs for debouncing search
   const searchTimeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const [searchStatus, setSearchStatus] = useState<'idle' | 'typing' | 'debouncing' | 'searching'>('idle');
+  const [searchStatus, setSearchStatus] = useState<
+    "idle" | "typing" | "debouncing" | "searching"
+  >("idle");
 
   // Handle user navigating to cafe details
   const handleCafeClick = (id: number) => {
@@ -151,16 +185,16 @@ const Home: React.FC = () => {
   // Handle search form submission
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Clear any pending debounced searches
     if (searchTimeoutRef.current) {
       clearTimeout(searchTimeoutRef.current);
       searchTimeoutRef.current = null;
     }
-    
+
     // Only search if there's something to search for
     if (inputValue.trim()) {
-      setSearchStatus('searching');
+      setSearchStatus("searching");
       performSearch(inputValue);
     }
   };
@@ -169,24 +203,24 @@ const Home: React.FC = () => {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     setInputValue(value);
-    setSearchStatus('typing');
-    
+    setSearchStatus("typing");
+
     // If user clears the input, also clear the search results
-    if (value === '') {
+    if (value === "") {
       clearSearch();
-      setSearchStatus('idle');
+      setSearchStatus("idle");
       return;
     }
-    
+
     // Clear any pending debounced searches
     if (searchTimeoutRef.current) {
       clearTimeout(searchTimeoutRef.current);
     }
-    
+
     // Set up a new debounced search
     searchTimeoutRef.current = setTimeout(() => {
       if (value.trim()) {
-        setSearchStatus('debouncing');
+        setSearchStatus("debouncing");
         performSearch(value);
       }
     }, 800); // Wait 800ms after user stops typing before searching
@@ -196,39 +230,41 @@ const Home: React.FC = () => {
   const handleSuggestionClick = (suggestion: string) => {
     // If input is empty, just use the suggestion
     // If input already has text, add the suggestion with a space before it
-    const newValue = inputValue 
+    const newValue = inputValue
       ? `${inputValue} ${suggestion.toLowerCase()}`
       : suggestion.toLowerCase();
-    
+
     // Only update the input value, don't trigger search
     setInputValue(newValue);
-    
+
     // Flash feedback to user
-    const searchInput = document.querySelector('.search-bar input') as HTMLInputElement;
+    const searchInput = document.querySelector(
+      ".search-bar input"
+    ) as HTMLInputElement;
     if (searchInput) {
       // Focus the input
       searchInput.focus();
-      
+
       // Flash the search button to indicate next step
-      const searchButton = document.querySelector('.search-button');
+      const searchButton = document.querySelector(".search-button");
       if (searchButton) {
-        searchButton.classList.add('flash-animation');
+        searchButton.classList.add("flash-animation");
         setTimeout(() => {
-          searchButton.classList.remove('flash-animation');
+          searchButton.classList.remove("flash-animation");
         }, 500);
       }
     }
   };
-  
+
   // Update search status when isSearching changes
   useEffect(() => {
     if (isSearching) {
-      setSearchStatus('searching');
-    } else if (searchStatus === 'searching' || searchStatus === 'debouncing') {
-      setSearchStatus('idle');
+      setSearchStatus("searching");
+    } else if (searchStatus === "searching" || searchStatus === "debouncing") {
+      setSearchStatus("idle");
     }
   }, [isSearching, searchStatus]);
-  
+
   // Clean up timeout on unmount
   useEffect(() => {
     return () => {
@@ -261,10 +297,12 @@ const Home: React.FC = () => {
   return (
     <div className="home-page">
       <form className="search-bar" onSubmit={handleSearchSubmit}>
-        <span className="search-icon">🔍</span>
-        <input 
-          type="text" 
-          placeholder="Ask anything (e.g., 'quiet place with good pastries')" 
+        <span className="search-icon">
+          <SearchIcon />
+        </span>
+        <input
+          type="text"
+          placeholder="Ask anything (e.g., 'quiet place with good pastries')"
           value={inputValue}
           onChange={handleInputChange}
         />
@@ -274,14 +312,17 @@ const Home: React.FC = () => {
       </form>
 
       <div className="search-suggestions">
-        <div className="search-hint">Click keywords to add to your search, then press <strong>Search</strong> to find cafes</div>
+        <div className="search-hint">
+          Click keywords to add to your search, then press{" "}
+          <strong>Search</strong> to find cafes
+        </div>
         {searchSuggestions.map((category, idx) => (
           <div key={idx} className="suggestion-category">
             <div className="category-title">{category.category}</div>
             <div className="suggestion-buttons">
               {category.suggestions.map((suggestion, sIdx) => (
-                <button 
-                  key={sIdx} 
+                <button
+                  key={sIdx}
                   className="suggestion-button"
                   onClick={() => handleSuggestionClick(suggestion)}
                   title="Add to search"
@@ -295,16 +336,14 @@ const Home: React.FC = () => {
       </div>
 
       {/* Show search feedback */}
-      {searchStatus === 'typing' && inputValue.length > 0 && (
+      {searchStatus === "typing" && inputValue.length > 0 && (
         <div className="search-feedback">
           Type more or press Enter to search
         </div>
       )}
-      
-      {searchStatus === 'debouncing' && (
-        <div className="search-feedback">
-          Preparing search...
-        </div>
+
+      {searchStatus === "debouncing" && (
+        <div className="search-feedback">Preparing search...</div>
       )}
 
       {error && <div className="search-error">{error}</div>}
@@ -317,12 +356,16 @@ const Home: React.FC = () => {
       ) : (
         <>
           <h2 className="section-title">
-            {searchQuery ? `Results for "${searchQuery}"` : "Recommended For You:"}
+            {searchQuery
+              ? `Results for "${searchQuery}"`
+              : "Recommended For You:"}
           </h2>
 
           {displayedCafes.length === 0 ? (
             <div className="no-results">
-              {searchQuery ? "No cafes match your search. Try different keywords." : "No cafes match your preferences."}
+              {searchQuery
+                ? "No cafes match your search. Try different keywords."
+                : "No cafes match your preferences."}
             </div>
           ) : (
             <div className="cafe-list">
@@ -342,30 +385,44 @@ const Home: React.FC = () => {
       )}
 
       <div className="bottom-nav">
-        <Link to="/" className="nav-icon active">
-          🔍
+        <Link
+          to="/"
+          className={`nav-icon ${currentPath === "/" ? "active" : ""}`}
+        >
+          <SearchIcon />
         </Link>
-        <Link to="/bookmarks" className="nav-icon">
-          🔖
+        <Link
+          to="/bookmarks"
+          className={`nav-icon ${currentPath === "/bookmarks" ? "active" : ""}`}
+        >
+          <BookmarkIcon />
         </Link>
-        <Link to="/settings" className="nav-icon">
-          ⚙️
+        <Link
+          to="/settings"
+          className={`nav-icon ${currentPath === "/settings" ? "active" : ""}`}
+        >
+          <SettingsIcon />
         </Link>
       </div>
-      
+
       {/* Debug button only shown in development */}
-      {process.env.NODE_ENV === 'development' && (
-        <button 
+      {process.env.NODE_ENV === "development" && (
+        <button
           className="debug-button"
           onClick={() => {
-            const currentValue = localStorage.getItem('MOCK_API') === 'true';
-            localStorage.setItem('MOCK_API', (!currentValue).toString());
+            const currentValue = localStorage.getItem("MOCK_API") === "true";
+            localStorage.setItem("MOCK_API", (!currentValue).toString());
             // Set the environment variable for the current session
             (window as any).REACT_APP_MOCK_API = (!currentValue).toString();
-            alert(`Mock API mode ${!currentValue ? 'enabled' : 'disabled'}. Refresh the page to apply.`);
+            alert(
+              `Mock API mode ${
+                !currentValue ? "enabled" : "disabled"
+              }. Refresh the page to apply.`
+            );
           }}
         >
-          {localStorage.getItem('MOCK_API') === 'true' ? 'Disable' : 'Enable'} Mock API
+          {localStorage.getItem("MOCK_API") === "true" ? "Disable" : "Enable"}{" "}
+          Mock API
         </button>
       )}
     </div>

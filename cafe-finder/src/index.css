@@ -13,10 +13,12 @@ body {
 
 body.light-theme {
   background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 body.dark-theme {
   background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 code {

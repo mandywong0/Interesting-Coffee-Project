@@ -10,9 +10,10 @@
 }
 
 .section-title {
-  color: white;
   margin: 20px 0;
   font-size: 18px;
+  color: var(--header-color);
+
 }
 
 .cafe-list {
@@ -70,6 +71,7 @@
 }
 
 .search-bar {
+  color:var(--header-color);
   display: flex;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
@@ -85,12 +87,12 @@
 }
 
 .search-bar input {
+  color:var(--header-color);
   border: none;
   background: transparent;
   width: 100%;
   outline: none;
   padding: 8px 0;
-  color: var(--text-color);
 }
 
 .search-button {
@@ -110,7 +112,6 @@
 }
 
 .search-button:hover {
-  background-color: #b07334;
   transform: translateY(-1px);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
 }
@@ -249,7 +250,7 @@
   justify-content: center;
   align-items: center;
   padding: 40px 0;
-  color: var(--text-color);
+  color: var(--header-color);
   font-size: 16px;
   text-align: center;
 }
@@ -279,6 +280,8 @@
 }
 
 .cafe-info {
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -314,6 +317,15 @@
   font-size: 13px;
   color: #5d4206;
   font-weight: 700;
+}
+
+.nav-icon svg {
+  color: var(--deactive-color);
+  transition: color 0.2s ease;
+}
+
+.nav-icon.active svg {
+  color: var(--active-color);
 }
 
 /* Debug button */

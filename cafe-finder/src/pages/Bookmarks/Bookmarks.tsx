@@ -1,9 +1,12 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import cafesData from "../../data/cafes.json";
 import { Cafe } from "../Home/Home";
 import "../Home/Home.css";
 import "./Bookmarks.css";
+import BookmarkIcon from "@mui/icons-material/Bookmark";
+import SearchIcon from "@mui/icons-material/Search";
+import SettingsIcon from "@mui/icons-material/Settings";
 
 interface CafeCardProps {
   cafe: Cafe;
@@ -77,35 +80,43 @@ const Bookmarks: React.FC = () => {
   const handleCafeClick = (id: number) => {
     navigate(`/cafe/${id}`);
   };
-
+  const location = useLocation();
+  const currentPath = location.pathname;
   return (
     <div className="bookmarks-page">
-      <h1 className="page-title">Your Bookmarked Cafes</h1>
+      <h1 className="page-title" >Your Bookmarked Cafes</h1>
 
       <div className="bookmarks-cafe-list">
         {bookmarkedCafes.length === 0 ? (
-          <p><b>No bookmarks yet! 🔖</b></p>
+          <p>
+            <b>No bookmarks yet! 🔖</b>
+          </p>
         ) : (
           bookmarkedCafes.map((cafe) => (
-            <CafeCard
-              key={cafe.id}
-              cafe={cafe}
-              onClick={handleCafeClick}
-            />
+            <CafeCard key={cafe.id} cafe={cafe} onClick={handleCafeClick} />
           ))
         )}
       </div>
 
       {/* Bottom Nav Bar */}
       <div className="bottom-nav">
-        <Link to="/" className="nav-icon">
-          🔍
+        <Link
+          to="/"
+          className={`nav-icon ${currentPath === "/" ? "active" : ""}`}
+        >
+          <SearchIcon />
         </Link>
-        <Link to="/bookmarks" className="nav-icon active">
-          🔖
+        <Link
+          to="/bookmarks"
+          className={`nav-icon ${currentPath === "/bookmarks" ? "active" : ""}`}
+        >
+          <BookmarkIcon />
         </Link>
-        <Link to="/settings" className="nav-icon">
-          ⚙️
+        <Link
+          to="/settings"
+          className={`nav-icon ${currentPath === "/settings" ? "active" : ""}`}
+        >
+          <SettingsIcon />
         </Link>
       </div>
     </div>

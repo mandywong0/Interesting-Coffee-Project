@@ -74,7 +74,7 @@
   color:var(--header-color);
   display: flex;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--secondary-button-color);
   border-radius: 20px;
   padding: 6px 15px;
   margin: 15px 0;
@@ -98,7 +98,7 @@
 .search-button {
   background-color: var(--accent-color);
   border: none;
-  color: white;
+  color: black;
   padding: 6px 12px;
   border-radius: 16px;
   font-size: 14px;
@@ -133,18 +133,31 @@
 }
 
 /* Search Suggestions Styles */
+.search-container {
+  position: relative;
+}
+
 .search-suggestions {
   display: flex;
   flex-direction: column;
   gap: 8px;
   margin-bottom: 16px;
+  position: absolute;
+  top: 100%; 
+  left: 0;
   width: 100%;
+  z-index: 1000;
+  background-color: var(--secondary-button-color);
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  padding: 1rem;
+  margin-top: -13px;
 }
 
 .search-hint {
   text-align: center;
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  color: var(--secondary-header-color);
   margin-bottom: 10px;
   padding: 0 10px;
 }
@@ -161,7 +174,7 @@
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 6px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--secondary-header-color);
 }
 
 .suggestion-buttons {
@@ -172,12 +185,12 @@
 }
 
 .suggestion-button {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: color-mix(in srgb, var(--button-color) 80%, transparent);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   padding: 5px 12px;
   font-size: 13px;
-  color: var(--text-color);
+  color: var(--card-color);
   cursor: pointer;
   transition: all 0.2s ease;
   white-space: nowrap;
@@ -188,7 +201,7 @@
 
 .suggestion-button:hover {
   background-color: var(--accent-color);
-  color: white;
+  color: black;
   border-color: var(--accent-color);
 }
 

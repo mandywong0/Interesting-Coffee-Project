@@ -293,46 +293,65 @@ const Home: React.FC = () => {
 
   // Show search results if there's a search query, otherwise show filtered cafes
   const displayedCafes = searchQuery ? searchResults : filteredCafes;
+  const [showSearchSuggestions, setShowSearchSuggestions] = useState(false);
 
   return (
     <div className="home-page">
-      <form className="search-bar" onSubmit={handleSearchSubmit}>
-        <span className="search-icon">
-          <SearchIcon />
-        </span>
-        <input
-          type="text"
-          placeholder="Ask anything (e.g., 'quiet place with good pastries')"
-          value={inputValue}
-          onChange={handleInputChange}
-        />
-        <button type="submit" className="search-button">
-          Search
-        </button>
-      </form>
+      <div className="search-container">
+        <form className="search-bar" onSubmit={handleSearchSubmit} style={{
+          borderBottomLeftRadius: showSearchSuggestions ? "0" : "20px",
+          borderBottomRightRadius: showSearchSuggestions ? "0" : "20px",
+        }}>
+          <span className="search-icon">
+            <SearchIcon />
+          </span>
+          <input
+            type="text"
+            placeholder="Ask anything (e.g., 'quiet place with good pastries')"
+            value={inputValue}
+            onChange={handleInputChange}
+            onFocus={() => setShowSearchSuggestions(true)}
+            onBlur={(e) => {
+              const relatedTarget = e.relatedTarget as HTMLElement | null;
+              if (
+                relatedTarget &&
+                relatedTarget.closest(".search-suggestions")
+              ) {
+                return;
+              }
+              setTimeout(() => setShowSearchSuggestions(false), 100);
+            }}
+          />
+          <button type="submit" className="search-button">
+            Search
+          </button>
+        </form>
 
-      <div className="search-suggestions">
-        <div className="search-hint">
-          Click keywords to add to your search, then press{" "}
-          <strong>Search</strong> to find cafes
-        </div>
-        {searchSuggestions.map((category, idx) => (
-          <div key={idx} className="suggestion-category">
-            <div className="category-title">{category.category}</div>
-            <div className="suggestion-buttons">
-              {category.suggestions.map((suggestion, sIdx) => (
-                <button
-                  key={sIdx}
-                  className="suggestion-button"
-                  onClick={() => handleSuggestionClick(suggestion)}
-                  title="Add to search"
-                >
-                  <span className="add-symbol">+</span> {suggestion}
-                </button>
-              ))}
+        {showSearchSuggestions && (
+          <div className="search-suggestions">
+            <div className="search-hint">
+              Click keywords to add to your search, then press{" "}
+              <strong>Search</strong> to find cafes
             </div>
+            {searchSuggestions.map((category, idx) => (
+              <div key={idx} className="suggestion-category">
+                <div className="category-title">{category.category}</div>
+                <div className="suggestion-buttons">
+                  {category.suggestions.map((suggestion, sIdx) => (
+                    <button
+                      key={sIdx}
+                      className="suggestion-button"
+                      onClick={() => handleSuggestionClick(suggestion)}
+                      title="Add to search"
+                    >
+                      <span className="add-symbol">+</span> {suggestion}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
-        ))}
+        )}
       </div>
 
       {/* Show search feedback */}

@@ -15,6 +15,8 @@
   --active-color: white;
   --deactive-color: rgb(250, 247, 236);
   --header-color: white;
+  --secondary-header-color: rgba(255, 255, 255, 0.7);
+  --secondary-button-color: #4d391e;
 }
 
 .light-theme {
@@ -26,6 +28,8 @@
   --active-color: #852518;
   --deactive-color: #8e4c1d;
   --header-color: #201403;
+  --secondary-header-color: rgba(9, 9, 9, 0.7);
+  --secondary-button-color: rgb(255, 251, 240);
 }
 
 * {

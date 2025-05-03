@@ -89,7 +89,7 @@ const Bookmarks: React.FC = () => {
       <div className="bookmarks-cafe-list">
         {bookmarkedCafes.length === 0 ? (
           <p>
-            <b>No bookmarks yet! 🔖</b>
+            <b className="no-bookmark-text">No bookmarks available. <br></br><br></br>Start saving your favorite cafes by clicking on the bookmark icon at the top left corner on the cafe's profile page!</b>
           </p>
         ) : (
           bookmarkedCafes.map((cafe) => (

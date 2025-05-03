@@ -46,7 +46,7 @@
 .score-value {
   font-size: 16px;
   font-weight: 700;
-  color: var(--accent-color);
+  color: brown;
 }
 
 .score-label {
@@ -57,7 +57,7 @@
 
 .cafe-match-label {
   font-size: 12px;
-  color: #fff;
+  color: black;
   background-color: var(--accent-color);
   padding: 3px 8px;
   border-radius: 10px;

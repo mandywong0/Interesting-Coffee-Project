@@ -94,6 +94,10 @@
   outline: none;
   padding: 8px 0;
 }
+.search-bar input::placeholder {
+  color:var(--header-color);
+}
+
 
 .search-button {
   background-color: var(--accent-color);

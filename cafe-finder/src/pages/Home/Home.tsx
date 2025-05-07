@@ -308,6 +308,7 @@ const Home: React.FC = () => {
           <input
             type="text"
             placeholder="Ask anything (e.g., 'quiet place with good pastries')"
+            
             value={inputValue}
             onChange={handleInputChange}
             onFocus={() => setShowSearchSuggestions(true)}

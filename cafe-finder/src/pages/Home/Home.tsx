@@ -114,10 +114,11 @@ const CafeCard: React.FC<CafeCardProps> = ({
         </div>
 
         <div className="cafe-footer">
-          {priceRange && <span className="cafe-price-range">{priceRange}</span>}
-          {showScore && relevanceScore >= 8 && (
+        {showScore && relevanceScore >= 8 && (
             <span className="cafe-match-label">Perfect Match</span>
           )}
+          {priceRange && <span className="cafe-price-range">{priceRange}</span>}
+          
         </div>
       </div>
     </div>
@@ -308,7 +309,7 @@ const Home: React.FC = () => {
           <input
             type="text"
             placeholder="Ask anything (e.g., 'quiet place with good pastries')"
-            
+
             value={inputValue}
             onChange={handleInputChange}
             onFocus={() => setShowSearchSuggestions(true)}

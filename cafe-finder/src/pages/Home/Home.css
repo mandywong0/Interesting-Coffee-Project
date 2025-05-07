@@ -30,6 +30,7 @@
 
 .cafe-footer {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin-top: 8px;
@@ -62,6 +63,7 @@
   padding: 3px 8px;
   border-radius: 10px;
   font-weight: 600;
+ margin-bottom: 12px;
 }
 
 .cafe-name {
